@@ -1,0 +1,74 @@
+# gz topic published by the JointState plugin
+- ros_topic_name: "joint_states"
+  gz_topic_name: "joint_states"
+  ros_type_name: "sensor_msgs/msg/JointState"
+  gz_type_name: "gz.msgs.Model" # In future, this will be gz.msgs.Model
+  direction: GZ_TO_ROS
+
+# gz topic subscribed by the JointPositionController plugin
+
+# - ros_topic_name: "model/robot_1/joint/base/cmd_pos"
+#   gz_topic_name: "model/robot_1/joint/base/0/cmd_pos"
+#   ros_type_name: "std_msgs/msg/Float64"
+#   gz_type_name: "gz.msgs.Double" # In future, this will be gz.msgs.Double
+#   direction: ROS_TO_GZ
+
+- ros_topic_name: "model/robot_1/joint/l1/cmd_pos"
+  gz_topic_name: "model/robot_1/joint/l1/0/cmd_pos"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double" # In future, this will be gz.msgs.Double
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "model/robot_1/joint/l2/cmd_pos"
+  gz_topic_name: "model/robot_1/joint/l2/0/cmd_pos"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double" # In future, this will be gz.msgs.Double
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "model/robot_1/joint/l3_1/cmd_pos"
+  gz_topic_name: "model/robot_1/joint/l3_1/0/cmd_pos"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double" # In future, this will be gz.msgs.Double
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "model/robot_1/joint/l3_2/cmd_pos"
+  gz_topic_name: "model/robot_1/joint/l3_2/0/cmd_pos"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double" # In future, this will be gz.msgs.Double
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "model/robot_1/joint/l3_3/cmd_pos"
+  gz_topic_name: "model/robot_1/joint/l3_3/0/cmd_pos"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double" # In future, this will be gz.msgs.Double
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "model/robot_1/joint/r1/cmd_pos"
+  gz_topic_name: "model/robot_1/joint/r1/0/cmd_pos"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double" # In future, this will be gz.msgs.Double
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "model/robot_1/joint/r2/cmd_pos"
+  gz_topic_name: "model/robot_1/joint/r2/0/cmd_pos"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double" # In future, this will be gz.msgs.Double
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "model/robot_1/joint/r3_1/cmd_pos"
+  gz_topic_name: "model/robot_1/joint/r3_1/0/cmd_pos"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double" # In future, this will be gz.msgs.Double
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "model/robot_1/joint/r3_2/cmd_pos"
+  gz_topic_name: "model/robot_1/joint/r3_2/0/cmd_pos"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double" # In future, this will be gz.msgs.Double
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "model/robot_1/joint/r3_3/cmd_pos"
+  gz_topic_name: "model/robot_1/joint/r3_3/0/cmd_pos"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double" # In future, this will be gz.msgs.Double
+  direction: ROS_TO_GZ

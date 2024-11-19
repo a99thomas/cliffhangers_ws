@@ -1,0 +1,673 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="robot_1">
+
+<link name="part_1">
+<visual>
+<origin xyz="0.0013727877574868513344 -0.0053712131587662081955 -0.0039510241908585685619" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://robot_1/meshes/part_1.stl"/>
+</geometry>
+<material name="part_1_material">
+<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.0013727877574868513344 -0.0053712131587662081955 -0.0039510241908585685619" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package://robot_1/meshes/part_1.stl"/>
+</geometry>
+       <surface>
+            <friction>
+                <ode>
+                    <mu>1.0</mu> <!-- Coefficient of friction -->
+                    <mu2>1.0</mu2> <!-- Second coefficient (for lateral friction) -->
+                </ode>
+            </friction>
+        </surface>
+</collision>
+<inertial>
+<origin xyz="0.055347787757486853477 0.053183101617656144966 0.01326060219886256164" rpy="0 0 0"/>
+<mass value="0.62610941871727798791" />
+<inertia ixx="0.0008593322951854244756" ixy="0"  ixz="0" iyy="0.00074250206540093903213" iyz="1.7546148978066100784e-05" izz="0.0013321713541736847873" />
+</inertial>
+</link>
+<gazebo reference="part_1">
+    <material>Gazebo/Blue</material>
+</gazebo>
+
+<link name="part_2">
+<visual>
+<origin xyz="0.047499999999999993616 -0.036750000000000004885 -0.0060000000000000001249" rpy="3.141592653589793116 -0 -2.4153322824164133124e-47" />
+<geometry>
+<mesh filename="package://robot_1/meshes/part_2.stl"/>
+</geometry>
+<material name="part_2_material">
+<color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.047499999999999993616 -0.036750000000000004885 -0.0060000000000000001249" rpy="3.141592653589793116 -0 -2.4153322824164133124e-47" />
+<geometry>
+<mesh filename="package://robot_1/meshes/part_2.stl"/>
+</geometry>
+
+       <surface>
+            <friction>
+                <ode>
+                    <mu>1.0</mu> <!-- Coefficient of friction -->
+                    <mu2>1.0</mu2> <!-- Second coefficient (for lateral friction) -->
+                </ode>
+            </friction>
+        </surface>
+</collision>
+<inertial>
+<origin xyz="2.0816681711721685133e-17 -0.0090437726479904445576 -0.039456989109231871415" rpy="0 0 0"/>
+<mass value="0.06949409633095127159" />
+<inertia ixx="5.2401655773473042126e-05" ixy="-1.2592067681114347566e-51"  ixz="1.9220019392947116384e-55" iyy="4.7394571595251979356e-05" iyz="1.4084995408983201223e-06" izz="2.7628571394076009606e-05" />
+</inertial>
+</link>
+
+<gazebo reference="part_2">
+    <material>Gazebo/Blue</material>
+</gazebo>
+
+<link name="part_3">
+<visual>
+<origin xyz="-0.030000000000000026645 0.019999999999999996947 -0.023249999999999979017" rpy="1.570796326794896558 1.570796326794896336 0" />
+<geometry>
+<mesh filename="package://robot_1/meshes/part_3.stl"/>
+</geometry>
+<material name="part_3_material">
+<color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.030000000000000026645 0.019999999999999996947 -0.023249999999999979017" rpy="1.570796326794896558 1.570796326794896336 0" />
+<geometry>
+<mesh filename="package://robot_1/meshes/part_3.stl"/>
+</geometry>
+
+       <surface>
+            <friction>
+                <ode>
+                    <mu>1.0</mu> <!-- Coefficient of friction -->
+                    <mu2>1.0</mu2> <!-- Second coefficient (for lateral friction) -->
+                </ode>
+            </friction>
+        </surface>
+</collision>
+<inertial>
+<origin xyz="0.13189467202653989975 0 0.021249999999999994588" rpy="0 0 0"/>
+<mass value="0.28713897938754778805" />
+<inertia ixx="0.00028658951840004702732" ixy="2.3966060212844725121e-52"  ixz="4.2309925582385751535e-19" iyy="0.0020334976641882621107" iyz="6.0121703262277413871e-39" izz="0.0020243778399926292202" />
+</inertial>
+</link>
+
+<gazebo reference="part_3">
+    <material>Gazebo/Blue</material>
+</gazebo>
+
+<link name="part_4">
+<visual>
+<origin xyz="0.044500000000000018707 -0.019999999999999996947 0.077000000000000012879" rpy="-1.570796326794896558 2.1518102817078941447e-34 -1.0999788174064431782e-33" />
+<geometry>
+<mesh filename="package://robot_1/meshes/part_4.stl"/>
+</geometry>
+<material name="part_4_material">
+<color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.044500000000000018707 -0.019999999999999996947 0.077000000000000012879" rpy="-1.570796326794896558 2.1518102817078941447e-34 -1.0999788174064431782e-33" />
+<geometry>
+<mesh filename="package://robot_1/meshes/part_4.stl"/>
+</geometry>
+
+       <surface>
+            <friction>
+                <ode>
+                    <mu>1.0</mu> <!-- Coefficient of friction -->
+                    <mu2>1.0</mu2> <!-- Second coefficient (for lateral friction) -->
+                </ode>
+            </friction>
+        </surface>
+</collision>
+<inertial>
+<origin xyz="6.9388939039072283776e-18 -3.4694469519536141888e-18 -0.11400000000000001799" rpy="0 0 0"/>
+<mass value="0.2147560065430382803" />
+<inertia ixx="0.0010182119160221814874" ixy="5.1598462190615880344e-41"  ixz="-1.8113828432374419686e-37" iyy="0.0010182119160221817043" iyz="1.119134167606821025e-52" izz="0.00017577779135547676138" />
+</inertial>
+</link>
+
+
+<gazebo reference="part_4">
+    <material>Gazebo/Blue</material>
+</gazebo>
+
+<link name="part_5">
+<visual>
+<origin xyz="0.044500000000000018707 0.019999999999999990008 -0.30500000000000004885" rpy="1.570796326794896558 4.2441676511099281358e-38 8.5980701485027661843e-40" />
+<geometry>
+<mesh filename="package://robot_1/meshes/part_5.stl"/>
+</geometry>
+<material name="part_5_material">
+<color rgba="0.76862745098039220171 0.88627450980392152857 0.95294117647058818044 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.044500000000000018707 0.019999999999999990008 -0.30500000000000004885" rpy="1.570796326794896558 4.2441676511099281358e-38 8.5980701485027661843e-40" />
+<geometry>
+<mesh filename="package://robot_1/meshes/part_5.stl"/>
+</geometry>
+
+       <surface>
+            <friction>
+                <ode>
+                    <mu>1.0</mu> <!-- Coefficient of friction -->
+                    <mu2>1.0</mu2> <!-- Second coefficient (for lateral friction) -->
+                </ode>
+            </friction>
+        </surface>
+</collision>
+<inertial>
+<origin xyz="6.9388939039072283776e-18 -6.9388939039072283776e-18 -0.1175698178664354443" rpy="0 0 0"/>
+<mass value="0.18290945561892793525" />
+<inertia ixx="0.00088800829470999243908" ixy="7.6351576103688323323e-43"  ixz="-3.7688560783254412321e-41" iyy="0.00088800829470999243908" iyz="-1.7470800804436305317e-40" izz="0.00010018441075244227407" />
+</inertial>
+</link>
+
+
+<gazebo reference="part_5">
+    <material>Gazebo/Blue</material>
+</gazebo>
+
+<link name="part_6">
+<visual>
+<origin xyz="0.044500000000000025646 -0.020000000000000003886 0.086999999999999966249" rpy="-1.570796326794896558 -4.0115617885092612685e-38 8.1987203393363346463e-41" />
+<geometry>
+<mesh filename="package://robot_1/meshes/part_6.stl"/>
+</geometry>
+<material name="part_6_material">
+<color rgba="0.97254901960784312376 0.52941176470588235947 0.0039215686274509803377 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.044500000000000025646 -0.020000000000000003886 0.086999999999999966249" rpy="-1.570796326794896558 -4.0115617885092612685e-38 8.1987203393363346463e-41" />
+<geometry>
+<mesh filename="package://robot_1/meshes/part_6.stl"/>
+</geometry>
+</collision>
+
+       <surface>
+            <friction>
+                <ode>
+                    <mu>1.0</mu> <!-- Coefficient of friction -->
+                    <mu2>1.0</mu2> <!-- Second coefficient (for lateral friction) -->
+                </ode>
+            </friction>
+        </surface>
+<visual>
+<origin xyz="-0.019999999999999990008 0.021664292481066306506 -0.30706029870018303196" rpy="1.570796326794896558 -4.4998625325695237274e-22 1.8644122228762474567e-16" />
+<geometry>
+<mesh filename="package://robot_1/meshes/part_7.stl"/>
+</geometry>
+<material name="part_7_material">
+<color rgba="0.49803921568627451677 0.49803921568627451677 0.49803921568627451677 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.019999999999999990008 0.021664292481066306506 -0.30706029870018303196" rpy="1.570796326794896558 -4.4998625325695237274e-22 1.8644122228762474567e-16" />
+<geometry>
+<mesh filename="package://robot_1/meshes/part_7.stl"/>
+</geometry>
+
+       <surface>
+            <friction>
+                <ode>
+                    <mu>1.0</mu> <!-- Coefficient of friction -->
+                    <mu2>1.0</mu2> <!-- Second coefficient (for lateral friction) -->
+                </ode>
+            </friction>
+        </surface>
+</collision>
+<inertial>
+<origin xyz="-2.4083097151211622749e-08 0.0074896704785985561068 -0.07788548317008536781" rpy="0 0 0"/>
+<mass value="0.42056606405083174494" />
+<inertia ixx="0.0028779169384101025569" ixy="-2.2430607794490196129e-10"  ixz="8.1416266755091767261e-10" iyy="0.0027569032826195855046" iyz="-0.00034732401154027468717" izz="0.00021806928312791129532" />
+</inertial>
+</link>
+
+
+<gazebo reference="part_6">
+    <material>Gazebo/Blue</material>
+</gazebo>
+
+<joint name="l3_3" type="prismatic">
+<origin xyz="6.9388939039072283776e-18 0 1.6653345369377348106e-16" rpy="3.6977638104450183139e-32 8.885745026174431196e-33 4.9123387184753208122e-24" />
+<parent link="part_5" />
+<child link="part_6" />
+<axis xyz="0 0 1"/>
+<limit effort="1000.0" velocity="20" lower="0" upper="0.17999999999999999334"/>
+<mimic joint="l3_1" multiplier="1.0" offset="0" />
+<joint_properties friction="0.3"/>
+</joint>
+
+<joint name="l3_2" type="prismatic">
+<origin xyz="-1.3877787807814456755e-17 -1.1102230246251565404e-16 5.5511151231257827021e-17" rpy="-5.5511144542865624076e-17 -5.8332578508189426285e-17 -2.645925832977267141e-17" />
+<parent link="part_4" />
+<child link="part_5" />
+<axis xyz="0 0 1"/>
+<limit effort="1000.0" velocity="20" lower="0" upper="0.17999999999999999334"/>
+<mimic joint="l3_1" multiplier="1.0" offset="0" />
+<joint_properties friction="0.3"/>
+</joint>
+
+<joint name="l3_1" type="prismatic">
+<origin xyz="0.27499999999999946709 1.1102230246251565404e-16 0.021249999999999956424" rpy="1.5434459381956434545e-33 1.570796326794896336 0" />
+<parent link="part_3" />
+<child link="part_4" />
+<axis xyz="0 0 1"/>
+<limit effort="1000.0" velocity="20" lower="0" upper="0.17999999999999999334"/>
+<joint_properties friction="0.3"/>
+</joint>
+
+<joint name="l2" type="revolute">
+<origin xyz="0.021499999999999956646 -0.02075000000000001843 -0.059000000000000024647" rpy="1.570796326794896558 -2.7599300664678181133e-18 -1.57079632679489678" />
+<parent link="part_2" />
+<child link="part_3" />
+<axis xyz="0 0 1"/>
+<limit effort="1000.0" velocity="20" lower="-2.356194490192344837" upper="2.356194490192344837"/>
+<joint_properties friction="0.3"/>
+</joint>
+
+<joint name="l1" type="revolute">
+<origin xyz="0.011372787757486797766 0.13702878684123381836 -0.0039510241908585728987" rpy="-3.141592653589793116 -8.7514256672955997163e-30 -5.0195255219392465385e-17" />
+<parent link="part_1" />
+<child link="part_2" />
+<axis xyz="0 0 1"/>
+<limit effort="1000.0" velocity="20" lower="-1.9198621771937625091" upper="2.7925268031909271649"/>
+<joint_properties friction="0.3"/>
+</joint>
+
+<link name="part_2_2">
+<visual>
+<origin xyz="0.047499999999999986677 -0.036750000000000004885 -0.0060000000000000001249" rpy="3.141592653589793116 -0 -5.3979186977644650422e-58" />
+<geometry>
+<mesh filename="package://robot_1/meshes/part_2.stl"/>
+</geometry>
+<material name="part_2_material">
+<color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.047499999999999986677 -0.036750000000000004885 -0.0060000000000000001249" rpy="3.141592653589793116 -0 -5.3979186977644650422e-58" />
+<geometry>
+<mesh filename="package://robot_1/meshes/part_2.stl"/>
+</geometry>
+
+       <surface>
+            <friction>
+                <ode>
+                    <mu>1.0</mu> <!-- Coefficient of friction -->
+                    <mu2>1.0</mu2> <!-- Second coefficient (for lateral friction) -->
+                </ode>
+            </friction>
+        </surface>
+</collision>
+<inertial>
+<origin xyz="1.3877787807814456755e-17 -0.0090437726479904445576 -0.039456989109231871415" rpy="0 0 0"/>
+<mass value="0.06949409633095127159" />
+<inertia ixx="5.2401655773473042126e-05" ixy="-5.3869192167999458617e-62"  ixz="-7.6029660076077072449e-64" iyy="4.7394571595251979356e-05" iyz="1.4084995408983201223e-06" izz="2.7628571394076009606e-05" />
+</inertial>
+</link>
+
+
+<gazebo reference="part_2_2">
+    <material>Gazebo/Blue</material>
+</gazebo>
+
+<link name="part_3_2">
+<visual>
+<origin xyz="-0.02999999999999999889 0.019999999999999996947 -0.023249999999999992895" rpy="1.570796326794896558 1.570796326794896336 0" />
+<geometry>
+<mesh filename="package://robot_1/meshes/part_3.stl"/>
+</geometry>
+<material name="part_3_material">
+<color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.02999999999999999889 0.019999999999999996947 -0.023249999999999992895" rpy="1.570796326794896558 1.570796326794896336 0" />
+<geometry>
+<mesh filename="package://robot_1/meshes/part_3.stl"/>
+</geometry>
+
+       <surface>
+            <friction>
+                <ode>
+                    <mu>1.0</mu> <!-- Coefficient of friction -->
+                    <mu2>1.0</mu2> <!-- Second coefficient (for lateral friction) -->
+                </ode>
+            </friction>
+        </surface>
+</collision>
+<inertial>
+<origin xyz="0.1318946720265399275 0 0.02124999999999998071" rpy="0 0 0"/>
+<mass value="0.28713897938754778805" />
+<inertia ixx="0.00028658951840004702732" ixy="2.3966060212844725121e-52"  ixz="4.2309925582385751535e-19" iyy="0.0020334976641882621107" iyz="6.0121703262277413871e-39" izz="0.0020243778399926292202" />
+</inertial>
+</link>
+
+<gazebo reference="part_3_2">
+    <material>Gazebo/Blue</material>
+</gazebo>
+
+<link name="part_4_2">
+<visual>
+<origin xyz="0.044500000000000011768 -0.019999999999999996947 0.077000000000000012879" rpy="-1.570796326794896558 2.1518102817078941447e-34 -1.0999788174064431782e-33" />
+<geometry>
+<mesh filename="package://robot_1/meshes/part_4.stl"/>
+</geometry>
+<material name="part_4_material">
+<color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.044500000000000011768 -0.019999999999999996947 0.077000000000000012879" rpy="-1.570796326794896558 2.1518102817078941447e-34 -1.0999788174064431782e-33" />
+<geometry>
+<mesh filename="package://robot_1/meshes/part_4.stl"/>
+</geometry>
+
+       <surface>
+            <friction>
+                <ode>
+                    <mu>1.0</mu> <!-- Coefficient of friction -->
+                    <mu2>1.0</mu2> <!-- Second coefficient (for lateral friction) -->
+                </ode>
+            </friction>
+        </surface>
+</collision>
+<inertial>
+<origin xyz="0 -3.4694469519536141888e-18 -0.11400000000000001799" rpy="0 0 0"/>
+<mass value="0.2147560065430382803" />
+<inertia ixx="0.0010182119160221814874" ixy="5.1598462190615880344e-41"  ixz="-1.8113828432374419686e-37" iyy="0.0010182119160221817043" iyz="1.119134167606821025e-52" izz="0.00017577779135547676138" />
+</inertial>
+</link>
+
+<gazebo reference="part_4_2">
+    <material>Gazebo/Blue</material>
+</gazebo>
+
+<link name="part_5_2">
+<visual>
+<origin xyz="0.044500000000000025646 0.019999999999999990008 -0.30500000000000004885" rpy="1.570796326794896558 4.2441676511099281358e-38 8.5980701485027661843e-40" />
+<geometry>
+<mesh filename="package://robot_1/meshes/part_5.stl"/>
+</geometry>
+<material name="part_5_material">
+<color rgba="0.76862745098039220171 0.88627450980392152857 0.95294117647058818044 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.044500000000000025646 0.019999999999999990008 -0.30500000000000004885" rpy="1.570796326794896558 4.2441676511099281358e-38 8.5980701485027661843e-40" />
+<geometry>
+<mesh filename="package://robot_1/meshes/part_5.stl"/>
+</geometry>
+
+       <surface>
+            <friction>
+                <ode>
+                    <mu>1.0</mu> <!-- Coefficient of friction -->
+                    <mu2>1.0</mu2> <!-- Second coefficient (for lateral friction) -->
+                </ode>
+            </friction>
+        </surface>
+</collision>
+<inertial>
+<origin xyz="1.3877787807814456755e-17 -6.9388939039072283776e-18 -0.1175698178664354443" rpy="0 0 0"/>
+<mass value="0.18290945561892793525" />
+<inertia ixx="0.00088800829470999243908" ixy="7.6351576103688323323e-43"  ixz="-3.7688560783254412321e-41" iyy="0.00088800829470999243908" iyz="-1.7470800804436305317e-40" izz="0.00010018441075244227407" />
+</inertial>
+</link>
+
+<gazebo reference="part_5_2">
+    <material>Gazebo/Blue</material>
+</gazebo>
+
+<link name="part_6_2">
+<visual>
+<origin xyz="-0.020000000000000003886 0.021664292481066306506 -0.30706029870018308747" rpy="1.570796326794896558 -4.4998625325695237274e-22 1.8644122228762474567e-16" />
+<geometry>
+<mesh filename="package://robot_1/meshes/part_7.stl"/>
+</geometry>
+<material name="part_7_material">
+<color rgba="0.49803921568627451677 0.49803921568627451677 0.49803921568627451677 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.020000000000000003886 0.021664292481066306506 -0.30706029870018308747" rpy="1.570796326794896558 -4.4998625325695237274e-22 1.8644122228762474567e-16" />
+<geometry>
+<mesh filename="package://robot_1/meshes/part_7.stl"/>
+</geometry>
+
+       <surface>
+            <friction>
+                <ode>
+                    <mu>1.0</mu> <!-- Coefficient of friction -->
+                    <mu2>1.0</mu2> <!-- Second coefficient (for lateral friction) -->
+                </ode>
+            </friction>
+        </surface>
+</collision>
+<visual>
+<origin xyz="0.044500000000000011768 -0.020000000000000003886 0.08700000000000002176" rpy="-1.570796326794896558 -4.0115617885092612685e-38 8.1987203393363346463e-41" />
+<geometry>
+<mesh filename="package://robot_1/meshes/part_6.stl"/>
+</geometry>
+<material name="part_6_material">
+<color rgba="0.97254901960784312376 0.52941176470588235947 0.0039215686274509803377 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.044500000000000011768 -0.020000000000000003886 0.08700000000000002176" rpy="-1.570796326794896558 -4.0115617885092612685e-38 8.1987203393363346463e-41" />
+<geometry>
+<mesh filename="package://robot_1/meshes/part_6.stl"/>
+</geometry>
+
+       <surface>
+            <friction>
+                <ode>
+                    <mu>1.0</mu> <!-- Coefficient of friction -->
+                    <mu2>1.0</mu2> <!-- Second coefficient (for lateral friction) -->
+                </ode>
+            </friction>
+        </surface>
+</collision>
+<inertial>
+<origin xyz="-2.4083097165089410556e-08 0.0074896704785985561068 -0.077885483170085326177" rpy="0 0 0"/>
+<mass value="0.42056606405083174494" />
+<inertia ixx="0.0028779169384101003885" ixy="-2.2430607794490196129e-10"  ixz="8.1416266755091684543e-10" iyy="0.0027569032826195829025" iyz="-0.00034732401154027441612" izz="0.00021806928312791137663" />
+</inertial>
+</link>
+
+<gazebo reference="part_6_2">
+    <material>Gazebo/Blue</material>
+</gazebo>
+
+<joint name="r3_3" type="prismatic">
+<origin xyz="-5.5511151231257827021e-17 0 5.5511151231257827021e-17" rpy="3.6977638104450183139e-32 8.885745026174431196e-33 4.9123387184753208122e-24" />
+<parent link="part_5_2" />
+<child link="part_6_2" />
+<axis xyz="0 0 1"/>
+<limit effort="1000.0" velocity="20" lower="0" upper="0.17999999999999999334"/>
+<mimic joint="r3_1" multiplier="1.0" offset="0" />
+<joint_properties friction="0.3"/>
+</joint>
+
+<joint name="r3_2" type="prismatic">
+<origin xyz="5.5511151231257827021e-17 -6.9388939039072283776e-18 0" rpy="-5.5511144542865624076e-17 -5.8332578508189426285e-17 -2.645925832977267141e-17" />
+<parent link="part_4_2" />
+<child link="part_5_2" />
+<axis xyz="0 0 1"/>
+<limit effort="1000.0" velocity="20" lower="0" upper="0.17999999999999999334"/>
+<mimic joint="r3_1" multiplier="1.0" offset="0" />
+<joint_properties friction="0.3"/>
+</joint>
+
+<joint name="r3_1" type="prismatic">
+<origin xyz="0.2754369972107536535 0 0.021249999999999935607" rpy="1.5434459381956434545e-33 1.570796326794896336 0" />
+<parent link="part_3_2" />
+<child link="part_4_2" />
+<axis xyz="0 0 1"/>
+<limit effort="1000.0" velocity="20" lower="0" upper="0.17999999999999999334"/>
+<joint_properties friction="0.3"/>
+</joint>
+
+<joint name="r2" type="revolute">
+<origin xyz="0.021499999999999963585 -0.020749999999999990674 -0.059000000000000031586" rpy="1.570796326794896558 6.1340377410317520737e-29 -1.57079632679489678" />
+<parent link="part_2_2" />
+<child link="part_3_2" />
+<axis xyz="0 0 1"/>
+<limit effort="1000.0" velocity="20" lower="-2.356194490192344837" upper="2.356194490192344837"/>
+<joint_properties friction="0.3"/>
+</joint>
+
+<joint name="r1" type="revolute">
+<origin xyz="0.099322787757486818982 0.13702878684123381836 -0.003951024190858571164" rpy="3.141592653589793116 -8.8008680092659895974e-30 -1.2658752338468423815e-29" />
+<parent link="part_1" />
+<child link="part_2_2" />
+<axis xyz="0 0 1"/>
+<limit effort="1000.0" velocity="20" lower="-1.9198621771937625091" upper="2.7925268031909271649"/>
+<joint_properties friction="0.3"/>
+</joint>
+
+    <gazebo>
+        <plugin filename="gz-sim-joint-state-publisher-system" name="gz::sim::systems::JointStatePublisher">
+            <topic>joint_states</topic>
+        </plugin>    
+    </gazebo>      
+
+    <gazebo>
+    <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+        <joint_name>l1</joint_name>
+        <p_gain>10</p_gain>
+        <i_gain>1.0</i_gain>
+        <d_gain>10.0</d_gain>
+        <i_max>5</i_max>
+        <i_min>-5</i_min>
+        <cmd_max>1000</cmd_max>
+        <cmd_min>-1000</cmd_min>
+    </plugin>    
+    </gazebo>
+
+    <gazebo>
+        <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+            <joint_name>l2</joint_name>
+                <p_gain>10</p_gain>
+                <i_gain>1.0</i_gain>
+                <d_gain>10.0</d_gain>
+                <i_max>5</i_max>
+                <i_min>-5</i_min>
+                <cmd_max>1000</cmd_max>
+                <cmd_min>-1000</cmd_min>
+        </plugin>    
+    </gazebo>  
+    <gazebo>
+        <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+            <joint_name>l3_1</joint_name>
+                <p_gain>30.0</p_gain>
+                <i_gain>1.0</i_gain>
+                <d_gain>20.0</d_gain>
+                <i_max>8</i_max>
+                <i_min>-9</i_min>
+                <cmd_max>1000</cmd_max>
+                <cmd_min>-1000</cmd_min>
+        </plugin>    
+    </gazebo>  
+    <gazebo>
+        <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+            <joint_name>l3_2</joint_name>
+                <p_gain>30.0</p_gain>
+                <i_gain>1.0</i_gain>
+                <d_gain>20.0</d_gain>
+                <i_max>8</i_max>
+                <i_min>-9</i_min>
+                <cmd_max>1000</cmd_max>
+                <cmd_min>-1000</cmd_min>
+        </plugin>    
+    </gazebo>  
+    <gazebo>
+        <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+            <joint_name>l3_3</joint_name>
+                <p_gain>30.0</p_gain>
+                <i_gain>1.0</i_gain>
+                <d_gain>20.0</d_gain>
+                <i_max>8</i_max>
+                <i_min>-9</i_min>
+                <cmd_max>1000</cmd_max>
+                <cmd_min>-1000</cmd_min>
+        </plugin>    
+    </gazebo>  
+    <gazebo>
+        <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+            <joint_name>r1</joint_name>
+                <p_gain>10</p_gain>
+                <i_gain>1.0</i_gain>
+                <d_gain>10.0</d_gain>
+                <i_max>5</i_max>
+                <i_min>-5</i_min>
+                <cmd_max>1000</cmd_max>
+                <cmd_min>-1000</cmd_min>
+        </plugin>    
+    </gazebo>  
+    <gazebo>
+        <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+            <joint_name>r2</joint_name>
+                <p_gain>10</p_gain>
+                <i_gain>1.0</i_gain>
+                <d_gain>10.0</d_gain>
+                <i_max>5</i_max>
+                <i_min>-5</i_min>
+                <cmd_max>1000</cmd_max>
+                <cmd_min>-1000</cmd_min>
+        </plugin>    
+    </gazebo>  
+    <gazebo>
+        <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+            <joint_name>r3_1</joint_name>
+                <p_gain>30.0</p_gain>
+                <i_gain>1.0</i_gain>
+                <d_gain>20.0</d_gain>
+                <i_max>8</i_max>
+                <i_min>-9</i_min>
+                <cmd_max>1000</cmd_max>
+                <cmd_min>-1000</cmd_min>
+        </plugin>    
+    </gazebo>  
+    <gazebo>
+        <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+            <joint_name>r3_2</joint_name>
+                <p_gain>30.0</p_gain>
+                <i_gain>1.0</i_gain>
+                <d_gain>20.0</d_gain>
+                <i_max>8</i_max>
+                <i_min>-9</i_min>
+                <cmd_max>1000</cmd_max>
+                <cmd_min>-1000</cmd_min>
+        </plugin>    
+    </gazebo>  
+    <gazebo>
+        <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+            <joint_name>r3_3</joint_name>
+                <p_gain>30.0</p_gain>
+                <i_gain>1.0</i_gain>
+                <d_gain>20.0</d_gain>
+                <i_max>8</i_max>
+                <i_min>-9</i_min>
+                <cmd_max>1000</cmd_max>
+                <cmd_min>-1000</cmd_min>
+        </plugin>    
+    </gazebo>  
+
+</robot>
+

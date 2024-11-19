@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: robot_1
+    relative_path: urdf/robot.urdf
+  srdf:
+    relative_path: config/onshape.srdf
+  package_settings:
+    author_name: Aaron Thomas
+    author_email: a99thomas@gmail.com
+    generated_timestamp: 1730517321
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
