@@ -1,0 +1,9 @@
+# Default initial positions for robot's ros2_control fake system
+
+initial_positions:
+  base_link_to_cube3: 0
+  cube3_to_cube3-copy3: 0
+  cylinder3-copy5_to_cylinder3: 0
+  ee1_pitch_joint: 0
+  ee1_roll_joint: 0
+  ee1_yaw_joint: 0
