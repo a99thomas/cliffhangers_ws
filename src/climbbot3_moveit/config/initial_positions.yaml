@@ -1,0 +1,15 @@
+# Default initial positions for climbbot3's ros2_control fake system
+
+initial_positions:
+  l1: 0
+  l2: 0
+  l3_1: 0
+  l3_pitch_joint: 0
+  l3_roll_joint: 0
+  l3_yaw_joint: 0
+  r1: 0
+  r2: 0
+  r3_1: 0
+  r3_pitch_joint: 0
+  r3_roll_joint: 0
+  r3_yaw_joint: 0

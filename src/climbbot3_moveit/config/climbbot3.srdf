@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This does not replace URDF, and is not an extension of URDF.
+    This is a format for representing semantic information about the robot structure.
+    A URDF file must exist for this robot as well, where the joints and the links that are referenced are defined
+-->
+<robot name="climbbot3">
+    <!--GROUPS: Representation of a set of joints and links. This can be useful for specifying DOF to plan for, defining arms, end effectors, etc-->
+    <!--LINKS: When a link is specified, the parent joint of that link (if it exists) is automatically included-->
+    <!--JOINTS: When a joint is specified, the child link of that joint (which will always exist) is automatically included-->
+    <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
+    <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->
+    <group name="left_arm">
+        <chain base_link="assembly_7" tip_link="l3_yaw"/>
+    </group>
+    <group name="right_arm">
+        <chain base_link="assembly_7" tip_link="r3_yaw"/>
+    </group>
+    <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
+    <group_state name="l_tucked" group="left_arm">
+        <joint name="l1" value="0"/>
+        <joint name="l2" value="0"/>
+        <joint name="l3_1" value="0"/>
+        <joint name="l3_pitch_joint" value="0"/>
+        <joint name="l3_roll_joint" value="0"/>
+        <joint name="l3_yaw_joint" value="0"/>
+    </group_state>
+    <group_state name="r_tucked" group="right_arm">
+        <joint name="r1" value="0"/>
+        <joint name="r2" value="0"/>
+        <joint name="r3_1" value="0"/>
+        <joint name="r3_pitch_joint" value="0"/>
+        <joint name="r3_roll_joint" value="0"/>
+        <joint name="r3_yaw_joint" value="0"/>
+    </group_state>
+    <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
+    <virtual_joint name="base_to_assm7" type="fixed" parent_frame="base_link" child_link="assembly_7"/>
+    <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
+    <disable_collisions link1="assembly_10" link2="assembly_11" reason="Never"/>
+    <disable_collisions link1="assembly_10" link2="assembly_8" reason="Adjacent"/>
+    <disable_collisions link1="assembly_10" link2="assembly_9" reason="Never"/>
+    <disable_collisions link1="assembly_10" link2="part_1_2" reason="Adjacent"/>
+    <disable_collisions link1="assembly_10" link2="part_4_2" reason="Never"/>
+    <disable_collisions link1="assembly_11" link2="assembly_7" reason="Never"/>
+    <disable_collisions link1="assembly_11" link2="assembly_8" reason="Never"/>
+    <disable_collisions link1="assembly_11" link2="assembly_9" reason="Never"/>
+    <disable_collisions link1="assembly_11" link2="part_1_2" reason="Never"/>
+    <disable_collisions link1="assembly_11" link2="part_4_2" reason="Adjacent"/>
+    <disable_collisions link1="assembly_12" link2="assembly_13" reason="Never"/>
+    <disable_collisions link1="assembly_12" link2="assembly_7" reason="Never"/>
+    <disable_collisions link1="assembly_12" link2="assembly_8" reason="Never"/>
+    <disable_collisions link1="assembly_12" link2="assembly_9" reason="Never"/>
+    <disable_collisions link1="assembly_12" link2="part_1" reason="Never"/>
+    <disable_collisions link1="assembly_12" link2="part_4" reason="Adjacent"/>
+    <disable_collisions link1="assembly_13" link2="assembly_9" reason="Adjacent"/>
+    <disable_collisions link1="assembly_13" link2="part_1" reason="Adjacent"/>
+    <disable_collisions link1="assembly_13" link2="part_4" reason="Never"/>
+    <disable_collisions link1="assembly_7" link2="assembly_8" reason="Adjacent"/>
+    <disable_collisions link1="assembly_7" link2="assembly_9" reason="Adjacent"/>
+    <disable_collisions link1="assembly_8" link2="assembly_9" reason="Never"/>
+    <disable_collisions link1="assembly_8" link2="part_1" reason="Never"/>
+    <disable_collisions link1="assembly_8" link2="part_1_2" reason="Never"/>
+    <disable_collisions link1="assembly_8" link2="part_4" reason="Never"/>
+    <disable_collisions link1="assembly_8" link2="part_4_2" reason="Never"/>
+    <disable_collisions link1="assembly_9" link2="part_1" reason="Never"/>
+    <disable_collisions link1="assembly_9" link2="part_1_2" reason="Never"/>
+    <disable_collisions link1="assembly_9" link2="part_4" reason="Never"/>
+    <disable_collisions link1="assembly_9" link2="part_4_2" reason="Never"/>
+    <disable_collisions link1="part_1" link2="part_4" reason="Adjacent"/>
+    <disable_collisions link1="part_1_2" link2="part_4_2" reason="Adjacent"/>
+</robot>
