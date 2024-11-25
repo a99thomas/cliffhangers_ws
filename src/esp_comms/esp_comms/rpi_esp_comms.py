@@ -13,8 +13,11 @@ class ESP32Controller(Node):
         super().__init__('esp32_controller')
 
         # Serial connection setup
-        self.serial_port = serial.Serial('/dev/ttyUSB0', 115200, timeout=1)
+        self.serial_port = serial.Serial('/dev/serial0', 115200, timeout=1)
         time.sleep(1)  # Allow the ESP32 to reset
+        self.serial_port.write(b'R\n')
+        time.sleep(0.1)
+        self.serial_port.write(b'L\n')
 
         # ROS 2 Publishers, Subscribers, and Parameters
         self.joint_state_pub = self.create_publisher(JointState, 'joint_states_1', 10)
@@ -54,22 +57,69 @@ class ESP32Controller(Node):
         self.latest_joint_state = msg
         # self.send_joint_commands()
 
+    # def send_joint_commands(self):
+    #     """Send joint states to ESP32 over serial."""
+    #     if self.latest_joint_state is None:
+    #         return
+
+    #     formatted_values = [
+    #         round(val * (180.0 / math.pi), 2) if i in [0, 1, 3, 4] else round(val, 4)
+    #         for i, val in enumerate(self.latest_joint_state.position)
+    #     ]
+    #     formatted_values.insert(3, 0)  # Insert placeholder values
+    #     formatted_values.insert(7, 0)
+
+    #     command = ','.join([f"{val:.4f}" for val in formatted_values]) + '\n'
+    #     print(command.encode('utf-8'))
+    #     self.serial_port.write(command.encode('utf-8'))
+    #     self.get_logger().info(f'Sent joint states: {command.strip()}')
+    
     def send_joint_commands(self):
-        """Send joint states to ESP32 over serial."""
+        """Send joint sta`tes to ESP32 over serial."""
         if self.latest_joint_state is None:
             return
 
-        formatted_values = [
-            round(val * (180.0 / math.pi), 2) if i in [0, 1, 3, 4] else round(val, 4)
-            for i, val in enumerate(self.latest_joint_state.position)
-        ]
-        formatted_values.insert(3, 0)  # Insert placeholder values
-        formatted_values.insert(7, 0)
+        # Extract joint names and positions
+        joint_names = self.latest_joint_state.name
+        joint_positions = self.latest_joint_state.position
 
+        # Create a dictionary that maps joint names to positions
+        joint_state_dict = {name: pos for name, pos in zip(joint_names, joint_positions)}
+
+        # Extract positions based on specific joint names
+        l1 = joint_state_dict.get('l1', 0)       # Default to 0 if the joint name isn't found
+        r2 = joint_state_dict.get('r2', 0)
+        r3_1 = joint_state_dict.get('r3_1', 0)
+        l3_1 = joint_state_dict.get('l3_1', 0)
+        l2 = joint_state_dict.get('l2', 0)
+        r1 = joint_state_dict.get('r1', 0)
+
+        # Reorder the values to match the new sequence: l1, l2, l3_1, 0, r1, r2, r3_1, 0
+        ordered_values = [
+            l1,                # l1
+            l2,                # l2
+            l3_1,              # l3_1
+            0,                 # Placeholder 0
+            r1,                # r1
+            r2,                # r2
+            r3_1,              # r3_1
+            0                  # Placeholder 0
+        ]
+
+        # Format the values: converting angles from radians to degrees for specific joints
+        formatted_values = [
+            round(val * (180.0 / math.pi), 2) if i in [0, 1, 4, 5] else round(val, 4)
+            for i, val in enumerate(ordered_values)
+        ]
+
+        # Prepare the command string
         command = ','.join([f"{val:.4f}" for val in formatted_values]) + '\n'
+
+        # Send the command over the serial port
         print(command.encode('utf-8'))
         self.serial_port.write(command.encode('utf-8'))
         self.get_logger().info(f'Sent joint states: {command.strip()}')
+
 
     def read_serial(self):
         """Continuously read from the serial port and queue messages."""
