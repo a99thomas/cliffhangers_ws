@@ -42,27 +42,27 @@ const int MOTOR7_CHA = 15, MOTOR7_CHB = 2;
 
 //Add offsets to align with MoveIt
 const int m1_offset = 90;
-const int m2_offset = 90;
+const int m2_offset = 96;
 const int m3_offset = 0;
 const int m4_offset = 0;
-const int m5_offset = 180;
-const int m6_offset = 180;
+const int m5_offset = 84;
+const int m6_offset = 90;
 const int m7_offset = 0;
 const int m8_offset = 0;
 
 //Add limits (after offsets)
-const float m1_max = 90;
-const float m1_min = -90;
-const float m2_max = 90;
-const float m2_min = -90;
+const float m1_max = 80;
+const float m1_min = -80;
+const float m2_max = 80;
+const float m2_min = -80;
 const float m3_max = 0.125;
 const float m3_min = 0;
 const float m4_max = 1;
 const float m4_min = -1;
-const float m5_max = 90;
-const float m5_min = -90;
-const float m6_max = 90;
-const float m6_min = -90;
+const float m5_max = 80;
+const float m5_min = -80;
+const float m6_max = 80;
+const float m6_min = -80;
 const float m7_max = 0.125;
 const float m7_min = 0;
 const float m8_max = 1;
@@ -328,8 +328,8 @@ void processCommand(String command) {
     // Convert angles to pulse widths
     int pulseWidth1 = mapFloat(m1_des_val, MIN_SERVO_ANGLE, MAX_SERVO_ANGLE, MIN_PWM_WIDTH, MAX_PWM_WIDTH);
     int pulseWidth2 = mapFloat(m2_des_val, MIN_SERVO_ANGLE, MAX_SERVO_ANGLE, MIN_PWM_WIDTH, MAX_PWM_WIDTH);
-    int pulseWidth5 = mapFloat(m3_des_val, MIN_SERVO_ANGLE, MAX_SERVO_ANGLE, MIN_PWM_WIDTH, MAX_PWM_WIDTH);
-    int pulseWidth6 = mapFloat(m4_des_val, MIN_SERVO_ANGLE, MAX_SERVO_ANGLE, MIN_PWM_WIDTH, MAX_PWM_WIDTH);
+    int pulseWidth5 = mapFloat(m5_des_val, MIN_SERVO_ANGLE, MAX_SERVO_ANGLE, MIN_PWM_WIDTH, MAX_PWM_WIDTH);
+    int pulseWidth6 = mapFloat(m6_des_val, MIN_SERVO_ANGLE, MAX_SERVO_ANGLE, MIN_PWM_WIDTH, MAX_PWM_WIDTH);
 
     // Calculate duty cycle for 12-bit resolution
     int dutyCycle1 = (pulseWidth1 * MAX_DUTY_CYCLE) / PERIOD_MICROSECONDS; // Convert pulse width to duty cycle
@@ -342,7 +342,6 @@ void processCommand(String command) {
     ledcWrite(PWM_CHANNEL_2, dutyCycle2);
     ledcWrite(PWM_CHANNEL_5, dutyCycle5);
     ledcWrite(PWM_CHANNEL_6, dutyCycle6);
-  
     // Set DC Motor 4 and 8 directions
     setpoint3 = m3_des_val*PULSE_PER_MET;
     setpoint7 = m7_des_val*PULSE_PER_MET;
