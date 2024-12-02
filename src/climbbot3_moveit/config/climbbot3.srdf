@@ -33,7 +33,7 @@
         <joint name="r3_yaw_joint" value="0"/>
     </group_state>
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
-    <virtual_joint name="base_to_assm7" type="fixed" parent_frame="base_link" child_link="assembly_7"/>
+    <virtual_joint name="base_to_assm7" type="fixed" parent_frame="aruco_link" child_link="assembly_7"/>
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
     <disable_collisions link1="assembly_10" link2="assembly_11" reason="Never"/>
     <disable_collisions link1="assembly_10" link2="assembly_8" reason="Adjacent"/>

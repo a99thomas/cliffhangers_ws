@@ -24,8 +24,6 @@ endif()
 
 install(
   DIRECTORY
-    rviz
-    launch
     climbbot3
   DESTINATION
     share/${PROJECT_NAME}/
