@@ -3,6 +3,7 @@ project(climbbot3_moveit)
 
 find_package(ament_cmake REQUIRED)
 find_package(rclpy REQUIRED)
+find_package(tf_transformations)
 
 # Install Python scripts
 install(PROGRAMS
