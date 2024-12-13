@@ -11,7 +11,6 @@ from pymoveit2.robots import climbing_robot
 from visualization_msgs.msg import MarkerArray
 import numpy as np
 import time
-from geometry_msgs.msg import Point, PoseStamped
 
 class ClimbingRobotController(Node):
     def __init__(self):
@@ -73,10 +72,11 @@ class ClimbingRobotController(Node):
 
         
 
-        r_offset1 = [float(0.0), float(-0.0), float(-0.0)]
-        r_offset2 = [float(0.0), float(-0.0), float(0.0)]
-        l_offset1 = [float(0.0), float(0.0), float(-0.0)]
-        l_offset2 = [float(0.0), float(0.0), float(0.0)]
+        r_offset1 = [0.0, -0.0, -0.0]
+        r_offset2 = [0.0, -0.0, 0.0]
+
+        l_offset1 = [0.0, 0.0, -0.0]
+        l_offset2 = [0.0, 0.0, 0.0]
 
         r_offset3 = [0.0, -0.0, -0.0]
         r_offset4 = [0.0, -0.0, 0.0]
@@ -93,7 +93,7 @@ class ClimbingRobotController(Node):
         
         
         pos_1 = self.get_closest_valid_position(self.get_transformed_marker_positions(self.latest_marker_msg), "left")
-        pos_1 = tuple(float(x) for x in pos_1)  # Ensure float conversion
+
         self.move_left_arm(pos_1, l_offset1)
         self.move_left_arm(pos_1, l_offset2) 
         self.move_arm_in_x_direction(self.left_moveit2, pos_1, -0.2, "left") #the inputs in this function are obsolete
@@ -180,58 +180,35 @@ class ClimbingRobotController(Node):
 
     
     def move_left_arm(self, left_target, offset):
-        """
-        Move the left arm to a target position with a specified offset.
-        """
-        if left_target is None:
-            self.get_logger().error("Invalid target position - target is None")
-            return False
-            
-        try:
-            self.is_executing = True
-            self.left_moveit2.clear_goal_constraints()
-            
-            # Create a Point message with explicit float conversions
-            point = Point()
-            point.x = float(left_target[0] + offset[0])
-            point.y = float(left_target[1] + offset[1])
-            point.z = float(left_target[2] + offset[2])
-            
-            self.get_logger().info(f"Moving left arm to position: [{point.x}, {point.y}, {point.z}]")
-            
-            # Set position goal using Point message
-            self.left_moveit2.set_position_goal(
-                position=point,
-                tolerance=float(0.01),
-                weight=float(1.0)
-            )
-            
-            left_trajectory = self.left_moveit2.plan()
-            if left_trajectory is None:
-                self.get_logger().error("Left arm planning failed!")
-                return False
-                
-            success = self.left_moveit2.execute(left_trajectory)
-            if not success:
-                self.get_logger().error("Execution failed!")
-                return False
-                
-            success = self.left_moveit2.wait_until_executed()
-            if not success:
-                self.get_logger().error("Wait until executed failed!")
-                return False
-            
-            time.sleep(1)
-            return True
-            
-        except Exception as e:
-            self.get_logger().error(f"Error in move_left_arm: {str(e)}")
-            import traceback
-            traceback.print_exc()
-            return False
-            
-        finally:
-            self.is_executing = False
+        self.is_executing = True
+        # self.get_logger().info(f"Moving left arm to: {left_target}")        
+        first_offset = offset
+
+        self.left_moveit2.clear_goal_constraints()
+        
+        updated_rt = np.add(list(left_target), first_offset)
+        self.left_moveit2.set_position_goal(
+            position=updated_rt,
+            tolerance=0.01,
+            weight=1.0
+        )
+
+        self.get_logger().info(f"Moving left arm to: {updated_rt}")
+        
+        # Plan and execute movements for the left arm
+        left_trajectory = self.left_moveit2.plan()
+        if left_trajectory is not None:
+            self.left_moveit2.execute(left_trajectory)
+            self.left_moveit2.wait_until_executed()  # Wait until left arm completes movement
+        else:
+            self.get_logger().warn("left arm planning failed!")
+
+        # Now move both arms by -0.3 in the x direction
+        time.sleep(1)
+        
+        
+        self.is_executing = False
+
     def move_right_arm(self, right_target, offset):
         self.is_executing = True
         # self.get_logger().info(f"Moving left arm to: {left_target}")        
@@ -314,43 +291,39 @@ class ClimbingRobotController(Node):
         self.is_executing = False
 
     def move_arm_in_x_direction(self, arm_moveit2, target_position, delta_x, arm_name):
-        """
-        Move arm in x direction after converting position to float
-        """
-        try:
-            # Get current joint states
-            current_state = arm_moveit2.joint_state
-            if current_state is None:
-                self.get_logger().warn("No joint state available!")
-                return False
-                
-            # Create list of all joint positions, setting only our target joint to 0.01
-            target_joint_name = "l3_1" if arm_name == "left" else "r3_1"
-            self.get_logger().info(f"Moving {arm_name} arm's {target_joint_name} joint to 0.01m")
+        # Get current joint states
+        current_state = arm_moveit2.joint_state
+        if current_state is None:
+            self.get_logger().warn("No joint state available!")
+            return
             
-            joint_positions = []
-            joint_names = []
-            
-            # Go through current joint states and create our target state with explicit float conversion
-            for i, name in enumerate(current_state.name):
-                if name in arm_moveit2.joint_names:  # Only include joints for this arm
-                    joint_names.append(name)
-                    if name == target_joint_name:
-                        joint_positions.append(float(0.01))  # Explicit float conversion
-                    else:
-                        joint_positions.append(float(current_state.position[i]))  # Explicit float conversion
-            
-            # Move to the target configuration
-            return arm_moveit2.move_to_configuration(
-                joint_positions=joint_positions,
-                joint_names=joint_names,
-                tolerance=float(0.001),
-                weight=float(1.0)
-            )
-                
-        except Exception as e:
-            self.get_logger().error(f"Error moving arm in x direction: {str(e)}")
-            return False
+        # Create list of all joint positions, setting only our target joint to 0.01
+        target_joint_name = "l3_1" if arm_name == "left" else "r3_1"
+        self.get_logger().info(f"Moving {arm_name} arm's {target_joint_name} joint to 0.01m")
+        
+        joint_positions = []
+        joint_names = []
+        
+        # Go through current joint states and create our target state
+        for i, name in enumerate(current_state.name):
+            if name in arm_moveit2.joint_names:  # Only include joints for this arm
+                joint_names.append(name)
+                if name == target_joint_name:
+                    joint_positions.append(0.01)  # Set our target joint to 0.01
+                else:
+                    joint_positions.append(current_state.position[i])  # Keep current position for other joints
+        
+        # Move to the target configuration
+        arm_moveit2.move_to_configuration(
+            joint_positions=joint_positions,
+            joint_names=joint_names,
+            tolerance=0.001,
+            weight=1.0
+        )
+        
+        # Wait until the motion is complete
+        arm_moveit2.wait_until_executed()
+
 def main():
     rclpy.init()
     
