@@ -9,6 +9,7 @@ find_package(tf_transformations)
 install(PROGRAMS
   scripts/fake_points.py
   scripts/climb.py
+  scripts/real_climb.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

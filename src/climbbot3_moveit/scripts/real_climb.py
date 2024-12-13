@@ -11,6 +11,7 @@ from pymoveit2.robots import climbing_robot
 from visualization_msgs.msg import MarkerArray
 import numpy as np
 import time
+from geometry_msgs.msg import Point, PoseStamped
 
 class ClimbingRobotController(Node):
     def __init__(self):
@@ -30,13 +31,14 @@ class ClimbingRobotController(Node):
         self.callback_group = ReentrantCallbackGroup()
         
         # Initialize marker subscriber
+
         self.marker_subscription = self.create_subscription(
             MarkerArray,
             'blue_object_centroids',
             self.marker_callback,
             10
         )
-        
+
         # Initialize MoveIt2 interfaces for both arms
         self.left_moveit2 = MoveIt2(
             node=self,
@@ -57,18 +59,66 @@ class ClimbingRobotController(Node):
         )
         
         # Set velocity scaling
-        self.left_moveit2.max_velocity = 0.1
-        self.right_moveit2.max_velocity = 0.1
+        self.left_moveit2.max_velocity = 1
+        self.right_moveit2.max_velocity = 1
         
         # Initialize marker positions
         self.marker_positions = []
         self.is_executing = False
-
+            
     def marker_callback(self, msg):
-        if self.is_executing:
-            return
+        self.latest_marker_msg = msg
 
+    def climb(self):
+
+        
+
+        r_offset1 = [float(0.0), float(-0.0), float(-0.0)]
+        r_offset2 = [float(0.0), float(-0.0), float(0.0)]
+        l_offset1 = [float(0.0), float(0.0), float(-0.0)]
+        l_offset2 = [float(0.0), float(0.0), float(0.0)]
+
+        r_offset3 = [0.0, -0.0, -0.0]
+        r_offset4 = [0.0, -0.0, 0.0]
+
+        l_offset3 = [0.0, 0.0, -0.0]
+        l_offset4 = [0.0, 0.0, 0.0]
+
+
+        # offsets from monday
+        # r_offset1 = [0.02, -0.04, -0.02]
+        # r_offset2 = [0.02, -0.04, 0.01]
+        # l_offset1 = [0.03, 0.09, -0.05]
+        # l_offset2 = [0.03, 0.09, 0.03]
+        
+        
+        pos_1 = self.get_closest_valid_position(self.get_transformed_marker_positions(self.latest_marker_msg), "left")
+        pos_1 = tuple(float(x) for x in pos_1)  # Ensure float conversion
+        self.move_left_arm(pos_1, l_offset1)
+        self.move_left_arm(pos_1, l_offset2) 
+        self.move_arm_in_x_direction(self.left_moveit2, pos_1, -0.2, "left") #the inputs in this function are obsolete
+
+        pos_2 = self.get_closest_valid_position(self.get_transformed_marker_positions(self.latest_marker_msg), "right")
+
+        self.move_right_arm(pos_2, r_offset1)
+        self.move_right_arm(pos_2, r_offset2)
+        
+        self.move_arm_in_x_direction(self.right_moveit2, pos_2, -0.2, "right")
+
+
+    def get_transformed_marker_positions(self, msg):
+        """
+        Get transformed marker positions from ArUco marker messages.
+        
+        Args:
+            msg: The ArUco marker message containing detected markers
+            
+        Returns:
+            list: List of tuples containing transformed (x, y, z) positions.
+                Returns empty list if no markers detected or transformation fails.
+        """
         transformed_positions = []
+        
         for marker in msg.markers:
             try:
                 # Create a PoseStamped for the marker in the camera_optical_frame
@@ -77,84 +127,118 @@ class ClimbingRobotController(Node):
                 marker_pose.pose = marker.pose
                 
                 # Transform the pose to the assembly_frame
-                transformed_pose = self.tf_buffer.transform(marker_pose, "assembly_7", timeout=rclpy.time.Duration(seconds=1.0))
+                transformed_pose = self.tf_buffer.transform(
+                    marker_pose, 
+                    "assembly_7", 
+                    timeout=rclpy.time.Duration(seconds=1.0)
+                )
                 
                 # Extract the transformed position
                 pos = transformed_pose.pose.position
                 transformed_positions.append((pos.x, pos.y, pos.z))
+                
             except (LookupException, ConnectivityException, ExtrapolationException) as e:
                 self.get_logger().warn(f"TF2 error: {e}")
-
+                
         if not transformed_positions:
             self.get_logger().warn("No markers detected or transformation failed!")
-            return
-        print(transformed_positions)
-        # Process the transformed positions (e.g., find nearest markers)
-        self.process_transformed_positions(transformed_positions)
+            
+        return transformed_positions
 
-    def process_transformed_positions(self, positions):
-        base_position = np.array([0.0, 0.0, 0.0])  # Robot's base in the assembly_frame
-        r_goal = [0.7, 0.35, 0]
-        l_goal = [0.7, -0.05, 0]
-        r_distances = [np.linalg.norm(np.array(pos) - r_goal) for pos in positions]
-        l_distances = [np.linalg.norm(np.array(pos) - l_goal) for pos in positions]
-        l_sorted = np.argsort(l_distances)
-        r_sorted = np.argsort(r_distances)
-        # distances = [np.linalg.norm(np.array(pos) - base_position) for pos in positions]
-        # sorted_indices = np.argsort(distances)
-        r_offset1 = [0.02, -0.04, -0.02]
-        r_offset2 = [0.02, -0.04, 0.01]
-        l_offset1 = [0.03, 0.09, -0.05]
-        l_offset2 = [0.03, 0.09, 0.03]
+    def get_closest_valid_position(self, positions, side):
+        """
+        Get the closest position to the goal that is not behind the goal (x-axis).
         
+        Args:
+            positions: List of (x, y, z) position tuples
+            side: "left" or "right" to specify which goal to use
+            
+        Returns:
+            tuple: Closest valid (x, y, z) position, or None if no valid positions found
+        """
+        if not positions:
+            return None
+            
+        # Define goals for each side
+        r_goal = np.array([0.7, 0.35, 0])
+        l_goal = np.array([0.7, -0.05, 0])
+        goal = r_goal if side == "right" else l_goal
         
-        self.move_left_arm(positions[l_sorted[0]], l_offset1)
-        self.move_left_arm(positions[l_sorted[0]], l_offset2)
+        # Filter positions to only include those not behind the goal
+        valid_positions = [(i, pos) for i, pos in enumerate(positions) if pos[0] <= goal[0]]
         
-        self.move_arm_in_x_direction(self.left_moveit2, positions[l_sorted[0]], -0.2, "left")
-
-        self.move_right_arm(positions[r_sorted[0]], r_offset1)
-        self.move_right_arm(positions[r_sorted[0]], r_offset2)
+        if not valid_positions:
+            return None
+            
+        # Calculate distances to the goal for valid positions
+        distances = [(i, np.linalg.norm(np.array(pos) - goal)) for i, pos in valid_positions]
         
-        self.move_arm_in_x_direction(self.left_moveit2, positions[l_sorted[0]], -0.2, "right")
+        # Get the index of the position with minimum distance
+        closest_idx = min(distances, key=lambda x: x[1])[0]
+        
+        return positions[closest_idx]
 
     
     def move_left_arm(self, left_target, offset):
-        self.is_executing = True
-        # self.get_logger().info(f"Moving left arm to: {left_target}")        
-        first_offset = offset
-
-        self.left_moveit2.clear_goal_constraints()
-        
-        updated_rt = np.add(list(left_target), first_offset)
-        self.left_moveit2.set_position_goal(
-            position=updated_rt,
-            tolerance=0.01,
-            weight=1.0
-        )
-
-        self.get_logger().info(f"Moving left arm to: {updated_rt}")
-        
-        # Plan and execute movements for the left arm
-        left_trajectory = self.left_moveit2.plan()
-        if left_trajectory is not None:
-            self.left_moveit2.execute(left_trajectory)
-            self.left_moveit2.wait_until_executed()  # Wait until left arm completes movement
-        else:
-            self.get_logger().warn("left arm planning failed!")
-
-        # Now move both arms by -0.3 in the x direction
-        time.sleep(1)
-        
-        
-        self.is_executing = False
-
+        """
+        Move the left arm to a target position with a specified offset.
+        """
+        if left_target is None:
+            self.get_logger().error("Invalid target position - target is None")
+            return False
+            
+        try:
+            self.is_executing = True
+            self.left_moveit2.clear_goal_constraints()
+            
+            # Create a Point message with explicit float conversions
+            point = Point()
+            point.x = float(left_target[0] + offset[0])
+            point.y = float(left_target[1] + offset[1])
+            point.z = float(left_target[2] + offset[2])
+            
+            self.get_logger().info(f"Moving left arm to position: [{point.x}, {point.y}, {point.z}]")
+            
+            # Set position goal using Point message
+            self.left_moveit2.set_position_goal(
+                position=point,
+                tolerance=float(0.01),
+                weight=float(1.0)
+            )
+            
+            left_trajectory = self.left_moveit2.plan()
+            if left_trajectory is None:
+                self.get_logger().error("Left arm planning failed!")
+                return False
+                
+            success = self.left_moveit2.execute(left_trajectory)
+            if not success:
+                self.get_logger().error("Execution failed!")
+                return False
+                
+            success = self.left_moveit2.wait_until_executed()
+            if not success:
+                self.get_logger().error("Wait until executed failed!")
+                return False
+            
+            time.sleep(1)
+            return True
+            
+        except Exception as e:
+            self.get_logger().error(f"Error in move_left_arm: {str(e)}")
+            import traceback
+            traceback.print_exc()
+            return False
+            
+        finally:
+            self.is_executing = False
     def move_right_arm(self, right_target, offset):
         self.is_executing = True
         # self.get_logger().info(f"Moving left arm to: {left_target}")        
         first_offset = offset
 
         self.right_moveit2.clear_goal_constraints()
+        print(right_target)
         
         updated_rt = np.add(list(right_target), first_offset)
         self.right_moveit2.set_position_goal(
@@ -230,39 +314,43 @@ class ClimbingRobotController(Node):
         self.is_executing = False
 
     def move_arm_in_x_direction(self, arm_moveit2, target_position, delta_x, arm_name):
-        # Get current joint states
-        current_state = arm_moveit2.joint_state
-        if current_state is None:
-            self.get_logger().warn("No joint state available!")
-            return
+        """
+        Move arm in x direction after converting position to float
+        """
+        try:
+            # Get current joint states
+            current_state = arm_moveit2.joint_state
+            if current_state is None:
+                self.get_logger().warn("No joint state available!")
+                return False
+                
+            # Create list of all joint positions, setting only our target joint to 0.01
+            target_joint_name = "l3_1" if arm_name == "left" else "r3_1"
+            self.get_logger().info(f"Moving {arm_name} arm's {target_joint_name} joint to 0.01m")
             
-        # Create list of all joint positions, setting only our target joint to 0.01
-        target_joint_name = "l3_1" if arm_name == "left" else "r3_1"
-        self.get_logger().info(f"Moving {arm_name} arm's {target_joint_name} joint to 0.01m")
-        
-        joint_positions = []
-        joint_names = []
-        
-        # Go through current joint states and create our target state
-        for i, name in enumerate(current_state.name):
-            if name in arm_moveit2.joint_names:  # Only include joints for this arm
-                joint_names.append(name)
-                if name == target_joint_name:
-                    joint_positions.append(0.01)  # Set our target joint to 0.01
-                else:
-                    joint_positions.append(current_state.position[i])  # Keep current position for other joints
-        
-        # Move to the target configuration
-        arm_moveit2.move_to_configuration(
-            joint_positions=joint_positions,
-            joint_names=joint_names,
-            tolerance=0.001,
-            weight=1.0
-        )
-        
-        # Wait until the motion is complete
-        arm_moveit2.wait_until_executed()
-
+            joint_positions = []
+            joint_names = []
+            
+            # Go through current joint states and create our target state with explicit float conversion
+            for i, name in enumerate(current_state.name):
+                if name in arm_moveit2.joint_names:  # Only include joints for this arm
+                    joint_names.append(name)
+                    if name == target_joint_name:
+                        joint_positions.append(float(0.01))  # Explicit float conversion
+                    else:
+                        joint_positions.append(float(current_state.position[i]))  # Explicit float conversion
+            
+            # Move to the target configuration
+            return arm_moveit2.move_to_configuration(
+                joint_positions=joint_positions,
+                joint_names=joint_names,
+                tolerance=float(0.001),
+                weight=float(1.0)
+            )
+                
+        except Exception as e:
+            self.get_logger().error(f"Error moving arm in x direction: {str(e)}")
+            return False
 def main():
     rclpy.init()
     
@@ -283,8 +371,7 @@ def main():
     
     try:
         # Keep the main thread alive
-        while rclpy.ok():
-            time.sleep(0.1)
+        node.climb()
     except KeyboardInterrupt:
         pass
     finally:
