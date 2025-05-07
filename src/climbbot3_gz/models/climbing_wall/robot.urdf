@@ -1,0 +1,189 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape document_id: b766bcec136b50d9cf4fd3a7 -->
+<robot name="climbing_wall">
+  <!-- Link wall -->
+  <link name="wall">
+    <inertial>
+      <origin xyz="0.381 0.472265 0.605557" rpy="0 0 0"/>
+      <mass value="288.901"/>
+      <inertia ixx="56.1647" ixy="2.94838e-15" ixz="-0.00718802" iyy="75.9579" iyz="7.05155" izz="28.5354"/>
+    </inertial>
+    <!-- Part jug_hold -->
+    <visual>
+      <origin xyz="0.501 0.386449 0.787" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl"/>
+      </geometry>
+      <material name="jug_hold_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.501 0.386449 0.787" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part jug_hold_2 -->
+    <visual>
+      <origin xyz="0.501 0.386449 1.187" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl"/>
+      </geometry>
+      <material name="jug_hold_2_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.501 0.386449 1.187" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wall -->
+    <visual>
+      <origin xyz="0 0.405499 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_gz/models/climbing_wall/assets/wall.stl"/>
+      </geometry>
+      <material name="wall_material">
+        <color rgba="0.917647 0.917647 0.917647 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.405499 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_gz/models/climbing_wall/assets/wall.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part jug_hold_3 -->
+    <visual>
+      <origin xyz="0.261 0.386449 0.687" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl"/>
+      </geometry>
+      <material name="jug_hold_3_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.261 0.386449 0.687" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part jug_hold_4 -->
+    <visual>
+      <origin xyz="0.261 0.386449 0.287" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl"/>
+      </geometry>
+      <material name="jug_hold_4_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.261 0.386449 0.287" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part jug_hold_5 -->
+    <visual>
+      <origin xyz="0.501 0.386449 0.587" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl"/>
+      </geometry>
+      <material name="jug_hold_5_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.501 0.386449 0.587" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part jug_hold_6 -->
+    <visual>
+      <origin xyz="0.501 0.386449 0.387" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl"/>
+      </geometry>
+      <material name="jug_hold_6_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.501 0.386449 0.387" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part jug_hold_7 -->
+    <visual>
+      <origin xyz="0.261 0.386449 0.487" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl"/>
+      </geometry>
+      <material name="jug_hold_7_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.261 0.386449 0.487" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part jug_hold_8 -->
+    <visual>
+      <origin xyz="0.261 0.386449 1.087" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl"/>
+      </geometry>
+      <material name="jug_hold_8_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.261 0.386449 1.087" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part jug_hold_9 -->
+    <visual>
+      <origin xyz="0.501 0.386449 0.987" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl"/>
+      </geometry>
+      <material name="jug_hold_9_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.501 0.386449 0.987" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part jug_hold_10 -->
+    <visual>
+      <origin xyz="0.261 0.386449 0.887" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl"/>
+      </geometry>
+      <material name="jug_hold_10_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.261 0.386449 0.887" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>

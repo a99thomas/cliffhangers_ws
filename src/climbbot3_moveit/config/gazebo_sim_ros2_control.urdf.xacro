@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
+    <xacro:macro name="load_gazebo_sim_ros2_control_plugin" params="robot_name use_gazebo">
+        <xacro:if value="${use_gazebo}">
+            <gazebo>
+                <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+                    <parameters>$(find climbbot3_moveit)/config/ros2_controllers.yaml</parameters>
+                    <ros>
+                        <remapping>/controller_manager/robot_description:=/robot_description</remapping>
+                    </ros>
+                </plugin>
+
+                <plugin
+                    filename="gz-sim-odometry-publisher-system"
+                    name="gz::sim::systems::OdometryPublisher"> <!-- or the odometry plugin -->
+                    <odom_frame>odom</odom_frame>
+                    <robot_base_frame>assembly_7</robot_base_frame>
+                    <odom_publish_frequency>50</odom_publish_frequency>
+                    <dimensions>3</dimensions>
+                </plugin>
+            </gazebo>
+        </xacro:if>
+    </xacro:macro>
+</robot>

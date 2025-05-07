@@ -1,0 +1,13 @@
+{
+    "configuration": "default",
+    "documentId": "67456fa7f995371c54d81f33",
+    "documentMicroversion": "74bfeb920de12ab01371e4a9",
+    "elementId": "bc64832fe6b7c589182240e5",
+    "fullConfiguration": "default",
+    "id": "Mi9sq34Lto771UEGY",
+    "isStandardContent": false,
+    "name": "DS3225MG Servo 25Kg 4.8-6.8V <1>",
+    "partId": "JLD",
+    "suppressed": false,
+    "type": "Part"
+}

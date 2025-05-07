@@ -1,0 +1,8 @@
+{
+        "documentId": "67456fa7f995371c54d81f33",
+	"assemblyName": "Assembly 1",
+        "outputFormat": "urdf",
+	"packageName": "climbbot3_description/climbbot3",
+	"robotName": "climbbot3",
+     	"simplifySTLs": "all"
+}
