@@ -27,7 +27,7 @@ ros2 launch climbbot3_gz climbbot3.gazebo.launch.py \
 
 
 # ros2 launch climbbot3_moveit move_group.launch.py
-#ros2 param set /move_group use_sim_time
+#ros2 param set /move_group use_sim_time True
 
 
 

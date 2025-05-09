@@ -1,0 +1,14 @@
+{
+    "configuration": "default",
+    "documentId": "e409637aa267aa43e3ee3e43",
+    "documentMicroversion": "ddafaea86fa89af4dc00194d",
+    "documentVersion": "12fb63b22e9ab1def8ddc7fa",
+    "elementId": "4ffd6e5952c5e65d4244fc55",
+    "fullConfiguration": "default",
+    "id": "MsfNLxy94FnTewXFM",
+    "isStandardContent": false,
+    "name": "jug_hold <18>",
+    "partId": "JHD",
+    "suppressed": false,
+    "type": "Part"
+}

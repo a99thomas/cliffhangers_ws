@@ -1,0 +1,14 @@
+{
+    "configuration": "default",
+    "documentId": "861e538437cb74619ff0141a",
+    "documentMicroversion": "a126ec6d4116164a04a7b2d0",
+    "documentVersion": "f0442546e0efdedfbae74132",
+    "elementId": "9600a2a36205f5cb1b202df0",
+    "fullConfiguration": "default",
+    "id": "MHEewsU/rB0tjg9Gm",
+    "isStandardContent": false,
+    "name": "gripper_hook <1>",
+    "partId": "JHD",
+    "suppressed": false,
+    "type": "Part"
+}

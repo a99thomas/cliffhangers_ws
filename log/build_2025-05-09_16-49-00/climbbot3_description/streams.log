@@ -1,0 +1,24 @@
+[0.018s] Invoking command in '/home/aaron/workspaces/cliffhangers_ws/build/climbbot3_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/aaron/workspaces/cliffhangers_ws/src/climbbot3_description -DCMAKE_INSTALL_PREFIX=/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description
+[0.235s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.235s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.265s] -- Found urdf: 2.10.0 (/opt/ros/jazzy/share/urdf/cmake)
+[0.289s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[0.301s] [31mCMake Error at CMakeLists.txt:11 (find_package):
+[0.301s]   By not providing "Findxacro.cmake" in CMAKE_MODULE_PATH this project has
+[0.301s]   asked CMake to find a package configuration file provided by "xacro", but
+[0.301s]   CMake did not find one.
+[0.301s] 
+[0.302s]   Could not find a package configuration file provided by "xacro" with any of
+[0.302s]   the following names:
+[0.302s] 
+[0.302s]     xacroConfig.cmake
+[0.302s]     xacro-config.cmake
+[0.302s] 
+[0.302s]   Add the installation prefix of "xacro" to CMAKE_PREFIX_PATH or set
+[0.302s]   "xacro_DIR" to a directory containing one of the above files.  If "xacro"
+[0.302s]   provides a separate development package or SDK, be sure it has been
+[0.302s]   installed.
+[0.302s] 
+[0.303s] [0m
+[0.303s] -- Configuring incomplete, errors occurred!
+[0.416s] Invoked command in '/home/aaron/workspaces/cliffhangers_ws/build/climbbot3_description' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/aaron/workspaces/cliffhangers_ws/src/climbbot3_description -DCMAKE_INSTALL_PREFIX=/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description

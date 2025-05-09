@@ -1,0 +1,41 @@
+running egg_info
+creating ../../build/realsense_pointcloud_py/realsense_pointcloud_py.egg-info
+writing ../../build/realsense_pointcloud_py/realsense_pointcloud_py.egg-info/PKG-INFO
+writing dependency_links to ../../build/realsense_pointcloud_py/realsense_pointcloud_py.egg-info/dependency_links.txt
+writing entry points to ../../build/realsense_pointcloud_py/realsense_pointcloud_py.egg-info/entry_points.txt
+writing requirements to ../../build/realsense_pointcloud_py/realsense_pointcloud_py.egg-info/requires.txt
+writing top-level names to ../../build/realsense_pointcloud_py/realsense_pointcloud_py.egg-info/top_level.txt
+writing manifest file '../../build/realsense_pointcloud_py/realsense_pointcloud_py.egg-info/SOURCES.txt'
+reading manifest file '../../build/realsense_pointcloud_py/realsense_pointcloud_py.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/realsense_pointcloud_py/realsense_pointcloud_py.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/build
+creating /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/build/lib
+creating /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/build/lib/realsense_pointcloud_py
+copying realsense_pointcloud_py/__init__.py -> /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/build/lib/realsense_pointcloud_py
+copying realsense_pointcloud_py/pointcloud_visualizer.py -> /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/build/lib/realsense_pointcloud_py
+copying realsense_pointcloud_py/aruco_detect.py -> /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/build/lib/realsense_pointcloud_py
+running install
+running install_lib
+creating /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/python3.12/site-packages/realsense_pointcloud_py
+copying /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/build/lib/realsense_pointcloud_py/__init__.py -> /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/python3.12/site-packages/realsense_pointcloud_py
+copying /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/build/lib/realsense_pointcloud_py/pointcloud_visualizer.py -> /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/python3.12/site-packages/realsense_pointcloud_py
+copying /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/build/lib/realsense_pointcloud_py/aruco_detect.py -> /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/python3.12/site-packages/realsense_pointcloud_py
+byte-compiling /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/python3.12/site-packages/realsense_pointcloud_py/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/python3.12/site-packages/realsense_pointcloud_py/pointcloud_visualizer.py to pointcloud_visualizer.cpython-312.pyc
+byte-compiling /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/python3.12/site-packages/realsense_pointcloud_py/aruco_detect.py to aruco_detect.cpython-312.pyc
+running install_data
+creating /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/share/ament_index
+creating /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/share/ament_index/resource_index
+creating /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/share/ament_index/resource_index/packages
+copying resource/realsense_pointcloud_py -> /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/share/ament_index/resource_index/packages
+copying package.xml -> /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/share/realsense_pointcloud_py
+creating /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/share/realsense_pointcloud_py/launch
+running install_egg_info
+Copying ../../build/realsense_pointcloud_py/realsense_pointcloud_py.egg-info to /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/python3.12/site-packages/realsense_pointcloud_py-0.0.1-py3.12.egg-info
+running install_scripts
+Installing aruco_detect script to /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/realsense_pointcloud_py
+Installing pointcloud_visualizer script to /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/realsense_pointcloud_py
+writing list of installed files to '/home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/install.log'

@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: realsense-pointcloud-py
+Version: 0.0.1
+Summary: RealSense PointCloud Processing Package
+Maintainer: your_name
+Maintainer-email: your_email@example.com
+License: Apache License 2.0
+License-File: LICENSE

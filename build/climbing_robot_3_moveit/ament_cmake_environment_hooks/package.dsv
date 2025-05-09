@@ -1,0 +1,4 @@
+source;share/climbing_robot_3_moveit/local_setup.bash
+source;share/climbing_robot_3_moveit/local_setup.dsv
+source;share/climbing_robot_3_moveit/local_setup.sh
+source;share/climbing_robot_3_moveit/local_setup.zsh

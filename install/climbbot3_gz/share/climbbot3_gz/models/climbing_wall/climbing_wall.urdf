@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<model name="climbing_wall">
+  <pose>1.0 2.0 0.5 0 0 1.57</pose> 
+  <static>true</static>
+  <link name="wall_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://climbbot3_gz/models/climbing_wall/climbing_wall.stl" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://climbbot3_gz/models/climbing_wall/climbing_wall.stl" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.0"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+  </link>
+</robot>

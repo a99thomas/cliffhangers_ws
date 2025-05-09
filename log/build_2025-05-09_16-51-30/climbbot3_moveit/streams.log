@@ -1,0 +1,57 @@
+[0.024s] Invoking command in '/home/aaron/workspaces/cliffhangers_ws/build/climbbot3_moveit': AMENT_PREFIX_PATH=/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/aaron/workspaces/cliffhangers_ws/build/climbbot3_moveit -- -j8 -l8
+[0.077s] Invoked command in '/home/aaron/workspaces/cliffhangers_ws/build/climbbot3_moveit' returned '0': AMENT_PREFIX_PATH=/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/aaron/workspaces/cliffhangers_ws/build/climbbot3_moveit -- -j8 -l8
+[0.078s] Invoking command in '/home/aaron/workspaces/cliffhangers_ws/build/climbbot3_moveit': AMENT_PREFIX_PATH=/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/aaron/workspaces/cliffhangers_ws/build/climbbot3_moveit
+[0.087s] -- Install configuration: ""
+[0.087s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/lib/climbbot3_moveit/fake_points.py
+[0.087s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/lib/climbbot3_moveit/climb.py
+[0.087s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/lib/climbbot3_moveit/servo_control.py
+[0.087s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/lib/climbbot3_moveit/real_climb.py
+[0.087s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/lib/climbbot3_moveit/fake_camera_link.py
+[0.087s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/lib/climbbot3_moveit/simple_climb.py
+[0.088s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/lib/climbbot3_moveit/gz_odom_tf.py
+[0.088s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/ament_index/resource_index/package_run_dependencies/climbbot3_moveit
+[0.088s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/ament_index/resource_index/parent_prefix_path/climbbot3_moveit
+[0.088s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/environment/ament_prefix_path.sh
+[0.088s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/environment/ament_prefix_path.dsv
+[0.088s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/environment/path.sh
+[0.088s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/environment/path.dsv
+[0.088s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/local_setup.bash
+[0.088s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/local_setup.sh
+[0.089s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/local_setup.zsh
+[0.089s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/local_setup.dsv
+[0.089s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/package.dsv
+[0.089s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/ament_index/resource_index/packages/climbbot3_moveit
+[0.089s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/cmake/climbbot3_moveitConfig.cmake
+[0.089s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/cmake/climbbot3_moveitConfig-version.cmake
+[0.089s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/package.xml
+[0.089s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/launch
+[0.089s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/launch/moveit_rviz.launch.py
+[0.089s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/launch/demo.launch.py
+[0.090s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/launch/gazebo.launch.py
+[0.090s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/launch/warehouse_db.launch.py
+[0.090s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/launch/rsp.launch.py
+[0.090s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/launch/static_virtual_joint_tfs.launch.py
+[0.090s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/launch/spawn_gz_controllers.launch.py
+[0.090s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/launch/robot_state_publisher.launch.py
+[0.090s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/launch/gazebo2.launch.py
+[0.090s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/launch/spawn_controllers.launch.py
+[0.090s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/launch/move_group.launch.py
+[0.090s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/launch/camera_state_publisher.launch.py
+[0.091s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/launch/setup_assistant.launch.py
+[0.091s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/config
+[0.091s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/config/moveit_controllers.yaml
+[0.091s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/config/climbbot3.srdf
+[0.091s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/config/gazebo_sim_ros2_control.urdf.xacro
+[0.091s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/config/kinematics.yaml
+[0.091s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/config/climbbot3.urdf.xacro
+[0.091s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/config/rsp.rviz
+[0.091s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/config/gz_controllers.yaml
+[0.091s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/config/climbbot3.ros2_control.xacro
+[0.091s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/config/moveit.rviz
+[0.092s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/config/pilz_cartesian_limits.yaml
+[0.092s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/config/ros2_controllers.yaml
+[0.092s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/config/initial_positions.yaml
+[0.092s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/config/joint_limits.yaml
+[0.092s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/config/ros2_controllers_template.yaml
+[0.092s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/.setup_assistant
+[0.093s] Invoked command in '/home/aaron/workspaces/cliffhangers_ws/build/climbbot3_moveit' returned '0': AMENT_PREFIX_PATH=/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/aaron/workspaces/cliffhangers_ws/build/climbbot3_moveit

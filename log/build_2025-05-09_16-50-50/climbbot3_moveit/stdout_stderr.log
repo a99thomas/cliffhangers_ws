@@ -1,0 +1,35 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rclpy: 7.1.4 (/opt/ros/jazzy/share/rclpy/cmake)
+[33mCMake Warning at CMakeLists.txt:6 (find_package):
+  By not providing "Findtf_transformations.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "tf_transformations", but CMake did not find one.
+
+  Could not find a package configuration file provided by
+  "tf_transformations" with any of the following names:
+
+    tf_transformationsConfig.cmake
+    tf_transformations-config.cmake
+
+  Add the installation prefix of "tf_transformations" to CMAKE_PREFIX_PATH or
+  set "tf_transformations_DIR" to a directory containing one of the above
+  files.  If "tf_transformations" provides a separate development package or
+  SDK, be sure it has been installed.
+
+[0m
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/aaron/workspaces/cliffhangers_ws/build/climbbot3_moveit

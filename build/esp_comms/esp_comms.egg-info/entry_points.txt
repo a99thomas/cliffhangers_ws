@@ -1,0 +1,2 @@
+[console_scripts]
+rpi_esp_comms = esp_comms.rpi_esp_comms:main

@@ -1,0 +1,3 @@
+[console_scripts]
+aruco_detect = realsense_pointcloud_py.aruco_detect:main
+pointcloud_visualizer = realsense_pointcloud_py.pointcloud_visualizer:main

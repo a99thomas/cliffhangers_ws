@@ -1,0 +1,8 @@
+source;share/climbing_robot_3_moveit/hook/cmake_prefix_path.ps1
+source;share/climbing_robot_3_moveit/hook/cmake_prefix_path.dsv
+source;share/climbing_robot_3_moveit/hook/cmake_prefix_path.sh
+source;share/climbing_robot_3_moveit/local_setup.bash
+source;share/climbing_robot_3_moveit/local_setup.dsv
+source;share/climbing_robot_3_moveit/local_setup.ps1
+source;share/climbing_robot_3_moveit/local_setup.sh
+source;share/climbing_robot_3_moveit/local_setup.zsh

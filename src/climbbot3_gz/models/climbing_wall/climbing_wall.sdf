@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="climbing_wall">
+    <pose>1.0 2.0 0.5 0 0 1.57</pose> 
+    <static>true</static>
+    <link name="wall_link">
+      <visual name="wall_visual">
+        <geometry>
+          <mesh>
+            <uri>model://climbbot3_gz/models/climbing_wall/climbing_wall.stl</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="wall_collision">
+        <geometry>
+          <mesh>
+            <uri>model://climbbot3_gz/models/climbing_wall/climbing_wall.stl</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>1.0</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+    </link>
+  </model>
+</sdf>

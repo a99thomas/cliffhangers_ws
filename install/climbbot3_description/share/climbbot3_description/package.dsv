@@ -1,0 +1,8 @@
+source;share/climbbot3_description/hook/cmake_prefix_path.ps1
+source;share/climbbot3_description/hook/cmake_prefix_path.dsv
+source;share/climbbot3_description/hook/cmake_prefix_path.sh
+source;share/climbbot3_description/local_setup.bash
+source;share/climbbot3_description/local_setup.dsv
+source;share/climbbot3_description/local_setup.ps1
+source;share/climbbot3_description/local_setup.sh
+source;share/climbbot3_description/local_setup.zsh

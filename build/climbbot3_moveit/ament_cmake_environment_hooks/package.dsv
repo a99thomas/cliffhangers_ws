@@ -1,0 +1,4 @@
+source;share/climbbot3_moveit/local_setup.bash
+source;share/climbbot3_moveit/local_setup.dsv
+source;share/climbbot3_moveit/local_setup.sh
+source;share/climbbot3_moveit/local_setup.zsh

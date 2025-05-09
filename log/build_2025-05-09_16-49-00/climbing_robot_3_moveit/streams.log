@@ -1,0 +1,8 @@
+[0.016s] Invoking command in '/home/aaron/workspaces/cliffhangers_ws/build/climbing_robot_3_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/aaron/workspaces/cliffhangers_ws/src/climbing_robot_3_moveit -DCMAKE_INSTALL_PREFIX=/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit
+[0.229s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.229s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.328s] -- Configuring done (0.3s)
+[0.330s] -- Generating done (0.0s)
+[0.332s] -- Build files have been written to: /home/aaron/workspaces/cliffhangers_ws/build/climbing_robot_3_moveit
+[0.414s] Invoked command in '/home/aaron/workspaces/cliffhangers_ws/build/climbing_robot_3_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/aaron/workspaces/cliffhangers_ws/src/climbing_robot_3_moveit -DCMAKE_INSTALL_PREFIX=/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit
+[0.416s] Invoking command in '/home/aaron/workspaces/cliffhangers_ws/build/climbing_robot_3_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/aaron/workspaces/cliffhangers_ws/build/climbing_robot_3_moveit -- -j8 -l8
