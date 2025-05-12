@@ -1,9 +1,12 @@
 <?xml version="1.0" ?>
-<sdf version="1.6">
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape document_id: b766bcec136b50d9cf4fd3a7 -->
+<sdf version="1.7">
   <model name="climbing_wall">
+    <!-- Link wall -->
     <link name="wall">
       <inertial>
-        <pose>0.381 0.472265 0.605557 0 0 0</pose>
+        <pose relative_to="wall">0.381 0.472265 0.605557 0 0 0</pose>
         <mass>288.901</mass>
         <inertia>
           <ixx>56.1647</ixx>
@@ -14,264 +17,254 @@
           <izz>28.5354</izz>
         </inertia>
       </inertial>
-
-      <visual name="jug_hold_visual_1">
-        <pose>0.501 0.386449 0.787 0 -0 0</pose>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part jug_hold -->
+      <visual name="jug_hold_visual_mesh_1">
+        <pose relative_to="wall">0.501 0.386449 0.787 0 -0 0</pose>
         <geometry>
           <mesh>
             <uri>package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl</uri>
           </mesh>
         </geometry>
         <material>
-          <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Blue</name>
-          </script>
           <ambient>0.231373 0.380392 0.705882 1.0</ambient>
+          <diffuse>0.231373 0.380392 0.705882 1.0</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
         </material>
       </visual>
-      <collision name="jug_hold_collision_1">
-        <pose>0.501 0.386449 0.787 0 -0 0</pose>
+      <collision name="jug_hold_collision_mesh_2">
+        <pose relative_to="wall">0.501 0.386449 0.787 0 -0 0</pose>
         <geometry>
           <mesh>
             <uri>package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl</uri>
           </mesh>
         </geometry>
       </collision>
-
-      <visual name="jug_hold_visual_2">
-        <pose>0.501 0.386449 1.187 0 -0 0</pose>
+      <!-- Part jug_hold_2 -->
+      <visual name="jug_hold_2_visual_mesh_1">
+        <pose relative_to="wall">0.501 0.386449 1.187 0 -0 0</pose>
         <geometry>
           <mesh>
             <uri>package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl</uri>
           </mesh>
         </geometry>
         <material>
-          <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Blue</name>
-          </script>
           <ambient>0.231373 0.380392 0.705882 1.0</ambient>
+          <diffuse>0.231373 0.380392 0.705882 1.0</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
         </material>
       </visual>
-      <collision name="jug_hold_collision_2">
-        <pose>0.501 0.386449 1.187 0 -0 0</pose>
+      <collision name="jug_hold_2_collision_mesh_2">
+        <pose relative_to="wall">0.501 0.386449 1.187 0 -0 0</pose>
         <geometry>
           <mesh>
             <uri>package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl</uri>
           </mesh>
         </geometry>
       </collision>
-
-      <visual name="wall_visual">
-        <pose>0 0.405499 0 0 -0 0</pose>
+      <!-- Part wall -->
+      <visual name="wall_visual_mesh_1">
+        <pose relative_to="wall">0 0.405499 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <uri>package://climbbot3_gz/models/climbing_wall/assets/wall.stl</uri>
           </mesh>
         </geometry>
         <material>
-          <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/White</name>
-          </script>
           <ambient>0.917647 0.917647 0.917647 1.0</ambient>
+          <diffuse>0.917647 0.917647 0.917647 1.0</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
         </material>
       </visual>
-      <collision name="wall_collision">
-        <pose>0 0.405499 0 0 -0 0</pose>
+      <collision name="wall_collision_mesh_2">
+        <pose relative_to="wall">0 0.405499 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <uri>package://climbbot3_gz/models/climbing_wall/assets/wall.stl</uri>
           </mesh>
         </geometry>
       </collision>
-
-      <visual name="jug_hold_visual_3">
-        <pose>0.261 0.386449 0.687 0 -0 0</pose>
+      <!-- Part jug_hold_3 -->
+      <visual name="jug_hold_3_visual_mesh_1">
+        <pose relative_to="wall">0.261 0.386449 0.687 0 -0 0</pose>
         <geometry>
           <mesh>
             <uri>package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl</uri>
           </mesh>
         </geometry>
         <material>
-          <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Blue</name>
-          </script>
           <ambient>0.231373 0.380392 0.705882 1.0</ambient>
+          <diffuse>0.231373 0.380392 0.705882 1.0</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
         </material>
       </visual>
-      <collision name="jug_hold_collision_3">
-        <pose>0.261 0.386449 0.687 0 -0 0</pose>
+      <collision name="jug_hold_3_collision_mesh_2">
+        <pose relative_to="wall">0.261 0.386449 0.687 0 -0 0</pose>
         <geometry>
           <mesh>
             <uri>package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl</uri>
           </mesh>
         </geometry>
       </collision>
-
-      <visual name="jug_hold_visual_4">
-        <pose>0.261 0.386449 0.287 0 -0 0</pose>
+      <!-- Part jug_hold_4 -->
+      <visual name="jug_hold_4_visual_mesh_1">
+        <pose relative_to="wall">0.261 0.386449 0.287 0 -0 0</pose>
         <geometry>
           <mesh>
             <uri>package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl</uri>
           </mesh>
         </geometry>
         <material>
-          <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Blue</name>
-          </script>
           <ambient>0.231373 0.380392 0.705882 1.0</ambient>
+          <diffuse>0.231373 0.380392 0.705882 1.0</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
         </material>
       </visual>
-      <collision name="jug_hold_collision_4">
-        <pose>0.261 0.386449 0.287 0 -0 0</pose>
+      <collision name="jug_hold_4_collision_mesh_2">
+        <pose relative_to="wall">0.261 0.386449 0.287 0 -0 0</pose>
         <geometry>
           <mesh>
             <uri>package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl</uri>
           </mesh>
         </geometry>
       </collision>
-
-      <visual name="jug_hold_visual_5">
-        <pose>0.501 0.386449 0.587 0 -0 0</pose>
+      <!-- Part jug_hold_5 -->
+      <visual name="jug_hold_5_visual_mesh_1">
+        <pose relative_to="wall">0.501 0.386449 0.587 0 -0 0</pose>
         <geometry>
           <mesh>
             <uri>package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl</uri>
           </mesh>
         </geometry>
         <material>
-          <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Blue</name>
-          </script>
           <ambient>0.231373 0.380392 0.705882 1.0</ambient>
+          <diffuse>0.231373 0.380392 0.705882 1.0</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
         </material>
       </visual>
-      <collision name="jug_hold_collision_5">
-        <pose>0.501 0.386449 0.587 0 -0 0</pose>
+      <collision name="jug_hold_5_collision_mesh_2">
+        <pose relative_to="wall">0.501 0.386449 0.587 0 -0 0</pose>
         <geometry>
           <mesh>
             <uri>package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl</uri>
           </mesh>
         </geometry>
       </collision>
-
-      <visual name="jug_hold_visual_6">
-        <pose>0.501 0.386449 0.387 0 -0 0</pose>
+      <!-- Part jug_hold_6 -->
+      <visual name="jug_hold_6_visual_mesh_1">
+        <pose relative_to="wall">0.501 0.386449 0.387 0 -0 0</pose>
         <geometry>
           <mesh>
             <uri>package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl</uri>
           </mesh>
         </geometry>
         <material>
-          <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Blue</name>
-          </script>
           <ambient>0.231373 0.380392 0.705882 1.0</ambient>
+          <diffuse>0.231373 0.380392 0.705882 1.0</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
         </material>
       </visual>
-      <collision name="jug_hold_collision_6">
-        <pose>0.501 0.386449 0.387 0 -0 0</pose>
+      <collision name="jug_hold_6_collision_mesh_2">
+        <pose relative_to="wall">0.501 0.386449 0.387 0 -0 0</pose>
         <geometry>
           <mesh>
             <uri>package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl</uri>
           </mesh>
         </geometry>
       </collision>
-
-      <visual name="jug_hold_visual_7">
-        <pose>0.261 0.386449 0.487 0 -0 0</pose>
+      <!-- Part jug_hold_7 -->
+      <visual name="jug_hold_7_visual_mesh_1">
+        <pose relative_to="wall">0.261 0.386449 0.487 0 -0 0</pose>
         <geometry>
           <mesh>
             <uri>package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl</uri>
           </mesh>
         </geometry>
         <material>
-          <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Blue</name>
-          </script>
           <ambient>0.231373 0.380392 0.705882 1.0</ambient>
+          <diffuse>0.231373 0.380392 0.705882 1.0</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
         </material>
       </visual>
-      <collision name="jug_hold_collision_7">
-        <pose>0.261 0.386449 0.487 0 -0 0</pose>
+      <collision name="jug_hold_7_collision_mesh_2">
+        <pose relative_to="wall">0.261 0.386449 0.487 0 -0 0</pose>
         <geometry>
           <mesh>
             <uri>package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl</uri>
           </mesh>
         </geometry>
       </collision>
-
-      <visual name="jug_hold_visual_8">
-        <pose>0.261 0.386449 1.087 0 -0 0</pose>
+      <!-- Part jug_hold_8 -->
+      <visual name="jug_hold_8_visual_mesh_1">
+        <pose relative_to="wall">0.261 0.386449 1.087 0 -0 0</pose>
         <geometry>
           <mesh>
             <uri>package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl</uri>
           </mesh>
         </geometry>
         <material>
-          <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Blue</name>
-          </script>
           <ambient>0.231373 0.380392 0.705882 1.0</ambient>
+          <diffuse>0.231373 0.380392 0.705882 1.0</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
         </material>
       </visual>
-      <collision name="jug_hold_collision_8">
-        <pose>0.261 0.386449 1.087 0 -0 0</pose>
+      <collision name="jug_hold_8_collision_mesh_2">
+        <pose relative_to="wall">0.261 0.386449 1.087 0 -0 0</pose>
         <geometry>
           <mesh>
             <uri>package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl</uri>
           </mesh>
         </geometry>
       </collision>
-
-      <visual name="jug_hold_visual_9">
-        <pose>0.501 0.386449 0.987 0 -0 0</pose>
+      <!-- Part jug_hold_9 -->
+      <visual name="jug_hold_9_visual_mesh_1">
+        <pose relative_to="wall">0.501 0.386449 0.987 0 -0 0</pose>
         <geometry>
           <mesh>
             <uri>package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl</uri>
           </mesh>
         </geometry>
         <material>
-          <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Blue</name>
-          </script>
           <ambient>0.231373 0.380392 0.705882 1.0</ambient>
+          <diffuse>0.231373 0.380392 0.705882 1.0</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
         </material>
       </visual>
-      <collision name="jug_hold_collision_9">
-        <pose>0.501 0.386449 0.987 0 -0 0</pose>
+      <collision name="jug_hold_9_collision_mesh_2">
+        <pose relative_to="wall">0.501 0.386449 0.987 0 -0 0</pose>
         <geometry>
           <mesh>
             <uri>package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl</uri>
           </mesh>
         </geometry>
       </collision>
-
-      <visual name="jug_hold_visual_10">
-        <pose>0.261 0.386449 0.887 0 -0 0</pose>
+      <!-- Part jug_hold_10 -->
+      <visual name="jug_hold_10_visual_mesh_1">
+        <pose relative_to="wall">0.261 0.386449 0.887 0 -0 0</pose>
         <geometry>
           <mesh>
             <uri>package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl</uri>
           </mesh>
         </geometry>
         <material>
-          <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Blue</name>
-          </script>
           <ambient>0.231373 0.380392 0.705882 1.0</ambient>
+          <diffuse>0.231373 0.380392 0.705882 1.0</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
         </material>
       </visual>
-      <collision name="jug_hold_collision_10">
-        <pose>0.261 0.386449 0.887 0 -0 0</pose>
+      <collision name="jug_hold_10_collision_mesh_2">
+        <pose relative_to="wall">0.261 0.386449 0.887 0 -0 0</pose>
         <geometry>
           <mesh>
             <uri>package://climbbot3_gz/models/climbing_wall/assets/jug_hold.stl</uri>
@@ -279,9 +272,26 @@
         </geometry>
       </collision>
     </link>
-
-    <gazebo reference="wall">
-      <static>true</static>
-    </gazebo>
+    <joint name="wall_fixed_world" type="fixed">
+      <parent>world</parent>
+      <child>wall</child>
+    </joint>
+    <!-- Link assembly_1 -->
+    <link name="assembly_1">
+      <inertial>
+        <pose relative_to="assembly_1">0 0 0 0 0 0</pose>
+        <mass>1e-09</mass>
+        <inertia>
+          <ixx>1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1e-09</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+    </link>
+    <static>true</static>
   </model>
 </sdf>

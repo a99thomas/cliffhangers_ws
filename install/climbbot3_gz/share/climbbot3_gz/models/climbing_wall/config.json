@@ -1,8 +1,7 @@
 {
         "documentId": "b766bcec136b50d9cf4fd3a7",
 	"assemblyName": "Assembly 2",
-        "outputFormat": "urdf",
+        "outputFormat": "sdf",
 	"packageName": "climbbot3_gz/models/climbing_wall",
-	"robotName": "climbing_wall",
-     	"simplifySTLs": "all"
+	"robotName": "climbing_wall"
 }

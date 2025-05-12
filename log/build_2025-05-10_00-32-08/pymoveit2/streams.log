@@ -1,0 +1,101 @@
+[0.146s] Invoking command in '/home/aaron/workspaces/cliffhangers_ws/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/aaron/workspaces/cliffhangers_ws/src/pymoveit2 -DCMAKE_INSTALL_PREFIX=/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2
+[0.203s] -- The C compiler identification is GNU 13.3.0
+[0.255s] -- The CXX compiler identification is GNU 13.3.0
+[0.268s] -- Detecting C compiler ABI info
+[0.336s] -- Detecting C compiler ABI info - done
+[0.344s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.345s] -- Detecting C compile features
+[0.345s] -- Detecting C compile features - done
+[0.353s] -- Detecting CXX compiler ABI info
+[0.429s] -- Detecting CXX compiler ABI info - done
+[0.436s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.436s] -- Detecting CXX compile features
+[0.437s] -- Detecting CXX compile features - done
+[0.440s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.568s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.803s] -- Configuring done (0.6s)
+[0.809s] -- Generating done (0.0s)
+[0.812s] -- Build files have been written to: /home/aaron/workspaces/cliffhangers_ws/build/pymoveit2
+[0.835s] Invoked command in '/home/aaron/workspaces/cliffhangers_ws/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/aaron/workspaces/cliffhangers_ws/src/pymoveit2 -DCMAKE_INSTALL_PREFIX=/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2
+[0.835s] Invoking command in '/home/aaron/workspaces/cliffhangers_ws/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/aaron/workspaces/cliffhangers_ws/build/pymoveit2 -- -j5 -l5
+[0.875s] Built target ament_cmake_python_copy_pymoveit2
+[1.023s] running egg_info
+[1.023s] creating pymoveit2.egg-info
+[1.037s] writing pymoveit2.egg-info/PKG-INFO
+[1.037s] writing dependency_links to pymoveit2.egg-info/dependency_links.txt
+[1.037s] writing top-level names to pymoveit2.egg-info/top_level.txt
+[1.037s] writing manifest file 'pymoveit2.egg-info/SOURCES.txt'
+[1.071s] reading manifest file 'pymoveit2.egg-info/SOURCES.txt'
+[1.071s] writing manifest file 'pymoveit2.egg-info/SOURCES.txt'
+[1.098s] Built target ament_cmake_python_build_pymoveit2_egg
+[1.109s] Invoked command in '/home/aaron/workspaces/cliffhangers_ws/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/aaron/workspaces/cliffhangers_ws/build/pymoveit2 -- -j5 -l5
+[1.110s] Invoking command in '/home/aaron/workspaces/cliffhangers_ws/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/aaron/workspaces/cliffhangers_ws/build/pymoveit2
+[1.117s] -- Install configuration: ""
+[1.117s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/environment/pythonpath.sh
+[1.117s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/environment/pythonpath.dsv
+[1.117s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2-4.0.0-py3.12.egg-info
+[1.117s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2-4.0.0-py3.12.egg-info/SOURCES.txt
+[1.117s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2-4.0.0-py3.12.egg-info/dependency_links.txt
+[1.117s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2-4.0.0-py3.12.egg-info/top_level.txt
+[1.118s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2-4.0.0-py3.12.egg-info/PKG-INFO
+[1.118s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2
+[1.118s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/utils.py
+[1.118s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/__init__.py
+[1.118s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/moveit2.py
+[1.118s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/moveit2_gripper.py
+[1.118s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/moveit2_servo.py
+[1.118s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/gripper_interface.py
+[1.118s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/gripper_command.py
+[1.118s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots
+[1.118s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/ur.py
+[1.118s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/panda.py
+[1.118s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/climbing_robot.py
+[1.118s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/__init__.py
+[1.118s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/phantomx_pincher.py
+[1.118s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/lbr.py
+[1.118s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/crane_x7.py
+[1.118s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/kinova.py
+[1.170s] Listing '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2'...
+[1.170s] Compiling '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/__init__.py'...
+[1.170s] Compiling '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/gripper_command.py'...
+[1.170s] Compiling '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/gripper_interface.py'...
+[1.170s] Compiling '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/moveit2.py'...
+[1.170s] Compiling '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/moveit2_gripper.py'...
+[1.170s] Compiling '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/moveit2_servo.py'...
+[1.170s] Listing '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots'...
+[1.170s] Compiling '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/__init__.py'...
+[1.170s] Compiling '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/climbing_robot.py'...
+[1.170s] Compiling '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/crane_x7.py'...
+[1.170s] Compiling '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/kinova.py'...
+[1.170s] Compiling '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/lbr.py'...
+[1.170s] Compiling '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/panda.py'...
+[1.170s] Compiling '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/phantomx_pincher.py'...
+[1.170s] Compiling '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/robots/ur.py'...
+[1.171s] Compiling '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages/pymoveit2/utils.py'...
+[1.175s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/pymoveit2/ex_allow_collisions.py
+[1.175s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/pymoveit2/ex_clear_planning_scene.py
+[1.175s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/pymoveit2/ex_collision_mesh.py
+[1.175s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/pymoveit2/ex_collision_primitive.py
+[1.175s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/pymoveit2/ex_fk.py
+[1.175s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/pymoveit2/ex_gripper.py
+[1.175s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/pymoveit2/ex_ik.py
+[1.175s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/pymoveit2/ex_joint_goal.py
+[1.175s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/pymoveit2/ex_orientation_path_constraint.py
+[1.175s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/pymoveit2/ex_pose_goal.py
+[1.175s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/pymoveit2/ex_servo.py
+[1.181s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/ament_index/resource_index/package_run_dependencies/pymoveit2
+[1.181s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/ament_index/resource_index/parent_prefix_path/pymoveit2
+[1.182s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/environment/ament_prefix_path.sh
+[1.182s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/environment/ament_prefix_path.dsv
+[1.182s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/environment/path.sh
+[1.182s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/environment/path.dsv
+[1.182s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/local_setup.bash
+[1.182s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/local_setup.sh
+[1.182s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/local_setup.zsh
+[1.182s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/local_setup.dsv
+[1.182s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/package.dsv
+[1.182s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/ament_index/resource_index/packages/pymoveit2
+[1.182s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/cmake/pymoveit2Config.cmake
+[1.182s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/cmake/pymoveit2Config-version.cmake
+[1.182s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/package.xml
+[1.185s] Invoked command in '/home/aaron/workspaces/cliffhangers_ws/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/aaron/workspaces/cliffhangers_ws/build/pymoveit2

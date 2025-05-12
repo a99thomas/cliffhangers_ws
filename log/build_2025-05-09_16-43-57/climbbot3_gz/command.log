@@ -1,2 +1,0 @@
-Invoking command in '/home/aaron/workspaces/cliffhangers_ws/build/climbbot3_gz': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/aaron/workspaces/cliffhangers_ws/src/climbbot3_gz -DCMAKE_INSTALL_PREFIX=/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz
-Invoked command in '/home/aaron/workspaces/cliffhangers_ws/build/climbbot3_gz' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/aaron/workspaces/cliffhangers_ws/src/climbbot3_gz -DCMAKE_INSTALL_PREFIX=/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz

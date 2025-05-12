@@ -1,659 +1,682 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape document_id: 67456fa7f995371c54d81f33 -->
 <robot name="climbbot3">
+
 <!-- <link name="base_link"/>
 
 <joint name="base_to_assm7" type="fixed">
   <parent link="base_link"/>
   <child link="assembly_7"/>
 </joint> -->
-
-
-<link name="assembly_7">
-<visual>
-<origin xyz="0.18085273176231164705 0.019157849104760489578 0.027627557350689037341" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/servo_arm_horn_25t_aluminium.stl"/>
-</geometry>
-<material name="servo_arm_horn_25t_aluminium_material">
-<color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0.18085273176231164705 0.019157849104760489578 0.027627557350689037341" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/servo_arm_horn_25t_aluminium.stl"/>
-</geometry>
-</collision>
-<visual>
-<origin xyz="0.018784657908169077878 0.041059807162437914063 0.013667211686659500383" rpy="1.2196174697886985261e-16 0.27516480587764807764 6.8081010723004434676e-17" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/component2.stl"/>
-</geometry>
-<material name="component2_material">
-<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0.018784657908169077878 0.041059807162437914063 0.013667211686659500383" rpy="1.2196174697886985261e-16 0.27516480587764807764 6.8081010723004434676e-17" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/component2.stl"/>
-</geometry>
-</collision>
-<visual>
-<origin xyz="0.018784657908168859303 0.10845980716243788788 0.013667211686660433664" rpy="1.2196174697887078938e-16 0.27516480587766073418 6.8081010723006554739e-17" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/component2.stl"/>
-</geometry>
-<material name="component2_material">
-<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0.018784657908168859303 0.10845980716243788788 0.013667211686660433664" rpy="1.2196174697887078938e-16 0.27516480587766073418 6.8081010723006554739e-17" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/component2.stl"/>
-</geometry>
-</collision>
-<visual>
-<origin xyz="0.028182544479005644522 0.070743218180606970424 -0.00032244264930486772613" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/component707.stl"/>
-</geometry>
-<material name="component707_material">
-<color rgba="0.98039215686274505668 0.71372549019607844922 0.0039215686274509803377 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0.028182544479005644522 0.070743218180606970424 -0.00032244264930486772613" rpy="0 -0 0" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/component707.stl"/>
-</geometry>
-</collision>
-<visual>
-<origin xyz="0.18085273176231164705 0.11919956669056486209 0.027627557350689037341" rpy="0 -0 3.141592653589793116" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/servo_arm_horn_25t_aluminium.stl"/>
-</geometry>
-<material name="servo_arm_horn_25t_aluminium_material">
-<color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0.18085273176231164705 0.11919956669056486209 0.027627557350689037341" rpy="0 -0 3.141592653589793116" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/servo_arm_horn_25t_aluminium.stl"/>
-</geometry>
-</collision>
-<inertial>
-<origin xyz="0.094310292465210887602 0.069041407722606834563 0.032199387513225957713" rpy="0 0 0"/>
-<mass value="0.23604354426025414559" />
-<inertia ixx="0.00036706906301535121608" ixy="-4.6052236606769244144e-07"  ixz="-4.2416531590769072869e-05" iyy="0.00067550735414545026551" iyz="6.48998682419119034e-07" izz="0.00089844077601398020412" />
-</inertial>
-</link>
-
-<link name="assembly_9">
-<visual>
-<origin xyz="0 0 0" rpy="-1.2703590904023397066e-33 -1.9781765994958304052e-44 -8.3359791378050353547e-46" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/ds3225mg_servo_25kg_4.8-6.8v.stl"/>
-</geometry>
-<material name="ds3225mg_servo_25kg_4.8-6.8v_material">
-<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0 0 0" rpy="-1.2703590904023397066e-33 -1.9781765994958304052e-44 -8.3359791378050353547e-46" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/ds3225mg_servo_25kg_4.8-6.8v.stl"/>
-</geometry>
-</collision>
-<visual>
-<origin xyz="-0.00056250000000024336089 0.059800000000004793765 -0.032300000000002167255" rpy="-1.57079632679483705 2.1605323061240980006e-15 2.5091040356528537814e-14" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/ds3225mg_servo_25kg_4.8-6.8v.stl"/>
-</geometry>
-<material name="ds3225mg_servo_25kg_4.8-6.8v_material">
-<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-0.00056250000000024336089 0.059800000000004793765 -0.032300000000002167255" rpy="-1.57079632679483705 2.1605323061240980006e-15 2.5091040356528537814e-14" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/ds3225mg_servo_25kg_4.8-6.8v.stl"/>
-</geometry>
-</collision>
-<visual>
-<origin xyz="0.059387500000000675859 0.042000000000004228395 -0.11254890000000715433" rpy="1.5707963267948825692 1.5707963267948346076 0" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/servomount1.stl"/>
-</geometry>
-<material name="servomount1_material">
-<color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0.059387500000000675859 0.042000000000004228395 -0.11254890000000715433" rpy="1.5707963267948825692 1.5707963267948346076 0" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/servomount1.stl"/>
-</geometry>
-</collision>
-<inertial>
-<origin xyz="0.0095029604817287900709 0.01524281214984805205 -0.030649511563567728017" rpy="0 0 0"/>
-<mass value="0.11732144979288477993" />
-<inertia ixx="5.9277623362855605361e-05" ixy="3.5879185899692777743e-07"  ixz="-6.4530541329917916692e-08" iyy="3.3711344270161779199e-05" iyz="2.6867677537987936453e-06" izz="6.3814515225711727019e-05" />
-</inertial>
-</link>
-
-<link name="assembly_13">
-<visual>
-<origin xyz="-0.035000000000002057243 0.0055000000000001714184 -0.0317099999999900517" rpy="-3.1415926535897535921 1.5707963267948275021 0" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/part_20.stl"/>
-</geometry>
-<material name="part_20_material">
-<color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-0.035000000000002057243 0.0055000000000001714184 -0.0317099999999900517" rpy="-3.1415926535897535921 1.5707963267948275021 0" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/part_20.stl"/>
-</geometry>
-</collision>
-<visual>
-<origin xyz="-0.099255968779395076229 0.00775000000000153344 -0.073216310041875093395" rpy="-7.3076671667708696672e-16 -0.42374695997859324059 3.1415926535896847582" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/part_22.stl"/>
-</geometry>
-<material name="part_22_material">
-<color rgba="0.97254901960784312376 0.52941176470588235947 0.0039215686274509803377 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-0.099255968779395076229 0.00775000000000153344 -0.073216310041875093395" rpy="-7.3076671667708696672e-16 -0.42374695997859324059 3.1415926535896847582" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/part_22.stl"/>
-</geometry>
-</collision>
-<visual>
-<origin xyz="-0.034999970260633908592 0.0065000000000003943512 -0.031709883451008502586" rpy="-2.9461814160787751915e-13 1.369337200377239272 3.1415926535894436178" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/spur_gear_(23_teeth).stl"/>
-</geometry>
-<material name="spur_gear_(23_teeth)_material">
-<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-0.034999970260633908592 0.0065000000000003943512 -0.031709883451008502586" rpy="-2.9461814160787751915e-13 1.369337200377239272 3.1415926535894436178" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/spur_gear_(23_teeth).stl"/>
-</geometry>
-</collision>
-<visual>
-<origin xyz="-0.099255968779392189649 0.0077500000000008673062 -0.073216310041874760328" rpy="-1.2910211994872585587e-14 -0.42374695997855882368 3.1415926535897154004" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/spur_gear_(22_teeth).stl"/>
-</geometry>
-<material name="spur_gear_(22_teeth)_material">
-<color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-0.099255968779392189649 0.0077500000000008673062 -0.073216310041874760328" rpy="-1.2910211994872585587e-14 -0.42374695997855882368 3.1415926535897154004" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/spur_gear_(22_teeth).stl"/>
-</geometry>
-</collision>
-<visual>
-<origin xyz="0 2.7755575615628913511e-17 0.0010499999999999953815" rpy="-3.141592653589793116 -0 0" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/servo_arm_horn_25t_aluminium.stl"/>
-</geometry>
-<material name="servo_arm_horn_25t_aluminium_material">
-<color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0 2.7755575615628913511e-17 0.0010499999999999953815" rpy="-3.141592653589793116 -0 0" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/servo_arm_horn_25t_aluminium.stl"/>
-</geometry>
-</collision>
-<visual>
-<origin xyz="-0.039027228773483739477 0.0054999999999988113952 -0.050432429963996439071" rpy="-1.5066543109907136149e-13 1.1470493668163628254 3.1415926535895968286" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/part_17.stl"/>
-</geometry>
-<material name="part_17_material">
-<color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-0.039027228773483739477 0.0054999999999988113952 -0.050432429963996439071" rpy="-1.5066543109907136149e-13 1.1470493668163628254 3.1415926535895968286" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/part_17.stl"/>
-</geometry>
-</collision>
-<inertial>
-<origin xyz="-0.049703587090552607541 -0.046601534269892774809 -0.030568690108426468249" rpy="0 0 0"/>
-<mass value="0.31630263661656304874" />
-<inertia ixx="0.0010761413009890800907" ixy="0.00014144245694637988249"  ixz="-1.5594114336563417338e-05" iyy="0.00034561264836999557514" iyz="-1.3286350617113631457e-05" izz="0.0012350897668136917324" />
-</inertial>
-</link>
-
-<link name="part_1">
-<visual>
-<origin xyz="0 -2.0816681711721685133e-17 -0.17999999999999982681" rpy="1.570796326794896558 6.0332446880791321662e-31 0" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/part_1.stl"/>
-</geometry>
-<material name="part_1_material">
-<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0 -2.0816681711721685133e-17 -0.17999999999999982681" rpy="1.570796326794896558 6.0332446880791321662e-31 0" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/part_1.stl"/>
-</geometry>
-</collision>
-<inertial>
-<origin xyz="1.3847249766113573207e-05 7.9959915124373077516e-06 -0.093087191860508525232" rpy="0 0 0"/>
-<mass value="0.14727877470824324302" />
-<inertia ixx="0.00046863240745720975873" ixy="3.9618798378412049325e-08"  ixz="1.3973064700252837908e-07" iyy="0.00046861352090256125922" iyz="6.37722716205203897e-08" izz="9.3297195262879322776e-05" />
-</inertial>
-</link>
-
-<link name="part_4">
-<visual>
-<origin xyz="0 -6.9388939039072283776e-18 -0.17999999999999991007" rpy="1.570796326794896558 -1.0920913152661629737e-31 0" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/part_4.stl"/>
-</geometry>
-<material name="part_4_material">
-<color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0 -6.9388939039072283776e-18 -0.17999999999999991007" rpy="1.570796326794896558 -1.0920913152661629737e-31 0" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/part_4.stl"/>
-</geometry>
-</collision>
-<inertial>
-<origin xyz="-3.0603851109879183951e-07 -9.1923183319470495005e-06 -0.085300641745860911191" rpy="0 0 0"/>
-<mass value="0.11176680215091941428" />
-<inertia ixx="0.00029493404277549967359" ixy="-2.5380493291061027753e-10"  ixz="-3.6314348818057794956e-09" iyy="0.00029491583482195747124" iyz="-7.8550477524643375018e-08" izz="5.0005735901673975822e-05" />
-</inertial>
-</link>
-
-<link name="assembly_12">
-<visual>
-<origin xyz="-6.8001160258290838101e-15 0.037068181818183915111 0.04500000000000498046" rpy="-3.5016990461602462244e-15 4.3298697960379906008e-15 1.00349431707676397e-14" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/gripper_hook.stl"/>
-</geometry>
-<material name="gripper_hook_material">
-<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-6.8001160258290838101e-15 0.037068181818183915111 0.04500000000000498046" rpy="-3.5016990461602462244e-15 4.3298697960379906008e-15 1.00349431707676397e-14" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/gripper_hook.stl"/>
-</geometry>
-</collision>
-<visual>
-<origin xyz="0 -6.9388939039072283776e-18 -0.18400000000000008016" rpy="1.570796326794896558 1.288868535924434882e-30 -4.1806537671993840322e-31" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/part_6.stl"/>
-</geometry>
-<material name="part_6_material">
-<color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0 -6.9388939039072283776e-18 -0.18400000000000008016" rpy="1.570796326794896558 1.288868535924434882e-30 -4.1806537671993840322e-31" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/part_6.stl"/>
-</geometry>
-</collision>
-<inertial>
-<origin xyz="-1.4286352412118971584e-06 0.0073454456175577496554 0.013681469872035542656" rpy="0 0 0"/>
-<mass value="0.23426959223082960415" />
-<inertia ixx="0.0011632072574718939351" ixy="-9.8355991723475704823e-10"  ixz="-9.195808238752822907e-08" iyy="0.0011681857923059152903" iyz="-9.5220138910597678164e-05" izz="9.7179276720587198833e-05" />
-</inertial>
-</link>
-
-<joint name="r3_3" type="prismatic">
-<origin xyz="2.7755575615628913511e-17 -6.9388939039072283776e-18 0.0020000000000004458656" rpy="6.1232339949145745248e-17 6.1584078566384796889e-16 -2.6015123810540368034e-15" />
-<parent link="part_4" />
-<child link="assembly_12" />
-<axis xyz="0 0 1"/>
-<limit effort="100" velocity="20" lower="-0.005" upper="0.13400000000000000799"/>
-<joint_properties friction="0.0"/>
-<mimic joint="r3_1" multiplier="1.0" offset="0.00201"/>
-</joint>
-
-<joint name="r3_2" type="prismatic">
-<origin xyz="0 -6.9388939039072283776e-18 6.1062266354383609723e-15" rpy="8.2112531624455133175e-27 -2.2204460492175295007e-16 -2.5243548967072383378e-29" />
-<parent link="part_1" />
-<child link="part_4" />
-<axis xyz="0 0 1"/>
-<limit effort="100" velocity="20" lower="-0.005" upper="0.13200000000000000622"/>
-<joint_properties friction="0.0"/>
-<mimic joint="r3_1" multiplier="1.0" offset="0.0"/>
-</joint>
-
-<joint name="r3_1" type="prismatic">
-<origin xyz="-0.035000000000009148793 -0.1744999999999917728 -0.03170999999999701835" rpy="1.570796326794936304 1.57079632679483705 0" />
-<parent link="assembly_13" />
-<child link="part_1" />
-<axis xyz="0 0 1"/>
-<limit effort="100" velocity="20" lower="-0.005" upper="0.13200000000000000622"/>
-<joint_properties friction="0.0"/>
-</joint>
-
-<joint name="r2" type="revolute">
-<origin xyz="-0.00056250000000024336089 0.059800000000004821521 -0.032300000000002160316" rpy="1.5707963267948827912 -1.5707963267947857577 0" />
-<parent link="assembly_9" />
-<child link="assembly_13" />
-<axis xyz="0 0 1"/>
-<limit effort="100" velocity="20" lower="-1.570796326794896558" upper="1.570796326794896558"/>
-<joint_properties friction="0.0"/>
-</joint>
-
-<joint name="r1" type="revolute">
-<origin xyz="0.18085273176231164705 0.11919956669056486209 0.028677557350689036192" rpy="-6.1232339957420538691e-17 7.1870441298269152156e-28 -6.3108872417680944433e-29" />
-<parent link="assembly_7" />
-<child link="assembly_9" />
-<axis xyz="0 0 1"/>
-<limit effort="100" velocity="20" lower="-1.570796326794896558" upper="1.570796326794896558"/>
-<joint_properties friction="0.0"/>
-</joint>
-
-<link name="assembly_8">
-<visual>
-<origin xyz="-0.039387499999987668486 -0.041999999999992793098 -0.11254890000000045136" rpy="-1.570796326794722475 1.5707963267948936714 0" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/servomount1.stl"/>
-</geometry>
-<material name="servomount1_material">
-<color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-0.039387499999987668486 -0.041999999999992793098 -0.11254890000000045136" rpy="-1.570796326794722475 1.5707963267948936714 0" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/servomount1.stl"/>
-</geometry>
-</collision>
-<visual>
-<origin xyz="0 0 0" rpy="6.4094948553066455225e-31 2.8744540632687537402e-31 1.6886553759465880094e-30" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/ds3225mg_servo_25kg_4.8-6.8v.stl"/>
-</geometry>
-<material name="ds3225mg_servo_25kg_4.8-6.8v_material">
-<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0 0 0" rpy="6.4094948553066455225e-31 2.8744540632687537402e-31 1.6886553759465880094e-30" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/ds3225mg_servo_25kg_4.8-6.8v.stl"/>
-</geometry>
-</collision>
-<visual>
-<origin xyz="0.00056249999998750355168 -0.059799999999987620003 -0.032300000000000390898" rpy="1.5707963267948947816 -8.6736173798839989872e-16 1.0685896612017319056e-15" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/ds3225mg_servo_25kg_4.8-6.8v.stl"/>
-</geometry>
-<material name="ds3225mg_servo_25kg_4.8-6.8v_material">
-<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0.00056249999998750355168 -0.059799999999987620003 -0.032300000000000390898" rpy="1.5707963267948947816 -8.6736173798839989872e-16 1.0685896612017319056e-15" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/ds3225mg_servo_25kg_4.8-6.8v.stl"/>
-</geometry>
-</collision>
-<inertial>
-<origin xyz="0.010320920025836587131 -0.015242812177330859746 -0.030649511591056010501" rpy="0 0 0"/>
-<mass value="0.11732144979288477993" />
-<inertia ixx="5.9277623275155169255e-05" ixy="2.6166308844533440798e-07"  ixz="1.5840131049187724996e-07" iyy="3.3716622737700043758e-05" iyz="-2.6867677986513824413e-06" izz="6.3819793584256909007e-05" />
-</inertial>
-</link>
-
-<link name="assembly_10">
-<visual>
-<origin xyz="4.336808689942017736e-19 0 0.0010500000000000023204" rpy="3.141592653589793116 -3.2516184358205434995e-30 1.770365831803577895e-30" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/servo_arm_horn_25t_aluminium.stl"/>
-</geometry>
-<material name="servo_arm_horn_25t_aluminium_material">
-<color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="4.336808689942017736e-19 0 0.0010500000000000023204" rpy="3.141592653589793116 -3.2516184358205434995e-30 1.770365831803577895e-30" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/servo_arm_horn_25t_aluminium.stl"/>
-</geometry>
-</collision>
-<visual>
-<origin xyz="0.09848549896289195138 0.0077500000000219060325 0.010135313762895420409" rpy="3.141592653589563966 0.40526026857636088252 2.366703441873562865e-14" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/part_22.stl"/>
-</geometry>
-<material name="part_22_material">
-<color rgba="0.97254901960784312376 0.52941176470588235947 0.0039215686274509803377 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0.09848549896289195138 0.0077500000000219060325 0.010135313762895420409" rpy="3.141592653589563966 0.40526026857636088252 2.366703441873562865e-14" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/part_22.stl"/>
-</geometry>
-</collision>
-<visual>
-<origin xyz="0.036508623174702131697 0.0055000000000012816415 -0.020086319004634776986" rpy="3.1415926535880172032 -1.3126617833007934166 1.9604811988912694313e-12" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/part_17.stl"/>
-</geometry>
-<material name="part_17_material">
-<color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0.036508623174702131697 0.0055000000000012816415 -0.020086319004634776986" rpy="3.1415926535880172032 -1.3126617833007934166 1.9604811988912694313e-12" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/part_17.stl"/>
-</geometry>
-</collision>
-<visual>
-<origin xyz="0.035000000000017766899 0.0055000000000232363018 0.068290000000005388059" rpy="-3.1415926535895564164 -1.570796326794577924 0" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/part_23.stl"/>
-</geometry>
-<material name="part_23_material">
-<color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0.035000000000017766899 0.0055000000000232363018 0.068290000000005388059" rpy="-3.1415926535895564164 -1.570796326794577924 0" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/part_23.stl"/>
-</geometry>
-</collision>
-<visual>
-<origin xyz="0.098485498962886955376 0.0077500000000217672547 0.010135313762897557588" rpy="3.1415926535895652982 0.40526026857624708466 2.3425418913290320426e-14" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/spur_gear_(22_teeth).stl"/>
-</geometry>
-<material name="spur_gear_(22_teeth)_material">
-<color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0.098485498962886955376 0.0077500000000217672547 0.010135313762897557588" rpy="3.1415926535895652982 0.40526026857624708466 2.3425418913290320426e-14" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/spur_gear_(22_teeth).stl"/>
-</geometry>
-</collision>
-<visual>
-<origin xyz="0.034999879857327276245 0.033499999999999752198 -0.031710005816561928627" rpy="-3.2418512319054328642e-13 3.3528735343755609629e-14 1.9939605522266539191e-13" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/spur_gear_(23_teeth).stl"/>
-</geometry>
-<material name="spur_gear_(23_teeth)_material">
-<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0.034999879857327276245 0.033499999999999752198 -0.031710005816561928627" rpy="-3.2418512319054328642e-13 3.3528735343755609629e-14 1.9939605522266539191e-13" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/spur_gear_(23_teeth).stl"/>
-</geometry>
-</collision>
-<inertial>
-<origin xyz="0.04970310957952477765 -0.046601529219728009268 -0.030573572081011246571" rpy="0 0 0"/>
-<mass value="0.31630258043837466975" />
-<inertia ixx="0.0010761456609257825587" ixy="-0.0001414465615694060084"  ixz="1.5609238030161979465e-05" iyy="0.00034563385694466586522" iyz="-1.3189897361773374727e-05" izz="0.0012351069724726741403" />
-</inertial>
-</link>
-
-<link name="part_1_2">
-<visual>
-<origin xyz="0 -1.3877787807814456755e-17 -0.17999999999999985456" rpy="1.570796326794896558 -6.063152024015275772e-30 -6.2268703600473517818e-32" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/part_1.stl"/>
-</geometry>
-<material name="part_1_material">
-<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0 -1.3877787807814456755e-17 -0.17999999999999985456" rpy="1.570796326794896558 -6.063152024015275772e-30 -6.2268703600473517818e-32" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/part_1.stl"/>
-</geometry>
-</collision>
-<inertial>
-<origin xyz="1.3847249766113573207e-05 7.9959915124442466455e-06 -0.093087191860508552987" rpy="0 0 0"/>
-<mass value="0.14727877470824324302" />
-<inertia ixx="0.00046863240745720975873" ixy="3.9618798378412049325e-08"  ixz="1.3973064700252837908e-07" iyy="0.00046861352090256125922" iyz="6.37722716205203897e-08" izz="9.3297195262879322776e-05" />
-</inertial>
-</link>
-
-<link name="part_4_2">
-<visual>
-<origin xyz="0 -6.9388939039072283776e-18 -0.17999999999999988232" rpy="1.570796326794896558 4.8265580663704500435e-30 6.8217798162097060391e-31" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/part_4.stl"/>
-</geometry>
-<material name="part_4_material">
-<color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="0 -6.9388939039072283776e-18 -0.17999999999999988232" rpy="1.570796326794896558 4.8265580663704500435e-30 6.8217798162097060391e-31" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/part_4.stl"/>
-</geometry>
-</collision>
-<inertial>
-<origin xyz="-3.0603851109879183951e-07 -9.1923183319470495005e-06 -0.085300641745860883436" rpy="0 0 0"/>
-<mass value="0.11176680215091941428" />
-<inertia ixx="0.00029493404277549967359" ixy="-2.5380493291061027753e-10"  ixz="-3.6314348818057794956e-09" iyy="0.00029491583482195747124" iyz="-7.8550477524643375018e-08" izz="5.0005735901673975822e-05" />
-</inertial>
-</link>
-
-<link name="assembly_11">
-<visual>
-<origin xyz="-1.7055801215803967352e-14 0.037068181818173978614 0.044999999999987994048" rpy="6.543965165907247586e-14 -1.4532819392345068687e-13 -9.1535151069043305194e-14" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/gripper_hook.stl"/>
-</geometry>
-<material name="gripper_hook_material">
-<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-1.7055801215803967352e-14 0.037068181818173978614 0.044999999999987994048" rpy="6.543965165907247586e-14 -1.4532819392345068687e-13 -9.1535151069043305194e-14" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/gripper_hook.stl"/>
-</geometry>
-</collision>
-<visual>
-<origin xyz="-1.3877787807814456755e-17 -6.9388939039072283776e-18 -0.18400000000000008016" rpy="1.570796326794896558 -3.353763989957623398e-30 0" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/part_6.stl"/>
-</geometry>
-<material name="part_6_material">
-<color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
-</material>
-</visual>
-<collision>
-<origin xyz="-1.3877787807814456755e-17 -6.9388939039072283776e-18 -0.18400000000000008016" rpy="1.570796326794896558 -3.353763989957623398e-30 0" />
-<geometry>
-<mesh filename="package://climbbot3_description/climbbot3/part_6.stl"/>
-</geometry>
-</collision>
-<inertial>
-<origin xyz="-1.4286352509712244294e-06 0.0073454456175505609614 0.013681469872022865297" rpy="0 0 0"/>
-<mass value="0.23426959223082960415" />
-<inertia ixx="0.0011632072574716345939" ixy="-9.835599045097351731e-10"  ixz="-9.1958082285796739839e-08" iyy="0.0011681857923056715616" iyz="-9.5220138910512134613e-05" izz="9.7179276720572060661e-05" />
-</inertial>
-</link>
-
-<joint name="l3_3" type="prismatic">
-<origin xyz="-6.9388939039072283776e-17 -6.9388939039072283776e-18 0.002000000000013435475" rpy="1.6653345365999751394e-16 3.5363473088349697426e-16 1.6018215753189618816e-16" />
-<parent link="part_4_2" />
-<child link="assembly_11" />
-<axis xyz="0 0 1"/>
-<limit effort="100" velocity="20" lower="-0.005" upper="0.13400000000000000799"/>
-<joint_properties friction="0.0"/>
-<mimic joint="l3_1" multiplier="1.0" offset="0.00201"/>
-</joint>
-
-<joint name="l3_2" type="prismatic">
-<origin xyz="9.7144514654701197287e-17 0 -2.0539125955565395998e-15" rpy="-7.4940054162850202012e-15 -8.4932061383676169492e-15 -7.327471960432721335e-15" />
-<parent link="part_1_2" />
-<child link="part_4_2" />
-<axis xyz="0 0 1"/>
-<limit effort="100" velocity="20" lower="-0.005" upper="0.13200000000000000622"/>
-<joint_properties friction="0.0"/>
-<mimic joint="l3_1" multiplier="1.0" offset="0.0"/>
-</joint>
-
-<joint name="l3_1" type="prismatic">
-<origin xyz="0.035000000000058303917 -0.17449999999999193934 -0.031709999999937635295" rpy="1.5707963267951410291 -1.5707963267945699304 0" />
-<parent link="assembly_10" />
-<child link="part_1_2" />
-<axis xyz="0 0 1"/>
-<limit effort="100" velocity="20" lower="-0.005" upper="0.13200000000000000622"/>
-<joint_properties friction="0.0"/>
-</joint>
-
-<joint name="l2" type="revolute">
-<origin xyz="0.00056249999998750355168 -0.059799999999987626942 -0.032300000000000390898" rpy="-1.570796326794572817 1.5707963267948663599 0" />
-<parent link="assembly_8" />
-<child link="assembly_10" />
-<axis xyz="0 0 1"/>
-<limit effort="100" velocity="20" lower="-1.570796326794896558" upper="1.570796326794896558"/>
-<joint_properties friction="0.0"/>
-</joint>
-
-<joint name="l1" type="revolute">
-<origin xyz="0.18085273176231164705 0.019157849104760489578 0.028677557350689036192" rpy="-7.2164496600701612993e-15 -7.1552173200943249137e-15 6.7910954637577480315e-14" />
-<parent link="assembly_7" />
-<child link="assembly_8" />
-<axis xyz="0 0 1"/>
-<limit effort="100" velocity="20" lower="-1.570796326794896558" upper="1.570796326794896558"/>
-<joint_properties friction="0.0"/>
-</joint>
-
+  <!-- Link assembly_7 -->
+  <link name="assembly_7">
+    <inertial>
+      <origin xyz="0.0943103 0.0690414 0.0321994" rpy="0 0 0"/>
+      <mass value="0.236044"/>
+      <inertia ixx="0.000367069" ixy="-4.60522e-07" ixz="-4.24165e-05" iyy="0.000675507" iyz="6.48999e-07" izz="0.000898441"/>
+    </inertial>
+    <!-- Part servo_arm_horn_25t_aluminium -->
+    <visual>
+      <origin xyz="0.180853 0.0191578 0.0276276" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/servo_arm_horn_25t_aluminium.stl"/>
+      </geometry>
+      <material name="servo_arm_horn_25t_aluminium_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.180853 0.0191578 0.0276276" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/servo_arm_horn_25t_aluminium.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part component2 -->
+    <visual>
+      <origin xyz="0.0187847 0.0410598 0.0136672" rpy="1.21962e-16 0.275165 6.8081e-17"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/component2.stl"/>
+      </geometry>
+      <material name="component2_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0187847 0.0410598 0.0136672" rpy="1.21962e-16 0.275165 6.8081e-17"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/component2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part component2_2 -->
+    <visual>
+      <origin xyz="0.0187847 0.10846 0.0136672" rpy="1.21962e-16 0.275165 6.8081e-17"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/component2.stl"/>
+      </geometry>
+      <material name="component2_2_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0187847 0.10846 0.0136672" rpy="1.21962e-16 0.275165 6.8081e-17"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/component2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part component707 -->
+    <visual>
+      <origin xyz="0.0281825 0.0707432 -0.000322443" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/component707.stl"/>
+      </geometry>
+      <material name="component707_material">
+        <color rgba="0.980392 0.713725 0.00392157 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0281825 0.0707432 -0.000322443" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/component707.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servo_arm_horn_25t_aluminium_2 -->
+    <visual>
+      <origin xyz="0.180853 0.1192 0.0276276" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/servo_arm_horn_25t_aluminium.stl"/>
+      </geometry>
+      <material name="servo_arm_horn_25t_aluminium_2_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.180853 0.1192 0.0276276" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/servo_arm_horn_25t_aluminium.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link assembly_9 -->
+  <link name="assembly_9">
+    <inertial>
+      <origin xyz="0.00950296 0.0152428 -0.0306495" rpy="0 0 0"/>
+      <mass value="0.117321"/>
+      <inertia ixx="5.92776e-05" ixy="3.58792e-07" ixz="-6.45305e-08" iyy="3.37113e-05" iyz="2.68677e-06" izz="6.38145e-05"/>
+    </inertial>
+    <!-- Part ds3225mg_servo_25kg_4_8_6_8v -->
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.63941e-45 -2.31229e-43 5.3455e-57"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/ds3225mg_servo_25kg_4_8_6_8v.stl"/>
+      </geometry>
+      <material name="ds3225mg_servo_25kg_4_8_6_8v_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.63941e-45 -2.31229e-43 5.3455e-57"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/ds3225mg_servo_25kg_4_8_6_8v.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ds3225mg_servo_25kg_4_8_6_8v_2 -->
+    <visual>
+      <origin xyz="-0.0005625 0.0598 -0.0323" rpy="-1.5708 2.16053e-15 2.5091e-14"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/ds3225mg_servo_25kg_4_8_6_8v.stl"/>
+      </geometry>
+      <material name="ds3225mg_servo_25kg_4_8_6_8v_2_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0005625 0.0598 -0.0323" rpy="-1.5708 2.16053e-15 2.5091e-14"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/ds3225mg_servo_25kg_4_8_6_8v.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servomount1 -->
+    <visual>
+      <origin xyz="0.0593875 0.042 -0.112549" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/servomount1.stl"/>
+      </geometry>
+      <material name="servomount1_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0593875 0.042 -0.112549" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/servomount1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link assembly_13 -->
+  <link name="assembly_13">
+    <inertial>
+      <origin xyz="-0.0497036 -0.0466015 -0.0305687" rpy="0 0 0"/>
+      <mass value="0.316303"/>
+      <inertia ixx="0.00107614" ixy="0.000141442" ixz="-1.55941e-05" iyy="0.000345613" iyz="-1.32864e-05" izz="0.00123509"/>
+    </inertial>
+    <!-- Part part_20 -->
+    <visual>
+      <origin xyz="-0.035 0.0055 -0.03171" rpy="-3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/part_20.stl"/>
+      </geometry>
+      <material name="part_20_material">
+        <color rgba="0.917647 0.917647 0.917647 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.035 0.0055 -0.03171" rpy="-3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/part_20.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_22 -->
+    <visual>
+      <origin xyz="-0.099256 0.00775 -0.0732163" rpy="-7.30767e-16 -0.423747 3.14159"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/part_22.stl"/>
+      </geometry>
+      <material name="part_22_material">
+        <color rgba="0.972549 0.529412 0.00392157 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.099256 0.00775 -0.0732163" rpy="-7.30767e-16 -0.423747 3.14159"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/part_22.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part spur_gear__23_teeth -->
+    <visual>
+      <origin xyz="-0.035 0.0065 -0.0317099" rpy="-2.94618e-13 1.36934 3.14159"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/spur_gear__23_teeth.stl"/>
+      </geometry>
+      <material name="spur_gear__23_teeth_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.035 0.0065 -0.0317099" rpy="-2.94618e-13 1.36934 3.14159"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/spur_gear__23_teeth.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part spur_gear__22_teeth -->
+    <visual>
+      <origin xyz="-0.099256 0.00775 -0.0732163" rpy="-1.29102e-14 -0.423747 3.14159"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/spur_gear__22_teeth.stl"/>
+      </geometry>
+      <material name="spur_gear__22_teeth_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.099256 0.00775 -0.0732163" rpy="-1.29102e-14 -0.423747 3.14159"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/spur_gear__22_teeth.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servo_arm_horn_25t_aluminium_3 -->
+    <visual>
+      <origin xyz="4.33681e-19 0 0.00105" rpy="-3.14159 -7.53975e-30 1.35143e-30"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/servo_arm_horn_25t_aluminium.stl"/>
+      </geometry>
+      <material name="servo_arm_horn_25t_aluminium_3_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="4.33681e-19 0 0.00105" rpy="-3.14159 -7.53975e-30 1.35143e-30"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/servo_arm_horn_25t_aluminium.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_17 -->
+    <visual>
+      <origin xyz="-0.0390272 0.0055 -0.0504324" rpy="-1.50665e-13 1.14705 3.14159"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/part_17.stl"/>
+      </geometry>
+      <material name="part_17_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0390272 0.0055 -0.0504324" rpy="-1.50665e-13 1.14705 3.14159"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/part_17.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link part_1 -->
+  <link name="part_1">
+    <inertial>
+      <origin xyz="1.38472e-05 7.99599e-06 -0.0930872" rpy="0 0 0"/>
+      <mass value="0.147279"/>
+      <inertia ixx="0.000468632" ixy="3.96188e-08" ixz="1.39731e-07" iyy="0.000468614" iyz="6.37723e-08" izz="9.32972e-05"/>
+    </inertial>
+    <!-- Part part_1 -->
+    <visual>
+      <origin xyz="0 -1.38778e-17 -0.18" rpy="1.5708 6.42508e-31 -1.26218e-29"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/part_1.stl"/>
+      </geometry>
+      <material name="part_1_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -1.38778e-17 -0.18" rpy="1.5708 6.42508e-31 -1.26218e-29"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/part_1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link part_4 -->
+  <link name="part_4">
+    <inertial>
+      <origin xyz="-3.06039e-07 -9.19232e-06 -0.0853006" rpy="0 0 0"/>
+      <mass value="0.111767"/>
+      <inertia ixx="0.000294934" ixy="-2.53805e-10" ixz="-3.63143e-09" iyy="0.000294916" iyz="-7.85505e-08" izz="5.00057e-05"/>
+    </inertial>
+    <!-- Part part_4 -->
+    <visual>
+      <origin xyz="0 0 -0.18" rpy="1.5708 1.18557e-30 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/part_4.stl"/>
+      </geometry>
+      <material name="part_4_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.18" rpy="1.5708 1.18557e-30 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/part_4.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link assembly_12 -->
+  <link name="assembly_12">
+    <inertial>
+      <origin xyz="-2.19526e-06 0.00540004 -0.0130509" rpy="0 0 0"/>
+      <mass value="0.156296"/>
+      <inertia ixx="0.000776836" ixy="-5.10682e-10" ixz="-8.26793e-08" iyy="0.000766427" iyz="-6.26958e-05" izz="5.24529e-05"/>
+    </inertial>
+    <!-- Part gripper_hook -->
+    <visual>
+      <origin xyz="-2.33147e-15 0.0419282 0.045" rpy="-3.7605e-15 5.41699e-15 6.12323e-17"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/gripper_hook.stl"/>
+      </geometry>
+      <material name="gripper_hook_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-2.33147e-15 0.0419282 0.045" rpy="-3.7605e-15 5.41699e-15 6.12323e-17"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/gripper_hook.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_6 -->
+    <visual>
+      <origin xyz="0 -6.93889e-18 -0.184" rpy="1.5708 7.28393e-31 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/part_6.stl"/>
+      </geometry>
+      <material name="part_6_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="2.77556e-17 0 -0.184" rpy="1.5708 -1.52305e-30 -7.472e-31"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/part_6.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from part_4 to assembly_12 -->
+  <joint name="r3_3" type="prismatic">
+    <origin xyz="-3.05311e-16 0 0.002" rpy="-4.11758e-30 3.50237e-15 -4.08619e-15"/>
+    <parent link="part_4"/>
+    <child link="assembly_12"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000" velocity="10" lower="-0.005" upper="0.134"/>
+    <mimic joint="r3_1" multiplier="1.0" offset="0.00201"/>
+  </joint>
+  <!-- Joint from part_1 to part_4 -->
+  <joint name="r3_2" type="prismatic">
+    <origin xyz="3.05311e-16 0 5.71765e-15" rpy="6.79253e-26 -1.9984e-15 -1.98441e-15"/>
+    <parent link="part_1"/>
+    <child link="part_4"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000" velocity="10" lower="-0.005" upper="0.134"/>
+    <mimic joint="r3_1" multiplier="1.0" offset="0.00201"/>
+  </joint>
+  <!-- Joint from assembly_13 to part_1 -->
+  <joint name="r3_1" type="prismatic">
+    <origin xyz="-0.035 -0.1745 -0.03171" rpy="1.5708 1.5708 0"/>
+    <parent link="assembly_13"/>
+    <child link="part_1"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000" velocity="10" lower="-0.007" upper="0.132"/>
+  </joint>
+  <!-- Joint from assembly_9 to assembly_13 -->
+  <joint name="r2" type="revolute">
+    <origin xyz="-0.0005625 0.0598 -0.0323" rpy="1.5708 -1.5708 0"/>
+    <parent link="assembly_9"/>
+    <child link="assembly_13"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000" velocity="10" lower="-1.5708" upper="1.5708"/>
+  </joint>
+  <!-- Joint from assembly_7 to assembly_9 -->
+  <joint name="r1" type="revolute">
+    <origin xyz="0.180853 0.1192 0.0286776" rpy="-5.78703e-29 5.42099e-27 -5.24704e-14"/>
+    <parent link="assembly_7"/>
+    <child link="assembly_9"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000" velocity="10" lower="-1.5708" upper="1.5708"/>
+  </joint>
+  <!-- Link assembly_8 -->
+  <link name="assembly_8">
+    <inertial>
+      <origin xyz="0.0103209 -0.0152428 -0.0306495" rpy="0 0 0"/>
+      <mass value="0.117321"/>
+      <inertia ixx="5.92776e-05" ixy="2.61663e-07" ixz="1.58401e-07" iyy="3.37166e-05" iyz="-2.68677e-06" izz="6.38198e-05"/>
+    </inertial>
+    <!-- Part servomount1_2 -->
+    <visual>
+      <origin xyz="-0.0393875 -0.042 -0.112549" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/servomount1.stl"/>
+      </geometry>
+      <material name="servomount1_2_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0393875 -0.042 -0.112549" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/servomount1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ds3225mg_servo_25kg_4_8_6_8v_3 -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 -7.99449e-48"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/ds3225mg_servo_25kg_4_8_6_8v.stl"/>
+      </geometry>
+      <material name="ds3225mg_servo_25kg_4_8_6_8v_3_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 -7.99449e-48"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/ds3225mg_servo_25kg_4_8_6_8v.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ds3225mg_servo_25kg_4_8_6_8v_4 -->
+    <visual>
+      <origin xyz="0.0005625 -0.0598 -0.0323" rpy="1.5708 -6.83843e-14 -6.49951e-14"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/ds3225mg_servo_25kg_4_8_6_8v.stl"/>
+      </geometry>
+      <material name="ds3225mg_servo_25kg_4_8_6_8v_4_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0005625 -0.0598 -0.0323" rpy="1.5708 -6.83843e-14 -6.49951e-14"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/ds3225mg_servo_25kg_4_8_6_8v.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link assembly_10 -->
+  <link name="assembly_10">
+    <inertial>
+      <origin xyz="0.0497031 -0.0466015 -0.0305736" rpy="0 0 0"/>
+      <mass value="0.316303"/>
+      <inertia ixx="0.00107615" ixy="-0.000141447" ixz="1.56092e-05" iyy="0.000345634" iyz="-1.31899e-05" izz="0.00123511"/>
+    </inertial>
+    <!-- Part servo_arm_horn_25t_aluminium_4 -->
+    <visual>
+      <origin xyz="-4.33681e-19 0 0.00105" rpy="3.14159 9.16604e-30 -4.07924e-31"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/servo_arm_horn_25t_aluminium.stl"/>
+      </geometry>
+      <material name="servo_arm_horn_25t_aluminium_4_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.33681e-19 0 0.00105" rpy="3.14159 9.16604e-30 -4.07924e-31"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/servo_arm_horn_25t_aluminium.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_22_2 -->
+    <visual>
+      <origin xyz="0.0984855 0.00775 0.0101353" rpy="3.14159 0.40526 2.3667e-14"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/part_22.stl"/>
+      </geometry>
+      <material name="part_22_2_material">
+        <color rgba="0.972549 0.529412 0.00392157 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0984855 0.00775 0.0101353" rpy="3.14159 0.40526 2.3667e-14"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/part_22.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_17_2 -->
+    <visual>
+      <origin xyz="0.0365086 0.0055 -0.0200863" rpy="3.14159 -1.31266 1.96048e-12"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/part_17.stl"/>
+      </geometry>
+      <material name="part_17_2_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0365086 0.0055 -0.0200863" rpy="3.14159 -1.31266 1.96048e-12"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/part_17.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_23 -->
+    <visual>
+      <origin xyz="0.035 0.0055 0.06829" rpy="-3.14159 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/part_23.stl"/>
+      </geometry>
+      <material name="part_23_material">
+        <color rgba="0.917647 0.917647 0.917647 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.035 0.0055 0.06829" rpy="-3.14159 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/part_23.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part spur_gear__22_teeth_2 -->
+    <visual>
+      <origin xyz="0.0984855 0.00775 0.0101353" rpy="3.14159 0.40526 2.34254e-14"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/spur_gear__22_teeth.stl"/>
+      </geometry>
+      <material name="spur_gear__22_teeth_2_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0984855 0.00775 0.0101353" rpy="3.14159 0.40526 2.34254e-14"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/spur_gear__22_teeth.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part spur_gear__23_teeth_2 -->
+    <visual>
+      <origin xyz="0.0349999 0.0335 -0.03171" rpy="-3.24185e-13 3.35287e-14 1.99396e-13"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/spur_gear__23_teeth.stl"/>
+      </geometry>
+      <material name="spur_gear__23_teeth_2_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0349999 0.0335 -0.03171" rpy="-3.24185e-13 3.35287e-14 1.99396e-13"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/spur_gear__23_teeth.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link part_1_2 -->
+  <link name="part_1_2">
+    <inertial>
+      <origin xyz="1.38472e-05 7.99599e-06 -0.0930872" rpy="0 0 0"/>
+      <mass value="0.147279"/>
+      <inertia ixx="0.000468632" ixy="3.96188e-08" ixz="1.39731e-07" iyy="0.000468614" iyz="6.37723e-08" izz="9.32972e-05"/>
+    </inertial>
+    <!-- Part part_1_2 -->
+    <visual>
+      <origin xyz="1.38778e-17 -1.38778e-17 -0.18" rpy="1.5708 5.07325e-31 -6.31089e-30"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/part_1.stl"/>
+      </geometry>
+      <material name="part_1_2_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1.38778e-17 -1.38778e-17 -0.18" rpy="1.5708 5.07325e-31 -6.31089e-30"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/part_1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link part_4_2 -->
+  <link name="part_4_2">
+    <inertial>
+      <origin xyz="-3.06039e-07 -9.19232e-06 -0.0853006" rpy="0 0 0"/>
+      <mass value="0.111767"/>
+      <inertia ixx="0.000294934" ixy="-2.53805e-10" ixz="-3.63143e-09" iyy="0.000294916" iyz="-7.85505e-08" izz="5.00057e-05"/>
+    </inertial>
+    <!-- Part part_4_2 -->
+    <visual>
+      <origin xyz="0 -6.93889e-18 -0.18" rpy="1.5708 3.1765e-31 -4.91298e-30"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/part_4.stl"/>
+      </geometry>
+      <material name="part_4_2_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -6.93889e-18 -0.18" rpy="1.5708 3.1765e-31 -4.91298e-30"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/part_4.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link assembly_11 -->
+  <link name="assembly_11">
+    <inertial>
+      <origin xyz="-2.19526e-06 0.00540004 -0.0130509" rpy="0 0 0"/>
+      <mass value="0.156296"/>
+      <inertia ixx="0.000776836" ixy="-5.10682e-10" ixz="-8.26793e-08" iyy="0.000766427" iyz="-6.26958e-05" izz="5.24529e-05"/>
+    </inertial>
+    <!-- Part gripper_hook_2 -->
+    <visual>
+      <origin xyz="-1.38778e-17 0.0419282 0.045" rpy="9.02058e-15 -1.4988e-15 4.43517e-15"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/gripper_hook.stl"/>
+      </geometry>
+      <material name="gripper_hook_2_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1.38778e-17 0.0419282 0.045" rpy="9.02058e-15 -1.4988e-15 4.43517e-15"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/gripper_hook.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_6_2 -->
+    <visual>
+      <origin xyz="0 6.93889e-18 -0.184" rpy="1.5708 1.56787e-31 7.25459e-31"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/part_6.stl"/>
+      </geometry>
+      <material name="part_6_2_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 6.93889e-18 -0.184" rpy="1.5708 1.56787e-31 7.25459e-31"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/part_6.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from part_4_2 to assembly_11 -->
+  <joint name="l3_3" type="prismatic">
+    <origin xyz="-7.07767e-16 -6.93889e-18 0.002" rpy="1.4988e-15 4.4964e-15 1.4988e-15"/>
+    <parent link="part_4_2"/>
+    <child link="assembly_11"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000" velocity="10" lower="-0.005" upper="0.134"/>
+    <mimic joint="l3_1" multiplier="1.0" offset="0.00201"/>
+  </joint>
+  <!-- Joint from part_1_2 to part_4_2 -->
+  <joint name="l3_2" type="prismatic">
+    <origin xyz="7.21645e-16 0 2.55351e-15" rpy="-1.58419e-27 -9.21485e-15 1.38143e-15"/>
+    <parent link="part_1_2"/>
+    <child link="part_4_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000" velocity="10" lower="-0.005" upper="0.134"/>
+    <mimic joint="l3_1" multiplier="1.0" offset="0.00201"/>
+  </joint>
+  <!-- Joint from assembly_10 to part_1_2 -->
+  <joint name="l3_1" type="prismatic">
+    <origin xyz="0.035 -0.1745 -0.03171" rpy="1.5708 -1.5708 0"/>
+    <parent link="assembly_10"/>
+    <child link="part_1_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000" velocity="10" lower="-0.007" upper="0.132"/>
+  </joint>
+  <!-- Joint from assembly_8 to assembly_10 -->
+  <joint name="l2" type="revolute">
+    <origin xyz="0.0005625 -0.0598 -0.0323" rpy="-1.5708 1.5708 0"/>
+    <parent link="assembly_8"/>
+    <child link="assembly_10"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000" velocity="10" lower="-1.5708" upper="1.5708"/>
+  </joint>
+  <!-- Joint from assembly_7 to assembly_8 -->
+  <joint name="l1" type="revolute">
+    <origin xyz="0.180853 0.0191578 0.0286776" rpy="1.50377e-30 5.32967e-18 4.55474e-14"/>
+    <parent link="assembly_7"/>
+    <child link="assembly_8"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000" velocity="10" lower="-1.5708" upper="1.5708"/>
+  </joint>
 
 <!-- First end effector modifications -->
 <link name="l3_roll">
@@ -783,5 +806,4 @@
 <axis xyz="0 0 1"/>
 <limit effort="1000.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
 </joint>
-
 </robot>

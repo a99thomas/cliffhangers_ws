@@ -1,0 +1,21 @@
+[0.513s] Invoking command in '/home/aaron/workspaces/cliffhangers_ws/src/esp_comms': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/aaron/workspaces/cliffhangers_ws/build/esp_comms/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/esp_comms build --build-base /home/aaron/workspaces/cliffhangers_ws/build/esp_comms/build install --record /home/aaron/workspaces/cliffhangers_ws/build/esp_comms/install.log --single-version-externally-managed install_data
+[0.656s] running egg_info
+[0.665s] writing ../../build/esp_comms/esp_comms.egg-info/PKG-INFO
+[0.666s] writing dependency_links to ../../build/esp_comms/esp_comms.egg-info/dependency_links.txt
+[0.666s] writing entry points to ../../build/esp_comms/esp_comms.egg-info/entry_points.txt
+[0.666s] writing requirements to ../../build/esp_comms/esp_comms.egg-info/requires.txt
+[0.666s] writing top-level names to ../../build/esp_comms/esp_comms.egg-info/top_level.txt
+[0.686s] reading manifest file '../../build/esp_comms/esp_comms.egg-info/SOURCES.txt'
+[0.687s] writing manifest file '../../build/esp_comms/esp_comms.egg-info/SOURCES.txt'
+[0.687s] running build
+[0.687s] running build_py
+[0.687s] running install
+[0.691s] running install_lib
+[0.701s] running install_data
+[0.701s] running install_egg_info
+[0.712s] removing '/home/aaron/workspaces/cliffhangers_ws/install/esp_comms/lib/python3.12/site-packages/esp_comms-0.0.0-py3.12.egg-info' (and everything under it)
+[0.712s] Copying ../../build/esp_comms/esp_comms.egg-info to /home/aaron/workspaces/cliffhangers_ws/install/esp_comms/lib/python3.12/site-packages/esp_comms-0.0.0-py3.12.egg-info
+[0.712s] running install_scripts
+[0.782s] Installing rpi_esp_comms script to /home/aaron/workspaces/cliffhangers_ws/install/esp_comms/lib/esp_comms
+[0.782s] writing list of installed files to '/home/aaron/workspaces/cliffhangers_ws/build/esp_comms/install.log'
+[0.801s] Invoked command in '/home/aaron/workspaces/cliffhangers_ws/src/esp_comms' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/aaron/workspaces/cliffhangers_ws/build/esp_comms/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/esp_comms build --build-base /home/aaron/workspaces/cliffhangers_ws/build/esp_comms/build install --record /home/aaron/workspaces/cliffhangers_ws/build/esp_comms/install.log --single-version-externally-managed install_data

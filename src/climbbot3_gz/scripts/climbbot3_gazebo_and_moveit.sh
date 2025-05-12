@@ -13,16 +13,16 @@ trap 'cleanup' SIGINT SIGTERM
 echo "Launching Gazebo simulation..."
 ros2 launch climbbot3_gz climbbot3.gazebo.launch.py \
     load_controllers:=true \
-    world_file:=empty.world \
+    world_file:=tubes.world \
     use_camera:=false \
     use_rviz:=true \
     use_robot_state_pub:=true \
     use_sim_time:=true \
-    x:=0.29 \
-    y:=0.253 \
-    z:=0.04 \
+    x:=0.8 \
+    y:=0.88 \
+    z:=0.36 \
     roll:=3.14 \
-    pitch:=-1.3\
+    pitch:=-1.24\
     yaw:=1.57
 
 
@@ -30,6 +30,9 @@ ros2 launch climbbot3_gz climbbot3.gazebo.launch.py \
 #ros2 param set /move_group use_sim_time True
 
 
+    # x:=0.29 \
+    # y:=0.25 \
+    # z:=0.24 \
 
     # x:=0.29 \
     # y:=-0.12 \

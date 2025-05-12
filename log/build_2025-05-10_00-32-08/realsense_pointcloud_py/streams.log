@@ -1,0 +1,43 @@
+[0.553s] Invoking command in '/home/aaron/workspaces/cliffhangers_ws/src/realsense_pointcloud': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/realsense_pointcloud_py build --build-base /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/build install --record /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/install.log --single-version-externally-managed install_data
+[0.762s] running egg_info
+[0.762s] creating ../../build/realsense_pointcloud_py/realsense_pointcloud_py.egg-info
+[0.775s] writing ../../build/realsense_pointcloud_py/realsense_pointcloud_py.egg-info/PKG-INFO
+[0.775s] writing dependency_links to ../../build/realsense_pointcloud_py/realsense_pointcloud_py.egg-info/dependency_links.txt
+[0.775s] writing entry points to ../../build/realsense_pointcloud_py/realsense_pointcloud_py.egg-info/entry_points.txt
+[0.775s] writing requirements to ../../build/realsense_pointcloud_py/realsense_pointcloud_py.egg-info/requires.txt
+[0.775s] writing top-level names to ../../build/realsense_pointcloud_py/realsense_pointcloud_py.egg-info/top_level.txt
+[0.775s] writing manifest file '../../build/realsense_pointcloud_py/realsense_pointcloud_py.egg-info/SOURCES.txt'
+[0.795s] reading manifest file '../../build/realsense_pointcloud_py/realsense_pointcloud_py.egg-info/SOURCES.txt'
+[0.795s] adding license file 'LICENSE'
+[0.795s] writing manifest file '../../build/realsense_pointcloud_py/realsense_pointcloud_py.egg-info/SOURCES.txt'
+[0.795s] running build
+[0.796s] running build_py
+[0.796s] creating /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/build
+[0.796s] creating /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/build/lib
+[0.798s] creating /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/build/lib/realsense_pointcloud_py
+[0.798s] copying realsense_pointcloud_py/pointcloud_visualizer.py -> /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/build/lib/realsense_pointcloud_py
+[0.798s] copying realsense_pointcloud_py/aruco_detect.py -> /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/build/lib/realsense_pointcloud_py
+[0.798s] copying realsense_pointcloud_py/__init__.py -> /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/build/lib/realsense_pointcloud_py
+[0.798s] running install
+[0.802s] running install_lib
+[0.812s] creating /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/python3.12/site-packages/realsense_pointcloud_py
+[0.812s] copying /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/build/lib/realsense_pointcloud_py/pointcloud_visualizer.py -> /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/python3.12/site-packages/realsense_pointcloud_py
+[0.812s] copying /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/build/lib/realsense_pointcloud_py/aruco_detect.py -> /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/python3.12/site-packages/realsense_pointcloud_py
+[0.812s] copying /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/build/lib/realsense_pointcloud_py/__init__.py -> /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/python3.12/site-packages/realsense_pointcloud_py
+[0.812s] byte-compiling /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/python3.12/site-packages/realsense_pointcloud_py/pointcloud_visualizer.py to pointcloud_visualizer.cpython-312.pyc
+[0.813s] byte-compiling /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/python3.12/site-packages/realsense_pointcloud_py/aruco_detect.py to aruco_detect.cpython-312.pyc
+[0.814s] byte-compiling /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/python3.12/site-packages/realsense_pointcloud_py/__init__.py to __init__.cpython-312.pyc
+[0.815s] running install_data
+[0.815s] creating /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/share/ament_index
+[0.815s] creating /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/share/ament_index/resource_index
+[0.815s] creating /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/share/ament_index/resource_index/packages
+[0.815s] copying resource/realsense_pointcloud_py -> /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/share/ament_index/resource_index/packages
+[0.815s] copying package.xml -> /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/share/realsense_pointcloud_py
+[0.816s] creating /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/share/realsense_pointcloud_py/launch
+[0.816s] running install_egg_info
+[0.827s] Copying ../../build/realsense_pointcloud_py/realsense_pointcloud_py.egg-info to /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/python3.12/site-packages/realsense_pointcloud_py-0.0.1-py3.12.egg-info
+[0.828s] running install_scripts
+[0.926s] Installing aruco_detect script to /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/realsense_pointcloud_py
+[0.927s] Installing pointcloud_visualizer script to /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/realsense_pointcloud_py
+[0.927s] writing list of installed files to '/home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/install.log'
+[0.961s] Invoked command in '/home/aaron/workspaces/cliffhangers_ws/src/realsense_pointcloud' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/realsense_pointcloud_py build --build-base /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/build install --record /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/install.log --single-version-externally-managed install_data

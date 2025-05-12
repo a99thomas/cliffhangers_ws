@@ -1,0 +1,120 @@
+[0.021s] Invoking command in '/home/aaron/workspaces/cliffhangers_ws/build/climbbot3_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/aaron/workspaces/cliffhangers_ws/src/climbbot3_description -DCMAKE_INSTALL_PREFIX=/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description
+[0.159s] -- The C compiler identification is GNU 13.3.0
+[0.160s] -- The CXX compiler identification is GNU 13.3.0
+[0.160s] -- Detecting C compiler ABI info
+[0.175s] -- Detecting C compiler ABI info - done
+[0.183s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.183s] -- Detecting C compile features
+[0.184s] -- Detecting C compile features - done
+[0.191s] -- Detecting CXX compiler ABI info
+[0.273s] -- Detecting CXX compiler ABI info - done
+[0.281s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.281s] -- Detecting CXX compile features
+[0.281s] -- Detecting CXX compile features - done
+[0.284s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.397s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.484s] -- Found urdf: 2.10.0 (/opt/ros/jazzy/share/urdf/cmake)
+[0.534s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[0.553s] -- Found xacro: 2.0.13 (/opt/ros/jazzy/share/xacro/cmake)
+[0.555s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.673s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.673s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.674s] -- Added test 'lint_cmake' to check CMake code style
+[0.675s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.678s] -- Added test 'xmllint' to check XML markup files
+[0.679s] -- Configuring done (0.7s)
+[0.681s] -- Generating done (0.0s)
+[0.683s] -- Build files have been written to: /home/aaron/workspaces/cliffhangers_ws/build/climbbot3_description
+[0.687s] Invoked command in '/home/aaron/workspaces/cliffhangers_ws/build/climbbot3_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/aaron/workspaces/cliffhangers_ws/src/climbbot3_description -DCMAKE_INSTALL_PREFIX=/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description
+[0.687s] Invoking command in '/home/aaron/workspaces/cliffhangers_ws/build/climbbot3_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/aaron/workspaces/cliffhangers_ws/build/climbbot3_description -- -j5 -l5
+[0.849s] Invoked command in '/home/aaron/workspaces/cliffhangers_ws/build/climbbot3_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/aaron/workspaces/cliffhangers_ws/build/climbbot3_description -- -j5 -l5
+[0.850s] Invoking command in '/home/aaron/workspaces/cliffhangers_ws/build/climbbot3_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/aaron/workspaces/cliffhangers_ws/build/climbbot3_description
+[0.860s] -- Install configuration: ""
+[0.860s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3
+[0.860s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/spur_gear_(23_teeth).part
+[0.860s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets
+[0.860s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/part_6.part
+[0.860s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/servo_arm_horn_25t_aluminium.stl
+[0.860s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/spur_gear__22_teeth.part
+[0.860s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/part_23.part
+[0.860s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/part_1.part
+[0.860s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/spur_gear__23_teeth.stl
+[0.860s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/intel_rgbd_cam_d435.urdf.xacro
+[0.860s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/gripper_hook.part
+[0.860s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/ds3225mg_servo_25kg_4_8_6_8v.part
+[0.861s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/ds3225mg_servo_25kg_4_8_6_8v.stl
+[0.861s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/part_20.part
+[0.861s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/part_22.part
+[0.861s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/servomount1.stl
+[0.861s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/part_4.stl
+[0.861s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/component2.stl
+[0.861s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/part_1.stl
+[0.861s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/part_17.stl
+[0.861s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/spur_gear__22_teeth.stl
+[0.863s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/component2.part
+[0.863s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/servo_arm_horn_25t_aluminium.part
+[0.863s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/spur_gear__23_teeth.part
+[0.863s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/servomount1.part
+[0.863s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/part_4.part
+[0.863s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/gripper_hook.stl
+[0.863s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/part_6.stl
+[0.863s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/component707.part
+[0.863s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/part_20.stl
+[0.863s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/part_23.stl
+[0.864s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/part_22.stl
+[0.864s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/part_17.part
+[0.864s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/assets/component707.stl
+[0.864s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/part_3.part
+[0.864s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/part_6.part
+[0.864s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/servo_arm_horn_25t_aluminium.stl
+[0.865s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/spur_gear_(23_teeth).stl
+[0.866s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/part_23.part
+[0.866s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/part_1.part
+[0.866s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/spur_gear_(22_teeth).stl
+[0.866s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/gripper_hook.part
+[0.866s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/robot.urdf
+[0.866s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/part_20.part
+[0.866s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/d435
+[0.866s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/d435/visual
+[0.866s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/d435/visual/d435.stl
+[0.872s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/servomount.stl
+[0.872s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/part_22.part
+[0.872s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/servomount1.stl
+[0.873s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/part_4.stl
+[0.873s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/component2.stl
+[0.873s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/part_1.stl
+[0.874s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/part_17.stl
+[0.874s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/component2.part
+[0.874s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/servo_arm_horn_25t_aluminium.part
+[0.874s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/spur_gear_(22_teeth).part
+[0.874s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/config.json
+[0.874s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/servomount1.part
+[0.874s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/part_4.part
+[0.874s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/gripper_hook.stl
+[0.875s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/part_6.stl
+[0.876s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/component707.part
+[0.876s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/ds3225mg_servo_25kg_4.8-6.8v.part
+[0.876s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/servomount.part
+[0.876s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/part_20.stl
+[0.877s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/part_3.stl
+[0.878s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/ds3225mg_servo_25kg_4.8-6.8v.stl
+[0.878s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/part_23.stl
+[0.878s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/part_22.stl
+[0.879s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/part_17.part
+[0.879s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description//climbbot3/component707.stl
+[0.879s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/ament_index/resource_index/package_run_dependencies/climbbot3_description
+[0.879s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/ament_index/resource_index/parent_prefix_path/climbbot3_description
+[0.879s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description/environment/ament_prefix_path.sh
+[0.880s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description/environment/ament_prefix_path.dsv
+[0.880s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description/environment/path.sh
+[0.880s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description/environment/path.dsv
+[0.880s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description/local_setup.bash
+[0.880s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description/local_setup.sh
+[0.880s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description/local_setup.zsh
+[0.880s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description/local_setup.dsv
+[0.880s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description/package.dsv
+[0.880s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/ament_index/resource_index/packages/climbbot3_description
+[0.881s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description/cmake/climbbot3_descriptionConfig.cmake
+[0.881s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description/cmake/climbbot3_descriptionConfig-version.cmake
+[0.882s] -- Installing: /home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description/package.xml
+[0.884s] Invoked command in '/home/aaron/workspaces/cliffhangers_ws/build/climbbot3_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/aaron/workspaces/cliffhangers_ws/build/climbbot3_description

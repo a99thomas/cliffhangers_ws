@@ -186,8 +186,4 @@
       </geometry>
     </collision>
   </link>
-  <gazebo reference="wall">
-    <static>true</static>
-  </gazebo>
-
 </robot>

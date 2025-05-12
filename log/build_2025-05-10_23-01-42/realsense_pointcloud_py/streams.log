@@ -1,0 +1,23 @@
+[0.887s] Invoking command in '/home/aaron/workspaces/cliffhangers_ws/src/realsense_pointcloud': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(myenv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(myenv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/realsense_pointcloud_py build --build-base /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/build install --record /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/install.log --single-version-externally-managed install_data
+[1.097s] running egg_info
+[1.110s] writing ../../build/realsense_pointcloud_py/realsense_pointcloud_py.egg-info/PKG-INFO
+[1.110s] writing dependency_links to ../../build/realsense_pointcloud_py/realsense_pointcloud_py.egg-info/dependency_links.txt
+[1.110s] writing entry points to ../../build/realsense_pointcloud_py/realsense_pointcloud_py.egg-info/entry_points.txt
+[1.110s] writing requirements to ../../build/realsense_pointcloud_py/realsense_pointcloud_py.egg-info/requires.txt
+[1.110s] writing top-level names to ../../build/realsense_pointcloud_py/realsense_pointcloud_py.egg-info/top_level.txt
+[1.136s] reading manifest file '../../build/realsense_pointcloud_py/realsense_pointcloud_py.egg-info/SOURCES.txt'
+[1.136s] adding license file 'LICENSE'
+[1.136s] writing manifest file '../../build/realsense_pointcloud_py/realsense_pointcloud_py.egg-info/SOURCES.txt'
+[1.136s] running build
+[1.136s] running build_py
+[1.137s] running install
+[1.146s] running install_lib
+[1.154s] running install_data
+[1.154s] running install_egg_info
+[1.183s] removing '/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/python3.12/site-packages/realsense_pointcloud_py-0.0.1-py3.12.egg-info' (and everything under it)
+[1.183s] Copying ../../build/realsense_pointcloud_py/realsense_pointcloud_py.egg-info to /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/python3.12/site-packages/realsense_pointcloud_py-0.0.1-py3.12.egg-info
+[1.183s] running install_scripts
+[1.279s] Installing aruco_detect script to /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/realsense_pointcloud_py
+[1.279s] Installing pointcloud_visualizer script to /home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/realsense_pointcloud_py
+[1.279s] writing list of installed files to '/home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/install.log'
+[1.332s] Invoked command in '/home/aaron/workspaces/cliffhangers_ws/src/realsense_pointcloud' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(myenv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(myenv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/realsense_pointcloud_py build --build-base /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/build install --record /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/install.log --single-version-externally-managed install_data

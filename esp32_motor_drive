@@ -1,0 +1,373 @@
+
+#include <Arduino.h>
+#include <ESP32Servo.h>
+#include <PID_v1.h>
+#include "driver/ledc.h"
+
+// https://lastminuteengineers.com/esp32-pinout-reference/
+// Servo Motors
+Servo motor1, motor2, motor5, motor6;
+
+// PID Control Variables for Motors 3 and 7
+double setpoint3, input3, output3;
+double setpoint7, input7, output7;
+
+double Kp3a = 40, Ki3a = 0.00, Kd3a = 3.;
+double Kp3b = 40, Ki3b = 5, Kd3b = 3.;
+double Kp7a = 40, Ki7a = 0.00, Kd7a = 3.;
+double Kp7b = 40, Ki7b = 5, Kd7b = 3.;
+
+PID pid3(&input3, &output3, &setpoint3, Kp3a, Ki3a, Kd3a, DIRECT);
+PID pid7(&input7, &output7, &setpoint7, Kp7a, Ki7a, Kd7a, DIRECT);
+
+// Pin Assignments
+const double PITCH = 0.003;   //m
+const int PPR = 2171;  //PULSES PER 1 MOTOR REV
+const float GEARING = 23.0/22.0; //GEARING RATIO (ARM GEAR/MOTOR GEAR)
+const float PULSE_PER_MET = PPR*GEARING/PITCH; 
+const int MOTOR1_PWM = 33;
+const int MOTOR2_PWM = 32;
+const int MOTOR3_PWM = 13, MOTOR3_IN1 = 27, MOTOR3_IN2 = 14; //Change 21 to 27 for ESP32 Dev
+const int MOTOR4_IN1 = 17, MOTOR4_IN2 = 5;
+const int MOTOR5_PWM = 23;
+const int MOTOR6_PWM = 22;
+const int MOTOR7_PWM = 12, MOTOR7_IN1 = 19, MOTOR7_IN2 = 18; //Change 21 to 27 for ESP32 Dev
+const int MOTOR8_IN1 = 26, MOTOR8_IN2 = 25;
+
+const int MOTOR3_LIMIT = 35;
+const int MOTOR7_LIMIT = 34;
+
+const int MOTOR3_CHA = 4, MOTOR3_CHB = 16;
+const int MOTOR7_CHA = 15, MOTOR7_CHB = 2;
+
+//Add offsets to align with MoveIt
+const int m1_offset = 90;
+const int m2_offset = 96;
+const int m3_offset = 0;
+const int m4_offset = 0;
+const int m5_offset = 84;
+const int m6_offset = 90;
+const int m7_offset = 0;
+const int m8_offset = 0;
+
+//Add limits (after offsets)
+const float m1_max = 80;
+const float m1_min = -80;
+const float m2_max = 80;
+const float m2_min = -80;
+const float m3_max = 0.125;
+const float m3_min = 0;
+const float m4_max = 1;
+const float m4_min = -1;
+const float m5_max = 80;
+const float m5_min = -80;
+const float m6_max = 80;
+const float m6_min = -80;
+const float m7_max = 0.125;
+const float m7_min = 0;
+const float m8_max = 1;
+const float m8_min = -1;
+
+//Add desired values
+float m1_des_val = 0;
+float m2_des_val = 0;
+float m3_des_val = 0;
+float m4_des_val = 0;
+float m5_des_val = 0;
+float m6_des_val = 0;
+float m7_des_val = 0;
+float m8_des_val = 0;
+
+const int PWM_FREQ = 50; // 50 Hz for servos
+const int PWM_RESOLUTION = 15; // 8-bit resolution
+const int PWM_CHANNEL_1 = 0; // Channel for Motor 1
+const int PWM_CHANNEL_2 = 1; // Channel for Motor 2
+const int PWM_CHANNEL_3 = 2; // Channel for Motor 3
+// const int PWM_CHANNEL_4 = 3; // Channel for Motor 4
+const int PWM_CHANNEL_5 = 4; // Channel for Motor 5
+const int PWM_CHANNEL_6 = 5; // Channel for Motor 6
+const int PWM_CHANNEL_7 = 6; // Channel for Motor 7
+// const int PWM_CHANNEL_8 = 7; // Channel for Motor 8
+const int MIN_SERVO_ANGLE = 0;
+const int MAX_SERVO_ANGLE = 270;
+const int MAX_DUTY_CYCLE = (1 << PWM_RESOLUTION) - 1; // 4095 for 12-bit resolution
+const int MIN_PWM_WIDTH = 500; // Minimum pulse width in microseconds
+const int MAX_PWM_WIDTH = 2500; // Maximum pulse width in microseconds
+const int PERIOD_MICROSECONDS = 1000000/PWM_FREQ; // 20ms for 50Hz
+
+const int slow_mark = 70;
+
+unsigned long previousMillis = 0;  // Store the last time sendJointPositions was called
+const long interval = 100;          // Interval at which to send positions (100 ms)
+
+
+const int MIN_DUTY_CYCLE = MAX_DUTY_CYCLE*MIN_PWM_WIDTH/PERIOD_MICROSECONDS; // Minimum pulse width in microseconds
+const int FULL_DUTY_CYCLE = MAX_DUTY_CYCLE*MAX_PWM_WIDTH/PERIOD_MICROSECONDS; // Maximum pulse width in microseconds
+
+volatile double m3_count = 0;         // Raw encoder count
+int protectedCount3 = 0;          // Safe copy of count for main loop
+int previousCount3 = 0;           // Track previous count for change detection
+
+volatile double m7_count = 0;         // Raw encoder count for motor 7
+int protectedCount7 = 0;           // Safe copy of count for main loop
+int previousCount7 = 0;            // Track previous count for change detection
+
+
+int home3 = 0;
+int home7 = 0;
+
+#define read3A bitRead(GPIO.in, MOTOR3_CHA)  // Faster than digitalRead()
+#define read3B bitRead(GPIO.in, MOTOR3_CHB)  // Faster than digitalRead()
+
+#define read7A bitRead(GPIO.in, MOTOR7_CHA)  // Faster than digitalRead()
+#define read7B bitRead(GPIO.in, MOTOR7_CHB)  // Faster than digitalRead()
+
+void isr3() {
+  m3_count += (read3A == read3B) ? -1 : 1; // Original optimization
+}
+
+void isr7() {
+  m7_count += (read7A == read7B) ? -1 : 1; // Original optimization
+}
+
+
+
+// Function prototypes
+void processCommand(String command);
+void setMotorDirection(int in1, int in2, int speed);
+void sendJointPositions();
+
+float mapFloat(float x, float in_min, float in_max, float out_min, float out_max) {
+    return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
+void setup() {
+  Serial.begin(115200);
+
+  // Attach Servo Motors and Initialize LEDC
+  ledcSetup(PWM_CHANNEL_1, PWM_FREQ, PWM_RESOLUTION);
+  ledcSetup(PWM_CHANNEL_2, PWM_FREQ, PWM_RESOLUTION);
+  ledcSetup(PWM_CHANNEL_3, PWM_FREQ, PWM_RESOLUTION);
+  // ledcSetup(PWM_CHANNEL_4, PWM_FREQ, PWM_RESOLUTION);
+  ledcSetup(PWM_CHANNEL_5, PWM_FREQ, PWM_RESOLUTION);
+  ledcSetup(PWM_CHANNEL_6, PWM_FREQ, PWM_RESOLUTION);
+  ledcSetup(PWM_CHANNEL_7, PWM_FREQ, PWM_RESOLUTION);
+  // ledcSetup(PWM_CHANNEL_8, PWM_FREQ, PWM_RESOLUTION);
+
+  // Attach the channels to the pins
+  ledcAttachPin(MOTOR1_PWM, PWM_CHANNEL_1);
+  ledcAttachPin(MOTOR2_PWM, PWM_CHANNEL_2);
+  ledcAttachPin(MOTOR3_PWM, PWM_CHANNEL_3);
+  // ledcAttachPin(MOTOR4_PWM, PWM_CHANNEL_4);
+  ledcAttachPin(MOTOR5_PWM, PWM_CHANNEL_5);
+  ledcAttachPin(MOTOR6_PWM, PWM_CHANNEL_6);
+  ledcAttachPin(MOTOR7_PWM, PWM_CHANNEL_7);
+  // ledcAttachPin(MOTOR8_PWM, PWM_CHANNEL_8);
+
+  // Set initial duty cycle to 0
+  ledcWrite(PWM_CHANNEL_1, 0);
+  ledcWrite(PWM_CHANNEL_2, 0);
+  ledcWrite(PWM_CHANNEL_3, 0);
+  ledcWrite(PWM_CHANNEL_5, 0);
+  ledcWrite(PWM_CHANNEL_6, 0);
+  ledcWrite(PWM_CHANNEL_7, 0);
+
+  // Set DC Motor Pins as Outputs
+  // pinMode(MOTOR3_PWM, OUTPUT);
+  pinMode(MOTOR3_IN1, OUTPUT);
+  pinMode(MOTOR3_IN2, OUTPUT);
+
+  pinMode(MOTOR4_IN1, OUTPUT);
+  pinMode(MOTOR4_IN2, OUTPUT);
+
+  // pinMode(MOTOR7_PWM, OUTPUT);
+  pinMode(MOTOR7_IN1, OUTPUT);
+  pinMode(MOTOR7_IN2, OUTPUT);
+
+  pinMode(MOTOR8_IN1, OUTPUT);
+  pinMode(MOTOR8_IN2, OUTPUT);
+
+//Limit Pins
+  pinMode(MOTOR3_LIMIT, INPUT);
+  pinMode(MOTOR7_LIMIT, INPUT);
+
+  // Encoder Pins
+  pinMode(MOTOR3_CHA, INPUT);
+  pinMode(MOTOR3_CHB, INPUT);
+  pinMode(MOTOR7_CHA, INPUT);
+  pinMode(MOTOR7_CHB, INPUT);
+  // Attach Interrupts for Encoders
+  // attachInterrupt(digitalPinToInterrupt(MOTOR3_CHA), encoder_isr_3, CHANGE);
+  // attachInterrupt(digitalPinToInterrupt(MOTOR3_CHB), encoder_isr_3, CHANGE);
+  attachInterrupt(digitalPinToInterrupt(MOTOR3_CHA), isr3, CHANGE);
+  // attachInterrupt(digitalPinToInterrupt(MOTOR3_CHB), isr3, CHANGE);
+  attachInterrupt(digitalPinToInterrupt(MOTOR7_CHA), isr7, CHANGE);
+  // attachInterrupt(digitalPinToInterrupt(MOTOR7_CHB), isr7B, CHANGE);
+
+
+  // Initialize PID Controllers
+  pid3.SetTunings(Kp3a, Ki3a, Kd3a);
+  pid3.SetTunings(Kp7a, Ki7a, Kd7a);
+  pid3.SetMode(AUTOMATIC);
+  pid3.SetOutputLimits(-MAX_DUTY_CYCLE, MAX_DUTY_CYCLE);
+  pid7.SetMode(AUTOMATIC);
+  pid7.SetOutputLimits(-MAX_DUTY_CYCLE, MAX_DUTY_CYCLE);
+}
+
+
+void loop() {
+  if (Serial.available()) {
+    String command = Serial.readStringUntil('\n');
+    processCommand(command);
+  }
+  // Serial.println(PULSETOMET);
+
+  // Update PID Control for Motors 3 and 7
+  if (abs(input3 - setpoint3) < slow_mark) {
+      pid3.SetTunings(Kp3b, Ki3b, Kd3b);
+  }
+  else if (abs(input3 - setpoint3) > slow_mark){
+      pid3.SetTunings(Kp3a, Ki3a, Kd3a);
+  }
+  if (abs(input7 - setpoint7) < slow_mark) {
+      pid7.SetTunings(Kp7b, Ki7b, Kd7b);
+  }
+  else if (abs(input7 - setpoint7) > slow_mark){
+      pid7.SetTunings(Kp7a, Ki7a, Kd7a);
+  }
+
+  if (home3 == 1){
+    setpoint3 = -0.2 * PULSE_PER_MET;
+    if (digitalRead(MOTOR3_LIMIT) == 0){
+      home3 = 0;
+      m3_count = 0.00;
+      setpoint3 = 0.00;
+    }
+  }
+  input3 = m3_count;
+  pid3.Compute();
+  setMotorDirection(MOTOR3_IN1, MOTOR3_IN2, output3);
+  ledcWrite(PWM_CHANNEL_3, abs(output3)); // Use ledcWrite for ESP32 PWM
+
+  if (home7 == 1){
+    setpoint7 = -0.2 * PULSE_PER_MET;
+    if (digitalRead(MOTOR7_LIMIT) == 0){
+      home7 = 0;
+      m7_count = 0.00;
+      setpoint7 = 0.00;
+    }
+  }
+  input7 = m7_count;
+  pid7.Compute();
+  setMotorDirection(MOTOR7_IN1, MOTOR7_IN2, output7);
+  ledcWrite(PWM_CHANNEL_7, abs(output7));
+  // ledcWrite(MOTOR7_PWM, abs(output7)); // Use ledcWrite for ESP32 PWM
+
+  // Send joint positions to Raspberry Pi
+  unsigned long currentMillis = millis();
+  if (currentMillis - previousMillis >= interval) {
+    previousMillis = currentMillis; // Save the last time you sent positions
+    sendJointPositions(); // Call your function to send joint positions
+  }
+  // Add a small delay to avoid WDT reset
+  delay(10); // Adjust as necessary
+}
+
+void processCommand(String command) {
+  //PID commands look like "PID<motor_number>,<Kp_value>,<Ki_value>,<Kd_value>"
+  if (command.startsWith("PIDa")) {
+    int motor = command.substring(4, 5).toInt();
+    if (motor == 3){
+      double Kp3a = command.substring(6, command.indexOf(',', 6)).toDouble();
+      double Ki3a = command.substring(command.indexOf(',', 6) + 1, command.lastIndexOf(',')).toDouble();
+      double Kd3a = command.substring(command.lastIndexOf(',') + 1).toDouble();
+    }
+    if (motor == 7){
+      double Kp7a = command.substring(7, command.indexOf(',', 6)).toDouble();
+      double Ki7a = command.substring(command.indexOf(',', 6) + 1, command.lastIndexOf(',')).toDouble();
+      double Kd7a = command.substring(command.lastIndexOf(',') + 1).toDouble();
+    }
+  }
+  else if (command.startsWith("PIDb")) {
+    int motor = command.substring(4, 5).toInt();
+    if (motor == 3){
+      double Kp3b = command.substring(6, command.indexOf(',', 6)).toDouble();
+      double Ki3b = command.substring(command.indexOf(',', 6) + 1, command.lastIndexOf(',')).toDouble();
+      double Kd3b = command.substring(command.lastIndexOf(',') + 1).toDouble();
+    }
+    if (motor == 7){
+      double Kp7b = command.substring(7, command.indexOf(',', 6)).toDouble();
+      double Ki7b = command.substring(command.indexOf(',', 6) + 1, command.lastIndexOf(',')).toDouble();
+      double Kd7b = command.substring(command.lastIndexOf(',') + 1).toDouble();
+    }
+  }
+  else if (command.startsWith("R")){
+    home7 = 1;
+  }
+  else if (command.startsWith("L")){
+    home3 = 1;
+  }
+  else {
+    String values[8];
+    int motor = 0;
+    int startIndex = 0;
+    for (int i = 0; i < 8; i++) {
+      int endIndex = command.indexOf(',', startIndex);
+      values[i] = command.substring(startIndex, endIndex);
+      startIndex = endIndex + 1;
+    }
+    // Set desired values
+    m1_des_val = max(min(values[0].toFloat(), m1_max), m1_min) + m1_offset;
+    m2_des_val = max(min(values[1].toFloat(), m2_max), m2_min) + m2_offset;
+    m3_des_val = max(min(values[2].toFloat(), m3_max), m3_min) + m3_offset;
+    m4_des_val = max(min(values[3].toFloat(), m4_max), m4_min) + m4_offset;
+    m5_des_val = max(min(values[4].toFloat(), m5_max), m5_min) + m5_offset;
+    m6_des_val = max(min(values[5].toFloat(), m6_max), m6_min) + m6_offset;
+    m7_des_val = max(min(values[6].toFloat(), m7_max), m7_min) + m7_offset;
+    m8_des_val = max(min(values[7].toFloat(), m8_max), m8_min) + m8_offset;
+
+    // Convert angles to pulse widths
+    int pulseWidth1 = mapFloat(m1_des_val, MIN_SERVO_ANGLE, MAX_SERVO_ANGLE, MIN_PWM_WIDTH, MAX_PWM_WIDTH);
+    int pulseWidth2 = mapFloat(m2_des_val, MIN_SERVO_ANGLE, MAX_SERVO_ANGLE, MIN_PWM_WIDTH, MAX_PWM_WIDTH);
+    int pulseWidth5 = mapFloat(m5_des_val, MIN_SERVO_ANGLE, MAX_SERVO_ANGLE, MIN_PWM_WIDTH, MAX_PWM_WIDTH);
+    int pulseWidth6 = mapFloat(m6_des_val, MIN_SERVO_ANGLE, MAX_SERVO_ANGLE, MIN_PWM_WIDTH, MAX_PWM_WIDTH);
+
+    // Calculate duty cycle for 12-bit resolution
+    int dutyCycle1 = (pulseWidth1 * MAX_DUTY_CYCLE) / PERIOD_MICROSECONDS; // Convert pulse width to duty cycle
+    int dutyCycle2 = (pulseWidth2 * MAX_DUTY_CYCLE) / PERIOD_MICROSECONDS;
+    int dutyCycle5 = (pulseWidth5 * MAX_DUTY_CYCLE) / PERIOD_MICROSECONDS;
+    int dutyCycle6 = (pulseWidth6 * MAX_DUTY_CYCLE) / PERIOD_MICROSECONDS;
+
+    // Write duty cycles to PWM channels
+    ledcWrite(PWM_CHANNEL_1, dutyCycle1);
+    ledcWrite(PWM_CHANNEL_2, dutyCycle2);
+    ledcWrite(PWM_CHANNEL_5, dutyCycle5);
+    ledcWrite(PWM_CHANNEL_6, dutyCycle6);
+    // Set DC Motor 4 and 8 directions
+    setpoint3 = m3_des_val*PULSE_PER_MET;
+    setpoint7 = m7_des_val*PULSE_PER_MET;
+    setMotorDirection(MOTOR4_IN1, MOTOR4_IN2, m4_des_val);
+    setMotorDirection(MOTOR8_IN1, MOTOR8_IN2, m8_des_val);
+  }
+}
+
+void setMotorDirection(int in1, int in2, int speed) {
+  digitalWrite(in1, speed > 0);
+  digitalWrite(in2, speed < 0);
+}
+
+void sendJointPositions() {
+  double m3_pos = m3_count/PULSE_PER_MET;
+  double m7_pos = m7_count/PULSE_PER_MET;
+  // Serial.println(m3_pos,5);
+  String positions = String(m1_des_val - m1_offset) + ","
+                       + String(m2_des_val - m2_offset) + ","
+                       + String(m3_pos - m3_offset) + ",0,"
+                       + String(m5_des_val - m5_offset) + ","
+                       + String(m6_des_val - m6_offset) + ","
+                       + String(m7_pos - m7_offset) + ",0\n";
+                      //  + String(digitalRead(MOTOR3_LIMIT)) + ","
+                      //  + String(digitalRead(MOTOR7_LIMIT));
+  Serial.print(positions);
+  Serial.flush();
+  yield();
+}

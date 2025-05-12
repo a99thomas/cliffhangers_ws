@@ -1,0 +1,501 @@
+[0.076s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.076s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=5, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xfd8337e11af0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xfd8337e11790>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xfd8337e11790>>, mixin_verb=('build',))
+[0.101s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.102s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.102s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.102s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.102s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.102s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.102s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/aaron/workspaces/cliffhangers_ws'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbbot3_description) by extensions ['ignore', 'ignore_ament_install']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbbot3_description) by extension 'ignore'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbbot3_description) by extension 'ignore_ament_install'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbbot3_description) by extensions ['colcon_pkg']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbbot3_description) by extension 'colcon_pkg'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbbot3_description) by extensions ['colcon_meta']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbbot3_description) by extension 'colcon_meta'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbbot3_description) by extensions ['ros']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbbot3_description) by extension 'ros'
+[0.123s] DEBUG:colcon.colcon_core.package_identification:Package 'src/climbbot3_description' with type 'ros.ament_cmake' and name 'climbbot3_description'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbbot3_gz) by extensions ['ignore', 'ignore_ament_install']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbbot3_gz) by extension 'ignore'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbbot3_gz) by extension 'ignore_ament_install'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbbot3_gz) by extensions ['colcon_pkg']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbbot3_gz) by extension 'colcon_pkg'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbbot3_gz) by extensions ['colcon_meta']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbbot3_gz) by extension 'colcon_meta'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbbot3_gz) by extensions ['ros']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbbot3_gz) by extension 'ros'
+[0.124s] DEBUG:colcon.colcon_core.package_identification:Package 'src/climbbot3_gz' with type 'ros.ament_cmake' and name 'climbbot3_gz'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbbot3_moveit) by extensions ['ignore', 'ignore_ament_install']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbbot3_moveit) by extension 'ignore'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbbot3_moveit) by extension 'ignore_ament_install'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbbot3_moveit) by extensions ['colcon_pkg']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbbot3_moveit) by extension 'colcon_pkg'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbbot3_moveit) by extensions ['colcon_meta']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbbot3_moveit) by extension 'colcon_meta'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbbot3_moveit) by extensions ['ros']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbbot3_moveit) by extension 'ros'
+[0.124s] DEBUG:colcon.colcon_core.package_identification:Package 'src/climbbot3_moveit' with type 'ros.ament_cmake' and name 'climbbot3_moveit'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbing_robot_3_moveit) by extensions ['ignore', 'ignore_ament_install']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbing_robot_3_moveit) by extension 'ignore'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbing_robot_3_moveit) by extension 'ignore_ament_install'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbing_robot_3_moveit) by extensions ['colcon_pkg']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbing_robot_3_moveit) by extension 'colcon_pkg'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbing_robot_3_moveit) by extensions ['colcon_meta']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbing_robot_3_moveit) by extension 'colcon_meta'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbing_robot_3_moveit) by extensions ['ros']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/climbing_robot_3_moveit) by extension 'ros'
+[0.125s] DEBUG:colcon.colcon_core.package_identification:Package 'src/climbing_robot_3_moveit' with type 'ros.ament_cmake' and name 'climbing_robot_3_moveit'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/esp_comms) by extensions ['ignore', 'ignore_ament_install']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/esp_comms) by extension 'ignore'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/esp_comms) by extension 'ignore_ament_install'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/esp_comms) by extensions ['colcon_pkg']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/esp_comms) by extension 'colcon_pkg'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/esp_comms) by extensions ['colcon_meta']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/esp_comms) by extension 'colcon_meta'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/esp_comms) by extensions ['ros']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/esp_comms) by extension 'ros'
+[0.126s] DEBUG:colcon.colcon_core.package_identification:Package 'src/esp_comms' with type 'ros.ament_python' and name 'esp_comms'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/pymoveit2) by extensions ['ignore', 'ignore_ament_install']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/pymoveit2) by extension 'ignore'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/pymoveit2) by extension 'ignore_ament_install'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/pymoveit2) by extensions ['colcon_pkg']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/pymoveit2) by extension 'colcon_pkg'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/pymoveit2) by extensions ['colcon_meta']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/pymoveit2) by extension 'colcon_meta'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/pymoveit2) by extensions ['ros']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/pymoveit2) by extension 'ros'
+[0.126s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pymoveit2' with type 'ros.ament_cmake' and name 'pymoveit2'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_pointcloud) by extensions ['ignore', 'ignore_ament_install']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_pointcloud) by extension 'ignore'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_pointcloud) by extension 'ignore_ament_install'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_pointcloud) by extensions ['colcon_pkg']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_pointcloud) by extension 'colcon_pkg'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_pointcloud) by extensions ['colcon_meta']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_pointcloud) by extension 'colcon_meta'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_pointcloud) by extensions ['ros']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense_pointcloud) by extension 'ros'
+[0.127s] DEBUG:colcon.colcon_core.package_identification:Package 'src/realsense_pointcloud' with type 'ros.ament_python' and name 'realsense_pointcloud_py'
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.141s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.141s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.142s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/aaron/workspaces/cliffhangers_ws/install
+[0.142s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/aaron/workspaces/automatic_ws/install
+[0.143s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/aaron/workspaces/miniur5e_ws/install
+[0.144s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 443 installed packages in /opt/ros/jazzy
+[0.145s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'climbbot3_description' build argument 'cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'climbbot3_description' build argument 'cmake_target' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'climbbot3_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'climbbot3_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'climbbot3_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'climbbot3_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'climbbot3_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'climbbot3_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'climbbot3_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.184s] DEBUG:colcon.colcon_core.verb:Building package 'climbbot3_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/aaron/workspaces/cliffhangers_ws/build/climbbot3_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description', 'merge_install': False, 'path': '/home/aaron/workspaces/cliffhangers_ws/src/climbbot3_description', 'symlink_install': False, 'test_result_base': None}
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'climbbot3_gz' build argument 'cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'climbbot3_gz' build argument 'cmake_target' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'climbbot3_gz' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'climbbot3_gz' build argument 'cmake_clean_cache' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'climbbot3_gz' build argument 'cmake_clean_first' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'climbbot3_gz' build argument 'cmake_force_configure' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'climbbot3_gz' build argument 'ament_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'climbbot3_gz' build argument 'catkin_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'climbbot3_gz' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.184s] DEBUG:colcon.colcon_core.verb:Building package 'climbbot3_gz' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/aaron/workspaces/cliffhangers_ws/build/climbbot3_gz', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz', 'merge_install': False, 'path': '/home/aaron/workspaces/cliffhangers_ws/src/climbbot3_gz', 'symlink_install': False, 'test_result_base': None}
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'climbing_robot_3_moveit' build argument 'cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'climbing_robot_3_moveit' build argument 'cmake_target' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'climbing_robot_3_moveit' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'climbing_robot_3_moveit' build argument 'cmake_clean_cache' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'climbing_robot_3_moveit' build argument 'cmake_clean_first' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'climbing_robot_3_moveit' build argument 'cmake_force_configure' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'climbing_robot_3_moveit' build argument 'ament_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'climbing_robot_3_moveit' build argument 'catkin_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'climbing_robot_3_moveit' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.185s] DEBUG:colcon.colcon_core.verb:Building package 'climbing_robot_3_moveit' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/aaron/workspaces/cliffhangers_ws/build/climbing_robot_3_moveit', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit', 'merge_install': False, 'path': '/home/aaron/workspaces/cliffhangers_ws/src/climbing_robot_3_moveit', 'symlink_install': False, 'test_result_base': None}
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'esp_comms' build argument 'cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'esp_comms' build argument 'cmake_target' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'esp_comms' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'esp_comms' build argument 'cmake_clean_cache' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'esp_comms' build argument 'cmake_clean_first' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'esp_comms' build argument 'cmake_force_configure' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'esp_comms' build argument 'ament_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'esp_comms' build argument 'catkin_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'esp_comms' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.185s] DEBUG:colcon.colcon_core.verb:Building package 'esp_comms' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/aaron/workspaces/cliffhangers_ws/build/esp_comms', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/aaron/workspaces/cliffhangers_ws/install/esp_comms', 'merge_install': False, 'path': '/home/aaron/workspaces/cliffhangers_ws/src/esp_comms', 'symlink_install': False, 'test_result_base': None}
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_target' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_clean_first' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_force_configure' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'ament_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.185s] DEBUG:colcon.colcon_core.verb:Building package 'pymoveit2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/aaron/workspaces/cliffhangers_ws/build/pymoveit2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2', 'merge_install': False, 'path': '/home/aaron/workspaces/cliffhangers_ws/src/pymoveit2', 'symlink_install': False, 'test_result_base': None}
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'realsense_pointcloud_py' build argument 'cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'realsense_pointcloud_py' build argument 'cmake_target' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'realsense_pointcloud_py' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'realsense_pointcloud_py' build argument 'cmake_clean_cache' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'realsense_pointcloud_py' build argument 'cmake_clean_first' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'realsense_pointcloud_py' build argument 'cmake_force_configure' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'realsense_pointcloud_py' build argument 'ament_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'realsense_pointcloud_py' build argument 'catkin_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'realsense_pointcloud_py' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.185s] DEBUG:colcon.colcon_core.verb:Building package 'realsense_pointcloud_py' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py', 'merge_install': False, 'path': '/home/aaron/workspaces/cliffhangers_ws/src/realsense_pointcloud', 'symlink_install': False, 'test_result_base': None}
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'climbbot3_moveit' build argument 'cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'climbbot3_moveit' build argument 'cmake_target' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'climbbot3_moveit' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'climbbot3_moveit' build argument 'cmake_clean_cache' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'climbbot3_moveit' build argument 'cmake_clean_first' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'climbbot3_moveit' build argument 'cmake_force_configure' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'climbbot3_moveit' build argument 'ament_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'climbbot3_moveit' build argument 'catkin_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'climbbot3_moveit' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.185s] DEBUG:colcon.colcon_core.verb:Building package 'climbbot3_moveit' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/aaron/workspaces/cliffhangers_ws/build/climbbot3_moveit', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit', 'merge_install': False, 'path': '/home/aaron/workspaces/cliffhangers_ws/src/climbbot3_moveit', 'symlink_install': False, 'test_result_base': None}
+[0.186s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.186s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.186s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/aaron/workspaces/cliffhangers_ws/src/climbbot3_description' with build type 'ament_cmake'
+[0.186s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/aaron/workspaces/cliffhangers_ws/src/climbbot3_description'
+[0.188s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.188s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.188s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.194s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/aaron/workspaces/cliffhangers_ws/src/climbbot3_gz' with build type 'ament_cmake'
+[0.194s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/aaron/workspaces/cliffhangers_ws/src/climbbot3_gz'
+[0.194s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.194s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.198s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/aaron/workspaces/cliffhangers_ws/src/climbing_robot_3_moveit' with build type 'ament_cmake'
+[0.198s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/aaron/workspaces/cliffhangers_ws/src/climbing_robot_3_moveit'
+[0.198s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.198s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.202s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/aaron/workspaces/cliffhangers_ws/src/esp_comms' with build type 'ament_python'
+[0.203s] Level 1:colcon.colcon_core.shell:create_environment_hook('esp_comms', 'ament_prefix_path')
+[0.203s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/esp_comms/share/esp_comms/hook/ament_prefix_path.ps1'
+[0.203s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aaron/workspaces/cliffhangers_ws/install/esp_comms/share/esp_comms/hook/ament_prefix_path.dsv'
+[0.203s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/esp_comms/share/esp_comms/hook/ament_prefix_path.sh'
+[0.204s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.204s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.207s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/aaron/workspaces/cliffhangers_ws/src/pymoveit2' with build type 'ament_cmake'
+[0.207s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/aaron/workspaces/cliffhangers_ws/src/pymoveit2'
+[0.208s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.208s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.217s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aaron/workspaces/cliffhangers_ws/build/climbbot3_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/aaron/workspaces/cliffhangers_ws/build/climbbot3_description -- -j5 -l5
+[0.219s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aaron/workspaces/cliffhangers_ws/build/climbbot3_gz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/aaron/workspaces/cliffhangers_ws/build/climbbot3_gz -- -j5 -l5
+[0.221s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aaron/workspaces/cliffhangers_ws/build/climbing_robot_3_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/aaron/workspaces/cliffhangers_ws/build/climbing_robot_3_moveit -- -j5 -l5
+[0.379s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/aaron/workspaces/cliffhangers_ws/src/esp_comms'
+[0.379s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.379s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.386s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aaron/workspaces/cliffhangers_ws/build/climbbot3_gz' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/aaron/workspaces/cliffhangers_ws/build/climbbot3_gz -- -j5 -l5
+[0.395s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aaron/workspaces/cliffhangers_ws/build/climbbot3_gz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/aaron/workspaces/cliffhangers_ws/build/climbbot3_gz
+[0.398s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aaron/workspaces/cliffhangers_ws/build/climbbot3_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/aaron/workspaces/cliffhangers_ws/build/climbbot3_description -- -j5 -l5
+[0.398s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aaron/workspaces/cliffhangers_ws/build/climbbot3_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/aaron/workspaces/cliffhangers_ws/build/climbbot3_description
+[0.401s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aaron/workspaces/cliffhangers_ws/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/aaron/workspaces/cliffhangers_ws/build/pymoveit2 -- -j5 -l5
+[0.402s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aaron/workspaces/cliffhangers_ws/build/climbing_robot_3_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/aaron/workspaces/cliffhangers_ws/build/climbing_robot_3_moveit -- -j5 -l5
+[0.402s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aaron/workspaces/cliffhangers_ws/build/climbing_robot_3_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/aaron/workspaces/cliffhangers_ws/build/climbing_robot_3_moveit
+[0.427s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(climbbot3_description)
+[0.432s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description' for CMake module files
+[0.432s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description' for CMake config files
+[0.432s] Level 1:colcon.colcon_core.shell:create_environment_hook('climbbot3_description', 'cmake_prefix_path')
+[0.432s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description/hook/cmake_prefix_path.ps1'
+[0.433s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description/hook/cmake_prefix_path.dsv'
+[0.433s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description/hook/cmake_prefix_path.sh'
+[0.433s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/bin'
+[0.433s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/lib/pkgconfig/climbbot3_description.pc'
+[0.434s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/lib/python3.12/site-packages'
+[0.434s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/bin'
+[0.434s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description/package.ps1'
+[0.437s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description/package.dsv'
+[0.438s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description/package.sh'
+[0.438s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description/package.bash'
+[0.439s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description/package.zsh'
+[0.442s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/colcon-core/packages/climbbot3_description)
+[0.442s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(climbbot3_description)
+[0.443s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description' for CMake module files
+[0.445s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description' for CMake config files
+[0.451s] Level 1:colcon.colcon_core.shell:create_environment_hook('climbbot3_description', 'cmake_prefix_path')
+[0.451s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description/hook/cmake_prefix_path.ps1'
+[0.452s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description/hook/cmake_prefix_path.dsv'
+[0.453s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description/hook/cmake_prefix_path.sh'
+[0.453s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/bin'
+[0.453s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/lib/pkgconfig/climbbot3_description.pc'
+[0.454s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/lib/python3.12/site-packages'
+[0.454s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/bin'
+[0.454s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description/package.ps1'
+[0.455s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description/package.dsv'
+[0.456s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description/package.sh'
+[0.458s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description/package.bash'
+[0.459s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/climbbot3_description/package.zsh'
+[0.461s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description/share/colcon-core/packages/climbbot3_description)
+[0.465s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(climbing_robot_3_moveit)
+[0.465s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit' for CMake module files
+[0.469s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit' for CMake config files
+[0.472s] Level 1:colcon.colcon_core.shell:create_environment_hook('climbing_robot_3_moveit', 'cmake_prefix_path')
+[0.472s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit/share/climbing_robot_3_moveit/hook/cmake_prefix_path.ps1'
+[0.473s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit/share/climbing_robot_3_moveit/hook/cmake_prefix_path.dsv'
+[0.475s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit/share/climbing_robot_3_moveit/hook/cmake_prefix_path.sh'
+[0.477s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit/bin'
+[0.477s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit/lib/pkgconfig/climbing_robot_3_moveit.pc'
+[0.477s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit/lib/python3.12/site-packages'
+[0.478s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit/bin'
+[0.479s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit/share/climbing_robot_3_moveit/package.ps1'
+[0.481s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit/share/climbing_robot_3_moveit/package.dsv'
+[0.483s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit/share/climbing_robot_3_moveit/package.sh'
+[0.486s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit/share/climbing_robot_3_moveit/package.bash'
+[0.487s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit/share/climbing_robot_3_moveit/package.zsh'
+[0.487s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit/share/colcon-core/packages/climbing_robot_3_moveit)
+[0.488s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(climbing_robot_3_moveit)
+[0.488s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit' for CMake module files
+[0.488s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit' for CMake config files
+[0.488s] Level 1:colcon.colcon_core.shell:create_environment_hook('climbing_robot_3_moveit', 'cmake_prefix_path')
+[0.488s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit/share/climbing_robot_3_moveit/hook/cmake_prefix_path.ps1'
+[0.489s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit/share/climbing_robot_3_moveit/hook/cmake_prefix_path.dsv'
+[0.492s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit/share/climbing_robot_3_moveit/hook/cmake_prefix_path.sh'
+[0.492s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit/bin'
+[0.492s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit/lib/pkgconfig/climbing_robot_3_moveit.pc'
+[0.492s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit/lib/python3.12/site-packages'
+[0.492s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit/bin'
+[0.492s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit/share/climbing_robot_3_moveit/package.ps1'
+[0.493s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit/share/climbing_robot_3_moveit/package.dsv'
+[0.493s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit/share/climbing_robot_3_moveit/package.sh'
+[0.493s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit/share/climbing_robot_3_moveit/package.bash'
+[0.493s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit/share/climbing_robot_3_moveit/package.zsh'
+[0.493s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit/share/colcon-core/packages/climbing_robot_3_moveit)
+[0.494s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/aaron/workspaces/cliffhangers_ws/src/realsense_pointcloud' with build type 'ament_python'
+[0.494s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_pointcloud_py', 'ament_prefix_path')
+[0.494s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/share/realsense_pointcloud_py/hook/ament_prefix_path.ps1'
+[0.494s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/share/realsense_pointcloud_py/hook/ament_prefix_path.dsv'
+[0.494s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/share/realsense_pointcloud_py/hook/ament_prefix_path.sh'
+[0.495s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.495s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.495s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aaron/workspaces/cliffhangers_ws/build/climbbot3_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/aaron/workspaces/cliffhangers_ws/build/climbbot3_description
+[0.496s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aaron/workspaces/cliffhangers_ws/build/climbing_robot_3_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/aaron/workspaces/cliffhangers_ws/build/climbing_robot_3_moveit
+[0.500s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/aaron/workspaces/cliffhangers_ws/src/climbbot3_moveit' with build type 'ament_cmake'
+[0.501s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/aaron/workspaces/cliffhangers_ws/src/climbbot3_moveit'
+[0.501s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.501s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.505s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(climbbot3_gz)
+[0.506s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aaron/workspaces/cliffhangers_ws/build/climbbot3_gz' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/aaron/workspaces/cliffhangers_ws/build/climbbot3_gz
+[0.506s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz' for CMake module files
+[0.506s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz' for CMake config files
+[0.506s] Level 1:colcon.colcon_core.shell:create_environment_hook('climbbot3_gz', 'cmake_prefix_path')
+[0.506s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz/share/climbbot3_gz/hook/cmake_prefix_path.ps1'
+[0.507s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz/share/climbbot3_gz/hook/cmake_prefix_path.dsv'
+[0.507s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz/share/climbbot3_gz/hook/cmake_prefix_path.sh'
+[0.507s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz/bin'
+[0.507s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz/lib/pkgconfig/climbbot3_gz.pc'
+[0.508s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz/lib/python3.12/site-packages'
+[0.508s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz/bin'
+[0.508s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz/share/climbbot3_gz/package.ps1'
+[0.508s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz/share/climbbot3_gz/package.dsv'
+[0.508s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz/share/climbbot3_gz/package.sh'
+[0.509s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz/share/climbbot3_gz/package.bash'
+[0.509s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz/share/climbbot3_gz/package.zsh'
+[0.509s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz/share/colcon-core/packages/climbbot3_gz)
+[0.510s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(climbbot3_gz)
+[0.510s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz' for CMake module files
+[0.510s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz' for CMake config files
+[0.510s] Level 1:colcon.colcon_core.shell:create_environment_hook('climbbot3_gz', 'cmake_prefix_path')
+[0.510s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz/share/climbbot3_gz/hook/cmake_prefix_path.ps1'
+[0.511s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz/share/climbbot3_gz/hook/cmake_prefix_path.dsv'
+[0.511s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz/share/climbbot3_gz/hook/cmake_prefix_path.sh'
+[0.511s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz/bin'
+[0.511s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz/lib/pkgconfig/climbbot3_gz.pc'
+[0.511s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz/lib/python3.12/site-packages'
+[0.511s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz/bin'
+[0.511s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz/share/climbbot3_gz/package.ps1'
+[0.512s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz/share/climbbot3_gz/package.dsv'
+[0.512s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz/share/climbbot3_gz/package.sh'
+[0.512s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz/share/climbbot3_gz/package.bash'
+[0.512s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz/share/climbbot3_gz/package.zsh'
+[0.512s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz/share/colcon-core/packages/climbbot3_gz)
+[0.664s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/aaron/workspaces/cliffhangers_ws/src/realsense_pointcloud'
+[0.664s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.664s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.671s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aaron/workspaces/cliffhangers_ws/build/climbbot3_moveit': CMAKE_PREFIX_PATH=/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description:/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2:/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit:/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit:/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz:/home/aaron/workspaces/automatic_ws/install/mycobot_moveit_config:/home/aaron/workspaces/automatic_ws/install/mycobot_gazebo:/home/aaron/workspaces/automatic_ws/install/mycobot_description:/home/aaron/workspaces/automatic_ws/install/mycobot_bringup:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco_interfaces:/home/aaron/workspaces/miniur5e_ws/install/mini_ur5e_moveit:/home/aaron/workspaces/miniur5e_ws/install/mini_ur5e:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/aaron/workspaces/cliffhangers_ws/build/climbbot3_moveit -- -j5 -l5
+[0.694s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aaron/workspaces/cliffhangers_ws/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/aaron/workspaces/cliffhangers_ws/build/pymoveit2 -- -j5 -l5
+[0.695s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aaron/workspaces/cliffhangers_ws/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/aaron/workspaces/cliffhangers_ws/build/pymoveit2
+[0.733s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aaron/workspaces/cliffhangers_ws/build/climbbot3_moveit' returned '0': CMAKE_PREFIX_PATH=/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description:/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2:/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit:/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit:/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz:/home/aaron/workspaces/automatic_ws/install/mycobot_moveit_config:/home/aaron/workspaces/automatic_ws/install/mycobot_gazebo:/home/aaron/workspaces/automatic_ws/install/mycobot_description:/home/aaron/workspaces/automatic_ws/install/mycobot_bringup:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco_interfaces:/home/aaron/workspaces/miniur5e_ws/install/mini_ur5e_moveit:/home/aaron/workspaces/miniur5e_ws/install/mini_ur5e:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/aaron/workspaces/cliffhangers_ws/build/climbbot3_moveit -- -j5 -l5
+[0.733s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aaron/workspaces/cliffhangers_ws/build/climbbot3_moveit': CMAKE_PREFIX_PATH=/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description:/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2:/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit:/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit:/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz:/home/aaron/workspaces/automatic_ws/install/mycobot_moveit_config:/home/aaron/workspaces/automatic_ws/install/mycobot_gazebo:/home/aaron/workspaces/automatic_ws/install/mycobot_description:/home/aaron/workspaces/automatic_ws/install/mycobot_bringup:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco_interfaces:/home/aaron/workspaces/miniur5e_ws/install/mini_ur5e_moveit:/home/aaron/workspaces/miniur5e_ws/install/mini_ur5e:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/aaron/workspaces/cliffhangers_ws/build/climbbot3_moveit
+[0.752s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(climbbot3_moveit)
+[0.753s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit' for CMake module files
+[0.753s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit' for CMake config files
+[0.753s] Level 1:colcon.colcon_core.shell:create_environment_hook('climbbot3_moveit', 'cmake_prefix_path')
+[0.753s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/hook/cmake_prefix_path.ps1'
+[0.754s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/hook/cmake_prefix_path.dsv'
+[0.754s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/hook/cmake_prefix_path.sh'
+[0.754s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/lib'
+[0.754s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/bin'
+[0.754s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/lib/pkgconfig/climbbot3_moveit.pc'
+[0.755s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/lib/python3.12/site-packages'
+[0.755s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/bin'
+[0.758s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/package.ps1'
+[0.758s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/package.dsv'
+[0.758s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/package.sh'
+[0.759s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/package.bash'
+[0.759s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/package.zsh'
+[0.759s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/colcon-core/packages/climbbot3_moveit)
+[0.759s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(climbbot3_moveit)
+[0.759s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit' for CMake module files
+[0.760s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit' for CMake config files
+[0.760s] Level 1:colcon.colcon_core.shell:create_environment_hook('climbbot3_moveit', 'cmake_prefix_path')
+[0.760s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/hook/cmake_prefix_path.ps1'
+[0.761s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/hook/cmake_prefix_path.dsv'
+[0.761s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aaron/workspaces/cliffhangers_ws/build/climbbot3_moveit' returned '0': CMAKE_PREFIX_PATH=/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_description:/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2:/home/aaron/workspaces/cliffhangers_ws/install/climbing_robot_3_moveit:/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit:/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_gz:/home/aaron/workspaces/automatic_ws/install/mycobot_moveit_config:/home/aaron/workspaces/automatic_ws/install/mycobot_gazebo:/home/aaron/workspaces/automatic_ws/install/mycobot_description:/home/aaron/workspaces/automatic_ws/install/mycobot_bringup:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco_interfaces:/home/aaron/workspaces/miniur5e_ws/install/mini_ur5e_moveit:/home/aaron/workspaces/miniur5e_ws/install/mini_ur5e:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/aaron/workspaces/cliffhangers_ws/build/climbbot3_moveit
+[0.764s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/hook/cmake_prefix_path.sh'
+[0.764s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/lib'
+[0.764s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/bin'
+[0.764s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/lib/pkgconfig/climbbot3_moveit.pc'
+[0.765s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/lib/python3.12/site-packages'
+[0.765s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/bin'
+[0.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/package.ps1'
+[0.765s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/package.dsv'
+[0.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/package.sh'
+[0.766s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/package.bash'
+[0.766s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/climbbot3_moveit/package.zsh'
+[0.766s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aaron/workspaces/cliffhangers_ws/install/climbbot3_moveit/share/colcon-core/packages/climbbot3_moveit)
+[0.797s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pymoveit2)
+[0.798s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2' for CMake module files
+[0.798s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2' for CMake config files
+[0.798s] Level 1:colcon.colcon_core.shell:create_environment_hook('pymoveit2', 'cmake_prefix_path')
+[0.798s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/hook/cmake_prefix_path.ps1'
+[0.799s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/hook/cmake_prefix_path.dsv'
+[0.799s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/hook/cmake_prefix_path.sh'
+[0.802s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aaron/workspaces/cliffhangers_ws/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms:/home/aaron/workspaces/miniur5e_ws/install/ros2_aruco:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/aaron/workspaces/cliffhangers_ws/build/pymoveit2
+[0.809s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib'
+[0.809s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/bin'
+[0.809s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/pkgconfig/pymoveit2.pc'
+[0.810s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages'
+[0.810s] Level 1:colcon.colcon_core.shell:create_environment_hook('pymoveit2', 'pythonpath')
+[0.810s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/hook/pythonpath.ps1'
+[0.811s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/hook/pythonpath.dsv'
+[0.811s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/hook/pythonpath.sh'
+[0.812s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/bin'
+[0.812s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/package.ps1'
+[0.812s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/package.dsv'
+[0.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/package.sh'
+[0.816s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/package.bash'
+[0.817s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/package.zsh'
+[0.817s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/colcon-core/packages/pymoveit2)
+[0.817s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pymoveit2)
+[0.817s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2' for CMake module files
+[0.820s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2' for CMake config files
+[0.820s] Level 1:colcon.colcon_core.shell:create_environment_hook('pymoveit2', 'cmake_prefix_path')
+[0.820s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/hook/cmake_prefix_path.ps1'
+[0.820s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/hook/cmake_prefix_path.dsv'
+[0.820s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/hook/cmake_prefix_path.sh'
+[0.821s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib'
+[0.821s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/bin'
+[0.821s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/pkgconfig/pymoveit2.pc'
+[0.821s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/lib/python3.12/site-packages'
+[0.821s] Level 1:colcon.colcon_core.shell:create_environment_hook('pymoveit2', 'pythonpath')
+[0.821s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/hook/pythonpath.ps1'
+[0.821s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/hook/pythonpath.dsv'
+[0.822s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/hook/pythonpath.sh'
+[0.822s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/bin'
+[0.822s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/package.ps1'
+[0.823s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/package.dsv'
+[0.823s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/package.sh'
+[0.823s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/package.bash'
+[0.823s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/pymoveit2/package.zsh'
+[0.824s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aaron/workspaces/cliffhangers_ws/install/pymoveit2/share/colcon-core/packages/pymoveit2)
+[0.913s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aaron/workspaces/cliffhangers_ws/src/esp_comms': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/aaron/workspaces/cliffhangers_ws/build/esp_comms/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/esp_comms build --build-base /home/aaron/workspaces/cliffhangers_ws/build/esp_comms/build install --record /home/aaron/workspaces/cliffhangers_ws/build/esp_comms/install.log --single-version-externally-managed install_data
+[1.143s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aaron/workspaces/cliffhangers_ws/src/realsense_pointcloud': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/realsense_pointcloud_py build --build-base /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/build install --record /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/install.log --single-version-externally-managed install_data
+[1.270s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/esp_comms' for CMake module files
+[1.270s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aaron/workspaces/cliffhangers_ws/src/esp_comms' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/aaron/workspaces/cliffhangers_ws/build/esp_comms/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aaron/workspaces/cliffhangers_ws/install/esp_comms/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/esp_comms build --build-base /home/aaron/workspaces/cliffhangers_ws/build/esp_comms/build install --record /home/aaron/workspaces/cliffhangers_ws/build/esp_comms/install.log --single-version-externally-managed install_data
+[1.271s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/esp_comms' for CMake config files
+[1.271s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/esp_comms/lib'
+[1.271s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/esp_comms/bin'
+[1.271s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/esp_comms/lib/pkgconfig/esp_comms.pc'
+[1.271s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/esp_comms/lib/python3.12/site-packages'
+[1.272s] Level 1:colcon.colcon_core.shell:create_environment_hook('esp_comms', 'pythonpath')
+[1.272s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/esp_comms/share/esp_comms/hook/pythonpath.ps1'
+[1.272s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aaron/workspaces/cliffhangers_ws/install/esp_comms/share/esp_comms/hook/pythonpath.dsv'
+[1.272s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/esp_comms/share/esp_comms/hook/pythonpath.sh'
+[1.273s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/esp_comms/bin'
+[1.273s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(esp_comms)
+[1.273s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/esp_comms/share/esp_comms/package.ps1'
+[1.273s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aaron/workspaces/cliffhangers_ws/install/esp_comms/share/esp_comms/package.dsv'
+[1.273s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/esp_comms/share/esp_comms/package.sh'
+[1.273s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/esp_comms/share/esp_comms/package.bash'
+[1.274s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/esp_comms/share/esp_comms/package.zsh'
+[1.274s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aaron/workspaces/cliffhangers_ws/install/esp_comms/share/colcon-core/packages/esp_comms)
+[1.505s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py' for CMake module files
+[1.505s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aaron/workspaces/cliffhangers_ws/src/realsense_pointcloud' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/realsense_pointcloud_py build --build-base /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/build install --record /home/aaron/workspaces/cliffhangers_ws/build/realsense_pointcloud_py/install.log --single-version-externally-managed install_data
+[1.506s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py' for CMake config files
+[1.506s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib'
+[1.506s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/bin'
+[1.506s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/pkgconfig/realsense_pointcloud_py.pc'
+[1.507s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/lib/python3.12/site-packages'
+[1.507s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_pointcloud_py', 'pythonpath')
+[1.507s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/share/realsense_pointcloud_py/hook/pythonpath.ps1'
+[1.507s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/share/realsense_pointcloud_py/hook/pythonpath.dsv'
+[1.507s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/share/realsense_pointcloud_py/hook/pythonpath.sh'
+[1.508s] Level 1:colcon.colcon_core.environment:checking '/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/bin'
+[1.508s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense_pointcloud_py)
+[1.508s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/share/realsense_pointcloud_py/package.ps1'
+[1.508s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/share/realsense_pointcloud_py/package.dsv'
+[1.509s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/share/realsense_pointcloud_py/package.sh'
+[1.509s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/share/realsense_pointcloud_py/package.bash'
+[1.509s] INFO:colcon.colcon_core.shell:Creating package script '/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/share/realsense_pointcloud_py/package.zsh'
+[1.509s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aaron/workspaces/cliffhangers_ws/install/realsense_pointcloud_py/share/colcon-core/packages/realsense_pointcloud_py)
+[1.509s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.510s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.510s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.510s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.514s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.515s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.515s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.528s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.528s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aaron/workspaces/cliffhangers_ws/install/local_setup.ps1'
+[1.529s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/aaron/workspaces/cliffhangers_ws/install/_local_setup_util_ps1.py'
+[1.530s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aaron/workspaces/cliffhangers_ws/install/setup.ps1'
+[1.531s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aaron/workspaces/cliffhangers_ws/install/local_setup.sh'
+[1.531s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/aaron/workspaces/cliffhangers_ws/install/_local_setup_util_sh.py'
+[1.531s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aaron/workspaces/cliffhangers_ws/install/setup.sh'
+[1.532s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aaron/workspaces/cliffhangers_ws/install/local_setup.bash'
+[1.533s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aaron/workspaces/cliffhangers_ws/install/setup.bash'
+[1.534s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aaron/workspaces/cliffhangers_ws/install/local_setup.zsh'
+[1.534s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aaron/workspaces/cliffhangers_ws/install/setup.zsh'
