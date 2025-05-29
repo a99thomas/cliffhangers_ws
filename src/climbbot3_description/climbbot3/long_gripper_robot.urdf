@@ -2,6 +2,13 @@
 <!-- Generated using onshape-to-robot -->
 <!-- Onshape document_id: 67456fa7f995371c54d81f33 -->
 <robot name="climbbot3">
+
+<!-- <link name="base_link"/>
+
+<joint name="base_to_assm7" type="fixed">
+  <parent link="base_link"/>
+  <child link="assembly_7"/>
+</joint> -->
   <!-- Link assembly_7 -->
   <link name="assembly_7">
     <inertial>
@@ -99,7 +106,7 @@
     </inertial>
     <!-- Part ds3225mg_servo_25kg_4_8_6_8v -->
     <visual>
-      <origin xyz="0 0 0" rpy="2.90254e-33 -4.41058e-33 4.2735e-33"/>
+      <origin xyz="0 0 0" rpy="-1.63941e-45 -2.31229e-43 5.3455e-57"/>
       <geometry>
         <mesh filename="package://climbbot3_description/climbbot3/assets/ds3225mg_servo_25kg_4_8_6_8v.stl"/>
       </geometry>
@@ -108,7 +115,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="2.90254e-33 -4.41058e-33 4.2735e-33"/>
+      <origin xyz="0 0 0" rpy="-1.63941e-45 -2.31229e-43 5.3455e-57"/>
       <geometry>
         <mesh filename="package://climbbot3_description/climbbot3/assets/ds3225mg_servo_25kg_4_8_6_8v.stl"/>
       </geometry>
@@ -219,7 +226,7 @@
     </collision>
     <!-- Part servo_arm_horn_25t_aluminium_3 -->
     <visual>
-      <origin xyz="0 0 0.00105" rpy="-3.14159 2.70409e-30 -8.20461e-30"/>
+      <origin xyz="4.33681e-19 0 0.00105" rpy="-3.14159 -7.53975e-30 1.35143e-30"/>
       <geometry>
         <mesh filename="package://climbbot3_description/climbbot3/assets/servo_arm_horn_25t_aluminium.stl"/>
       </geometry>
@@ -228,7 +235,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 0.00105" rpy="-3.14159 2.70409e-30 -8.20461e-30"/>
+      <origin xyz="4.33681e-19 0 0.00105" rpy="-3.14159 -7.53975e-30 1.35143e-30"/>
       <geometry>
         <mesh filename="package://climbbot3_description/climbbot3/assets/servo_arm_horn_25t_aluminium.stl"/>
       </geometry>
@@ -259,7 +266,7 @@
     </inertial>
     <!-- Part part_1 -->
     <visual>
-      <origin xyz="2.77556e-17 -1.38778e-17 -0.18" rpy="1.5708 1.88229e-30 0"/>
+      <origin xyz="0 -1.38778e-17 -0.18" rpy="1.5708 6.42508e-31 -1.26218e-29"/>
       <geometry>
         <mesh filename="package://climbbot3_description/climbbot3/assets/part_1.stl"/>
       </geometry>
@@ -268,7 +275,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="2.77556e-17 -1.38778e-17 -0.18" rpy="1.5708 1.88229e-30 0"/>
+      <origin xyz="0 -1.38778e-17 -0.18" rpy="1.5708 6.42508e-31 -1.26218e-29"/>
       <geometry>
         <mesh filename="package://climbbot3_description/climbbot3/assets/part_1.stl"/>
       </geometry>
@@ -283,7 +290,7 @@
     </inertial>
     <!-- Part part_4 -->
     <visual>
-      <origin xyz="0 -6.93889e-18 -0.18" rpy="1.5708 -1.51423e-30 2.40613e-31"/>
+      <origin xyz="0 0 -0.18" rpy="1.5708 1.18557e-30 0"/>
       <geometry>
         <mesh filename="package://climbbot3_description/climbbot3/assets/part_4.stl"/>
       </geometry>
@@ -292,7 +299,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0 -6.93889e-18 -0.18" rpy="1.5708 -1.51423e-30 2.40613e-31"/>
+      <origin xyz="0 0 -0.18" rpy="1.5708 1.18557e-30 0"/>
       <geometry>
         <mesh filename="package://climbbot3_description/climbbot3/assets/part_4.stl"/>
       </geometry>
@@ -301,13 +308,29 @@
   <!-- Link assembly_12 -->
   <link name="assembly_12">
     <inertial>
-      <origin xyz="-3.31864e-06 0.00632185 -0.0532591" rpy="0 0 0"/>
-      <mass value="0.101166"/>
-      <inertia ixx="0.00033024" ixy="-7.54605e-10" ixz="-6.95952e-08" iyy="0.000304095" iyz="-3.81889e-05" izz="5.27053e-05"/>
+      <origin xyz="-2.19526e-06 0.00540004 -0.0130509" rpy="0 0 0"/>
+      <mass value="0.156296"/>
+      <inertia ixx="0.000776836" ixy="-5.10682e-10" ixz="-8.26793e-08" iyy="0.000766427" iyz="-6.26958e-05" izz="5.24529e-05"/>
     </inertial>
+    <!-- Part gripper_hook -->
+    <visual>
+      <origin xyz="-2.33147e-15 0.0419282 0.045" rpy="-3.7605e-15 5.41699e-15 6.12323e-17"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/gripper_hook.stl"/>
+      </geometry>
+      <material name="gripper_hook_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-2.33147e-15 0.0419282 0.045" rpy="-3.7605e-15 5.41699e-15 6.12323e-17"/>
+      <geometry>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/gripper_hook.stl"/>
+      </geometry>
+    </collision>
     <!-- Part part_6 -->
     <visual>
-      <origin xyz="-2.77556e-17 -6.93889e-18 -0.184" rpy="1.5708 7.47422e-31 0"/>
+      <origin xyz="0 -6.93889e-18 -0.184" rpy="1.5708 7.28393e-31 0"/>
       <geometry>
         <mesh filename="package://climbbot3_description/climbbot3/assets/part_6.stl"/>
       </geometry>
@@ -316,31 +339,15 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="-2.77556e-17 -6.93889e-18 -0.184" rpy="1.5708 7.47422e-31 0"/>
+      <origin xyz="2.77556e-17 0 -0.184" rpy="1.5708 -1.52305e-30 -7.472e-31"/>
       <geometry>
         <mesh filename="package://climbbot3_description/climbbot3/assets/part_6.stl"/>
-      </geometry>
-    </collision>
-    <!-- Part flat_gripper -->
-    <visual>
-      <origin xyz="-2.35922e-15 0.0419282 0.045" rpy="5.04193e-16 -9.82966e-18 -2.83277e-16"/>
-      <geometry>
-        <mesh filename="package://climbbot3_description/climbbot3/assets/flat_gripper.stl"/>
-      </geometry>
-      <material name="flat_gripper_material">
-        <color rgba="0.615686 0.811765 0.929412 1.0"/>
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-2.35922e-15 0.0419282 0.045" rpy="5.04193e-16 -9.82966e-18 -2.83277e-16"/>
-      <geometry>
-        <mesh filename="package://climbbot3_description/climbbot3/assets/flat_gripper.stl"/>
       </geometry>
     </collision>
   </link>
   <!-- Joint from part_4 to assembly_12 -->
   <joint name="r3_3" type="prismatic">
-    <origin xyz="-1.66533e-16 4.85723e-17 0.002" rpy="6.09053e-17 4.63681e-18 7.28027e-17"/>
+    <origin xyz="-3.05311e-16 0 0.002" rpy="-4.11758e-30 3.50237e-15 -4.08619e-15"/>
     <parent link="part_4"/>
     <child link="assembly_12"/>
     <axis xyz="0 0 1"/>
@@ -349,7 +356,7 @@
   </joint>
   <!-- Joint from part_1 to part_4 -->
   <joint name="r3_2" type="prismatic">
-    <origin xyz="2.22045e-16 0 -2.10942e-15" rpy="6.11244e-25 -1.79856e-14 -7.30202e-17"/>
+    <origin xyz="3.05311e-16 0 5.71765e-15" rpy="6.79253e-26 -1.9984e-15 -1.98441e-15"/>
     <parent link="part_1"/>
     <child link="part_4"/>
     <axis xyz="0 0 1"/>
@@ -374,7 +381,7 @@
   </joint>
   <!-- Joint from assembly_7 to assembly_9 -->
   <joint name="r1" type="revolute">
-    <origin xyz="0.180853 0.1192 0.0286776" rpy="8.65347e-17 1.06056e-16 -1.34121e-16"/>
+    <origin xyz="0.180853 0.1192 0.0286776" rpy="-5.78703e-29 5.42099e-27 -5.24704e-14"/>
     <parent link="assembly_7"/>
     <child link="assembly_9"/>
     <axis xyz="0 0 1"/>
@@ -445,7 +452,7 @@
     </inertial>
     <!-- Part servo_arm_horn_25t_aluminium_4 -->
     <visual>
-      <origin xyz="0 0 0.00105" rpy="3.14159 -0 0"/>
+      <origin xyz="-4.33681e-19 0 0.00105" rpy="3.14159 9.16604e-30 -4.07924e-31"/>
       <geometry>
         <mesh filename="package://climbbot3_description/climbbot3/assets/servo_arm_horn_25t_aluminium.stl"/>
       </geometry>
@@ -454,14 +461,14 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 0.00105" rpy="3.14159 -0 0"/>
+      <origin xyz="-4.33681e-19 0 0.00105" rpy="3.14159 9.16604e-30 -4.07924e-31"/>
       <geometry>
         <mesh filename="package://climbbot3_description/climbbot3/assets/servo_arm_horn_25t_aluminium.stl"/>
       </geometry>
     </collision>
     <!-- Part part_22_2 -->
     <visual>
-      <origin xyz="0.0984855 0.00775 0.0101353" rpy="3.14159 0.40526 5.95139e-14"/>
+      <origin xyz="0.0984855 0.00775 0.0101353" rpy="3.14159 0.40526 2.3667e-14"/>
       <geometry>
         <mesh filename="package://climbbot3_description/climbbot3/assets/part_22.stl"/>
       </geometry>
@@ -470,14 +477,14 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0.0984855 0.00775 0.0101353" rpy="3.14159 0.40526 5.95139e-14"/>
+      <origin xyz="0.0984855 0.00775 0.0101353" rpy="3.14159 0.40526 2.3667e-14"/>
       <geometry>
         <mesh filename="package://climbbot3_description/climbbot3/assets/part_22.stl"/>
       </geometry>
     </collision>
     <!-- Part part_17_2 -->
     <visual>
-      <origin xyz="0.0365086 0.0055 -0.0200863" rpy="3.14159 -1.31266 2.04082e-12"/>
+      <origin xyz="0.0365086 0.0055 -0.0200863" rpy="3.14159 -1.31266 1.96048e-12"/>
       <geometry>
         <mesh filename="package://climbbot3_description/climbbot3/assets/part_17.stl"/>
       </geometry>
@@ -486,7 +493,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0.0365086 0.0055 -0.0200863" rpy="3.14159 -1.31266 2.04082e-12"/>
+      <origin xyz="0.0365086 0.0055 -0.0200863" rpy="3.14159 -1.31266 1.96048e-12"/>
       <geometry>
         <mesh filename="package://climbbot3_description/climbbot3/assets/part_17.stl"/>
       </geometry>
@@ -509,7 +516,7 @@
     </collision>
     <!-- Part spur_gear__22_teeth_2 -->
     <visual>
-      <origin xyz="0.0984855 0.00775 0.0101353" rpy="3.14159 0.40526 5.97555e-14"/>
+      <origin xyz="0.0984855 0.00775 0.0101353" rpy="3.14159 0.40526 2.34254e-14"/>
       <geometry>
         <mesh filename="package://climbbot3_description/climbbot3/assets/spur_gear__22_teeth.stl"/>
       </geometry>
@@ -518,14 +525,14 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0.0984855 0.00775 0.0101353" rpy="3.14159 0.40526 5.97555e-14"/>
+      <origin xyz="0.0984855 0.00775 0.0101353" rpy="3.14159 0.40526 2.34254e-14"/>
       <geometry>
         <mesh filename="package://climbbot3_description/climbbot3/assets/spur_gear__22_teeth.stl"/>
       </geometry>
     </collision>
     <!-- Part spur_gear__23_teeth_2 -->
     <visual>
-      <origin xyz="0.0349999 0.0335 -0.03171" rpy="-3.08309e-13 -9.44245e-14 3.98792e-13"/>
+      <origin xyz="0.0349999 0.0335 -0.03171" rpy="-3.24185e-13 3.35287e-14 1.99396e-13"/>
       <geometry>
         <mesh filename="package://climbbot3_description/climbbot3/assets/spur_gear__23_teeth.stl"/>
       </geometry>
@@ -534,7 +541,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0.0349999 0.0335 -0.03171" rpy="-3.08309e-13 -9.44245e-14 3.98792e-13"/>
+      <origin xyz="0.0349999 0.0335 -0.03171" rpy="-3.24185e-13 3.35287e-14 1.99396e-13"/>
       <geometry>
         <mesh filename="package://climbbot3_description/climbbot3/assets/spur_gear__23_teeth.stl"/>
       </geometry>
@@ -549,7 +556,7 @@
     </inertial>
     <!-- Part part_1_2 -->
     <visual>
-      <origin xyz="1.38778e-17 -1.38778e-17 -0.18" rpy="1.5708 3.78506e-30 -6.31089e-30"/>
+      <origin xyz="1.38778e-17 -1.38778e-17 -0.18" rpy="1.5708 5.07325e-31 -6.31089e-30"/>
       <geometry>
         <mesh filename="package://climbbot3_description/climbbot3/assets/part_1.stl"/>
       </geometry>
@@ -558,7 +565,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="1.38778e-17 -1.38778e-17 -0.18" rpy="1.5708 3.78506e-30 -6.31089e-30"/>
+      <origin xyz="1.38778e-17 -1.38778e-17 -0.18" rpy="1.5708 5.07325e-31 -6.31089e-30"/>
       <geometry>
         <mesh filename="package://climbbot3_description/climbbot3/assets/part_1.stl"/>
       </geometry>
@@ -573,7 +580,7 @@
     </inertial>
     <!-- Part part_4_2 -->
     <visual>
-      <origin xyz="0 0 -0.18" rpy="1.5708 6.0415e-30 -5.12751e-31"/>
+      <origin xyz="0 -6.93889e-18 -0.18" rpy="1.5708 3.1765e-31 -4.91298e-30"/>
       <geometry>
         <mesh filename="package://climbbot3_description/climbbot3/assets/part_4.stl"/>
       </geometry>
@@ -582,7 +589,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 -0.18" rpy="1.5708 6.0415e-30 -5.12751e-31"/>
+      <origin xyz="0 -6.93889e-18 -0.18" rpy="1.5708 3.1765e-31 -4.91298e-30"/>
       <geometry>
         <mesh filename="package://climbbot3_description/climbbot3/assets/part_4.stl"/>
       </geometry>
@@ -591,29 +598,29 @@
   <!-- Link assembly_11 -->
   <link name="assembly_11">
     <inertial>
-      <origin xyz="-3.31864e-06 0.00632185 -0.0532591" rpy="0 0 0"/>
-      <mass value="0.101166"/>
-      <inertia ixx="0.00033024" ixy="-7.54605e-10" ixz="-6.95952e-08" iyy="0.000304095" iyz="-3.81889e-05" izz="5.27053e-05"/>
+      <origin xyz="-2.19526e-06 0.00540004 -0.0130509" rpy="0 0 0"/>
+      <mass value="0.156296"/>
+      <inertia ixx="0.000776836" ixy="-5.10682e-10" ixz="-8.26793e-08" iyy="0.000766427" iyz="-6.26958e-05" izz="5.24529e-05"/>
     </inertial>
-    <!-- Part flat_gripper_2 -->
+    <!-- Part gripper_hook_2 -->
     <visual>
-      <origin xyz="1.7833e-14 0.0419282 0.045" rpy="-5.66214e-14 3.59712e-14 2.9976e-14"/>
+      <origin xyz="-1.38778e-17 0.0419282 0.045" rpy="9.02058e-15 -1.4988e-15 4.43517e-15"/>
       <geometry>
-        <mesh filename="package://climbbot3_description/climbbot3/assets/flat_gripper.stl"/>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/gripper_hook.stl"/>
       </geometry>
-      <material name="flat_gripper_2_material">
+      <material name="gripper_hook_2_material">
         <color rgba="0.615686 0.811765 0.929412 1.0"/>
       </material>
     </visual>
     <collision>
-      <origin xyz="1.7833e-14 0.0419282 0.045" rpy="-5.66214e-14 3.59712e-14 2.9976e-14"/>
+      <origin xyz="-1.38778e-17 0.0419282 0.045" rpy="9.02058e-15 -1.4988e-15 4.43517e-15"/>
       <geometry>
-        <mesh filename="package://climbbot3_description/climbbot3/assets/flat_gripper.stl"/>
+        <mesh filename="package://climbbot3_description/climbbot3/assets/gripper_hook.stl"/>
       </geometry>
     </collision>
     <!-- Part part_6_2 -->
     <visual>
-      <origin xyz="0 -6.93889e-18 -0.184" rpy="1.5708 -1.21544e-31 -5.39538e-30"/>
+      <origin xyz="0 6.93889e-18 -0.184" rpy="1.5708 1.56787e-31 7.25459e-31"/>
       <geometry>
         <mesh filename="package://climbbot3_description/climbbot3/assets/part_6.stl"/>
       </geometry>
@@ -622,7 +629,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0 -6.93889e-18 -0.184" rpy="1.5708 -1.21544e-31 -5.39538e-30"/>
+      <origin xyz="0 6.93889e-18 -0.184" rpy="1.5708 1.56787e-31 7.25459e-31"/>
       <geometry>
         <mesh filename="package://climbbot3_description/climbbot3/assets/part_6.stl"/>
       </geometry>
@@ -630,7 +637,7 @@
   </link>
   <!-- Joint from part_4_2 to assembly_11 -->
   <joint name="l3_3" type="prismatic">
-    <origin xyz="1.38778e-17 6.93889e-18 0.002" rpy="6.12323e-17 -3.66111e-14 3.58539e-14"/>
+    <origin xyz="-7.07767e-16 -6.93889e-18 0.002" rpy="1.4988e-15 4.4964e-15 1.4988e-15"/>
     <parent link="part_4_2"/>
     <child link="assembly_11"/>
     <axis xyz="0 0 1"/>
@@ -639,7 +646,7 @@
   </joint>
   <!-- Joint from part_1_2 to part_4_2 -->
   <joint name="l3_2" type="prismatic">
-    <origin xyz="-1.38778e-17 -1.38778e-17 3.10862e-15" rpy="-5.18013e-28 -1.33227e-15 -3.78022e-27"/>
+    <origin xyz="7.21645e-16 0 2.55351e-15" rpy="-1.58419e-27 -9.21485e-15 1.38143e-15"/>
     <parent link="part_1_2"/>
     <child link="part_4_2"/>
     <axis xyz="0 0 1"/>
@@ -652,7 +659,7 @@
     <parent link="assembly_10"/>
     <child link="part_1_2"/>
     <axis xyz="0 0 1"/>
-    <limit effort="10" velocity="10" lower="-0.007" upper="0.132"/>
+    <limit effort="1000" velocity="10" lower="-0.007" upper="0.132"/>
   </joint>
   <!-- Joint from assembly_8 to assembly_10 -->
   <joint name="l2" type="revolute">
@@ -660,143 +667,143 @@
     <parent link="assembly_8"/>
     <child link="assembly_10"/>
     <axis xyz="0 0 1"/>
-    <limit effort="10" velocity="10" lower="-1.5708" upper="1.5708"/>
+    <limit effort="1000" velocity="10" lower="-1.5708" upper="1.5708"/>
   </joint>
   <!-- Joint from assembly_7 to assembly_8 -->
   <joint name="l1" type="revolute">
-    <origin xyz="0.180853 0.0191578 0.0286776" rpy="1.50377e-30 5.32967e-18 1.92024e-13"/>
+    <origin xyz="0.180853 0.0191578 0.0286776" rpy="1.50377e-30 5.32967e-18 4.55474e-14"/>
     <parent link="assembly_7"/>
     <child link="assembly_8"/>
     <axis xyz="0 0 1"/>
     <limit effort="1000" velocity="10" lower="-1.5708" upper="1.5708"/>
   </joint>
 
-  <!-- First end effector modifications -->
-  <link name="l3_roll">
-  <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-      <cylinder radius="0.001" length="0.001"/>
-      </geometry>
-  </visual>
-  <inertial>
-      <mass value="0.001"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
-  </inertial>
-  </link>
+<!-- First end effector modifications -->
+<link name="l3_roll">
+<visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+    <cylinder radius="0.001" length="0.001"/>
+    </geometry>
+</visual>
+<inertial>
+    <mass value="0.001"/>
+    <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+</inertial>
+</link>
 
-  <joint name="l3_roll_joint" type="revolute">
-  <parent link="assembly_11"/>
-  <child link="l3_roll"/>
-  <origin xyz="0 0 0.05" rpy="0 0 0"/>
-  <axis xyz="1 0 0"/>
-  <limit effort="1000.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
-  </joint>
+<joint name="l3_roll_joint" type="revolute">
+<parent link="assembly_11"/>
+<child link="l3_roll"/>
+<origin xyz="0 0 0.05" rpy="0 0 0"/>
+<axis xyz="1 0 0"/>
+<limit effort="1000.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
+</joint>
 
-  <link name="l3_pitch">
-  <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-      <cylinder radius="0.001" length="0.001"/>
-      </geometry>
-  </visual>
-  <inertial>
-      <mass value="0.001"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
-  </inertial>
-  </link>
+<link name="l3_pitch">
+<visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+    <cylinder radius="0.001" length="0.001"/>
+    </geometry>
+</visual>
+<inertial>
+    <mass value="0.001"/>
+    <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+</inertial>
+</link>
 
-  <joint name="l3_pitch_joint" type="revolute">
-  <parent link="l3_roll"/>
-  <child link="l3_pitch"/>
-  <origin xyz="0 0 0" rpy="0 0 0"/>
-  <axis xyz="0 1 0"/>
-  <limit effort="1000.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
-  </joint>
+<joint name="l3_pitch_joint" type="revolute">
+<parent link="l3_roll"/>
+<child link="l3_pitch"/>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<axis xyz="0 1 0"/>
+<limit effort="1000.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
+</joint>
 
-  <link name="l3_yaw">
-  <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-      <cylinder radius="0.001" length="0.001"/>
-      </geometry>
-  </visual>
-  <inertial>
-      <mass value="0.001"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
-  </inertial>
-  </link>
+<link name="l3_yaw">
+<visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+    <cylinder radius="0.001" length="0.001"/>
+    </geometry>
+</visual>
+<inertial>
+    <mass value="0.001"/>
+    <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+</inertial>
+</link>
 
-  <joint name="l3_yaw_joint" type="revolute">
-  <parent link="l3_pitch"/>
-  <child link="l3_yaw"/>
-  <origin xyz="0 0 0" rpy="0 0 0"/>
-  <axis xyz="0 0 1"/>
-  <limit effort="1000.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
-  </joint>
+<joint name="l3_yaw_joint" type="revolute">
+<parent link="l3_pitch"/>
+<child link="l3_yaw"/>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<axis xyz="0 0 1"/>
+<limit effort="1000.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
+</joint>
 
 
-  <!-- Second end effector modifications -->
-  <link name="r3_roll">
-  <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-      <cylinder radius="0.001" length="0.001"/>
-      </geometry>
-  </visual>
-  <inertial>
-      <mass value="0.001"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
-  </inertial>
-  </link>
+<!-- Second end effector modifications -->
+<link name="r3_roll">
+<visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+    <cylinder radius="0.001" length="0.001"/>
+    </geometry>
+</visual>
+<inertial>
+    <mass value="0.001"/>
+    <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+</inertial>
+</link>
 
-  <joint name="r3_roll_joint" type="revolute">
-  <parent link="assembly_12"/>
-  <child link="r3_roll"/>
-  <origin xyz="0 0 0.05" rpy="0 0 0"/>
-  <axis xyz="1 0 0"/>
-  <limit effort="1000.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
-  </joint>
+<joint name="r3_roll_joint" type="revolute">
+<parent link="assembly_12"/>
+<child link="r3_roll"/>
+<origin xyz="0 0 0.05" rpy="0 0 0"/>
+<axis xyz="1 0 0"/>
+<limit effort="1000.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
+</joint>
 
-  <link name="r3_pitch">
-  <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-      <cylinder radius="0.001" length="0.001"/>
-      </geometry>
-  </visual>
-  <inertial>
-      <mass value="0.001"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
-  </inertial>
-  </link>
+<link name="r3_pitch">
+<visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+    <cylinder radius="0.001" length="0.001"/>
+    </geometry>
+</visual>
+<inertial>
+    <mass value="0.001"/>
+    <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+</inertial>
+</link>
 
-  <joint name="r3_pitch_joint" type="revolute">
-  <parent link="r3_roll"/>
-  <child link="r3_pitch"/>
-  <origin xyz="0 0 0" rpy="0 0 0"/>
-  <axis xyz="0 1 0"/>
-  <limit effort="1000.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
-  </joint>
+<joint name="r3_pitch_joint" type="revolute">
+<parent link="r3_roll"/>
+<child link="r3_pitch"/>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<axis xyz="0 1 0"/>
+<limit effort="1000.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
+</joint>
 
-  <link name="r3_yaw">
-  <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-      <cylinder radius="0.001" length="0.001"/>
-      </geometry>
-  </visual>
-  <inertial>
-      <mass value="0.001"/>
-      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
-  </inertial>
-  </link>
+<link name="r3_yaw">
+<visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+    <cylinder radius="0.001" length="0.001"/>
+    </geometry>
+</visual>
+<inertial>
+    <mass value="0.001"/>
+    <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+</inertial>
+</link>
 
-  <joint name="r3_yaw_joint" type="revolute">
-  <parent link="r3_pitch"/>
-  <child link="r3_yaw"/>
-  <origin xyz="0 0 0" rpy="0 0 0"/>
-  <axis xyz="0 0 1"/>
-  <limit effort="1000.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
-  </joint>
+<joint name="r3_yaw_joint" type="revolute">
+<parent link="r3_pitch"/>
+<child link="r3_yaw"/>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+<axis xyz="0 0 1"/>
+<limit effort="1000.0" lower="-3.14159" upper="3.14159" velocity="0.5"/>
+</joint>
 </robot>

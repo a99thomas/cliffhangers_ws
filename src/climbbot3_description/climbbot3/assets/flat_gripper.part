@@ -1,0 +1,14 @@
+{
+    "configuration": "default",
+    "documentId": "861e538437cb74619ff0141a",
+    "documentMicroversion": "b9c71b05d4f89e44d0d3e138",
+    "documentVersion": "31e882c133a9360ac859fdef",
+    "elementId": "f5afddff57c727193690c915",
+    "fullConfiguration": "default",
+    "id": "MlUHGXy+J/WPiWpWw",
+    "isStandardContent": false,
+    "name": "flat_gripper <2>",
+    "partId": "JHD",
+    "suppressed": false,
+    "type": "Part"
+}
